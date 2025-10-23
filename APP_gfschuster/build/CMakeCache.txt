@@ -23,6 +23,15 @@ APPLICATION_CONFIG_DIR:PATH=C:/Users/Gabe/Desktop/Embarcados/zephyr-app-ufsm0029
 //Application Source Directory
 APPLICATION_SOURCE_DIR:PATH=C:/Users/Gabe/Desktop/Embarcados/zephyr-app-ufsm00292/APP_gfschuster
 
+//Value Computed by CMake
+APP_gfschuster_BINARY_DIR:STATIC=C:/Users/Gabe/Desktop/Embarcados/zephyr-app-ufsm00292/APP_gfschuster/build
+
+//Value Computed by CMake
+APP_gfschuster_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+APP_gfschuster_SOURCE_DIR:STATIC=C:/Users/Gabe/Desktop/Embarcados/zephyr-app-ufsm00292/APP_gfschuster
+
 //Selected board
 BOARD:STRING=qemu_x86
 
@@ -226,7 +235,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=mini_estacao_ambiental
+CMAKE_PROJECT_NAME:STATIC=APP_gfschuster
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=4.2.99
@@ -407,15 +416,6 @@ ZephyrBuildConfiguration_DIR:PATH=ZephyrBuildConfiguration_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for Zephyr.
 Zephyr_DIR:PATH=C:/zephyrproject/zephyr/share/zephyr-package/cmake
-
-//Value Computed by CMake
-mini_estacao_ambiental_BINARY_DIR:STATIC=C:/Users/Gabe/Desktop/Embarcados/zephyr-app-ufsm00292/APP_gfschuster/build
-
-//Value Computed by CMake
-mini_estacao_ambiental_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-mini_estacao_ambiental_SOURCE_DIR:STATIC=C:/Users/Gabe/Desktop/Embarcados/zephyr-app-ufsm00292/APP_gfschuster
 
 
 ########################

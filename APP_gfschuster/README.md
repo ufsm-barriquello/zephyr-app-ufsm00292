@@ -1,8 +1,15 @@
-# UFSM00292 – Projeto de Sistemas Embarcados (Equipe APP)
+# APP_gfschuster - Mini Estação Ambiental (Zephyr RTOS)
 
-**Aluno:** Gabriel Fronza Schuster  
-**Professor:** Carlos Henrique Barriquello  
-**Período:** 2025/2  
+Projeto desenvolvido na disciplina **UFSM00292 – Projeto de Sistemas Embarcados**,  
+com o objetivo de criar uma aplicação multitarefa usando **Zephyr RTOS** e **QEMU**.
+
+---
+
+## 👤 Autoria
+**Gabriel Fronza Schuster**  
+Curso: Engenharia de Computação – UFSM  
+Professor: Carlos Henrique Barriquello  
+Período: 2025/2  
 
 ---
 
@@ -83,3 +90,61 @@ Saída esperada:
 === Mini Estação Ambiental Thread - UFSM ===
 Temperatura: 26 °C | Luminosidade: 415 lx
 Temperatura: 28 °C | Luminosidade: 712 lx
+
+---
+
+##  Semana 3 – Ajustes de estrutura de projeto e planejamento
+
+---
+
+### Estrutura do Projeto
+
+APP_gfschuster/
+├── include/
+│ └── app.h
+├── src/
+│ ├── main.c
+│ ├── sensor_temp.c
+│ ├── sensor_lux.c
+│ ├── sensor_humidity.c
+│ └── data_center.c
+├── CMakeLists.txt
+├── prj.conf
+└── run_APP_local.ps1
+
+---
+
+## Funcionalidade
+
+O projeto simula uma **mini estação ambiental**, composta por três sensores:
+
+| Sensor | Variável | Intervalo de simulação |
+|:-------|:----------|:-----------------------|
+| Temperatura | 20–29 °C | 1,0 s |
+| Luminosidade | 0–999 lx | 1,2 s |
+| Umidade | 40–79 % | 1,5 s |
+
+Os valores coletados são enviados via **fila de mensagens (`k_msgq`)** para uma thread central (`data_center`),  
+que calcula médias e exibe os resultados em formato de tabela no console.
+
+---
+
+## Threads do Sistema
+
+| Thread | Função | Prioridade |
+|:--------|:--------|:------------|
+| `sensor_temp_thread` | Gera valores de temperatura | 2 |
+| `sensor_lux_thread` | Gera valores de luminosidade | 2 |
+| `sensor_humidity_thread` | Gera valores de umidade | 2 |
+| `data_center_thread` | Recebe dados, calcula médias e imprime tabela | 1 |
+
+---
+
+## Arquitetura de Comunicação
+
+```mermaid
+flowchart LR
+    A[Sensor de Temperatura] -->|k_msgq_put| C[Thread Central 🧩]
+    B[Sensor de Luminosidade] -->|k_msgq_put| C
+    D[Sensor de Umidade] -->|k_msgq_put| C
+    C -->|printk (UART/QEMU)| E[Console / Interface Python]

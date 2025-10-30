@@ -30,6 +30,7 @@ Foram instaladas e configuradas todas as ferramentas necessárias para o desenvo
 
 - Além disso, foram iniciadas pesquisas sobre os periféricos da placa de desenvolvimento SAMR21 para análise de possíveis aplicações Zephyr utilizando os seus drivers já portados para o RTOS.
 
+
 ---
 
 
@@ -37,7 +38,18 @@ Foram instaladas e configuradas todas as ferramentas necessárias para o desenvo
 
 - Durante esta semana foi escolhida como parte do meu desenvolvimento para a aplicação zephyr a comunicação com openthread entre duas placas utilizando as antenas padrão IEEE802154.
 
-➡️ **Próximos passos:** Compilar o exemplo coap openthread do zephyr para a placa SAMR21.
+
+---
+
+# Entrega 4 - Exemplo COAP muito grande para SAMR21 e problemas com o sample Echo Client/Server-
+
+- Durante esta semana foi realizada tentativa de compilar e rodar o exemplo do zephyr com Openthread COAP, contúdo, foi observado um overflow na memória ram de 30KB e mesmo com otimizações o overflow continuou ocorrendo com cerca de 9KB. Com isto, foi escolhido o sample Echo Client/Server que é um pouco mais simples e visa estabelecer uma conexão Ipv6 entre duas SAMR21 via IEEE 802.15.4. Inicialmente observou-se uma compilacão correta e sem problemas para o Client, já no Server ocorreu um pequeno Overflow de 900B que foi corrigido com algumas reduções em stacks da aplicação. Partindo para o flash e execução na placa o Client executou perfeitamente mas no Server ocorreu um problema de erro de HARD FAULT.
+
+OBS: Ainda não foi realizado o commit dos arquivos de build e codigo fonte do sample para evitar confusão, assim que estiver tudo em completo funcionamento o commit sera efetuado.
+
+➡️ **Próximos passos:** Fazer depuração do código do Echo Server para encontrar a origem do HARD FAULT e tentar executar o sample de forma completa, observando a comunicação entre as placas corretamente.
+
+
 
 
 

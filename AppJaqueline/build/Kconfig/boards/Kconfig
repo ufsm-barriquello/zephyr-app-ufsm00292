@@ -1,2 +1,0 @@
-# Load Zephyr board Kconfig descriptions.
-osource "C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/Kconfig"

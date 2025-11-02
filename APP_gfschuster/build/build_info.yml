@@ -25,6 +25,7 @@ cmake:
      - 'C:/zephyrproject/modules/hal/nxp/dts'
      - 'C:/zephyrproject/modules/hal/stm32/dts'
      - 'C:/zephyrproject/modules/hal/ti/dts'
+     - 'C:/Users/Gabe/Desktop/Embarcados/zephyr-app-ufsm00292/APP_gfschuster/include'
      - 'C:/zephyrproject/zephyr/include'
      - 'C:/zephyrproject/zephyr/include/zephyr'
      - 'C:/zephyrproject/zephyr/dts/common'

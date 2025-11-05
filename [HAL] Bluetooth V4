@@ -1,0 +1,90 @@
+🗓️ Semana 5: Serialização de Dados (Protocol Buffers)
+Foco: O serviço NUS é apenas um "cano" serial. Enviar strings de texto (como "ligar_led") ou JSON é ineficiente em termos de tamanho de pacote BLE e uso de memória/CPU para parsing. Esta semana foi dedicada a implementar um protocolo de dados binário.
+
+3.1. Diagnóstico do Problema
+A troca de dados via NUS é frágil. Se o formato do texto mudar, a aplicação quebra. O parsing de strings em um Cortex-M0+ é custoso.
+
+3.2. Solução: Protocol Buffers (Protobuf) com nanopb
+Foi decidido usar Protobuf, um formato de serialização binária do Google, que é leve e ideal para embarcados. O Zephyr tem integração nativa com o nanopb, um compilador Protobuf para C.
+
+Modificações no prj.conf:
+
+Snippet de código
+
+# --- CONFIGS DE SERIALIZAÇÃO (Semana 3) ---
+
+# Habilita o módulo de Protocol Buffers (que usa nanopb)
+CONFIG_PROTOBUF=y
+3.3. Definição do Protocolo (.proto)
+Criamos um arquivo de definição de protocolo (ex: app_protocol.proto) para nossos comandos:
+
+Arquivo: proto/app_protocol.proto
+
+Protocol Buffers
+
+syntax = "proto3";
+
+message ComandoBT {
+  oneof payload {
+    ComandoLED led = 1;
+    RequisicaoSensor sensor = 2;
+  }
+}
+
+message ComandoLED {
+  uint32 id_led = 1;
+  bool estado = 2;
+}
+
+message RequisicaoSensor {
+  uint32 id_sensor = 1;
+}
+3.4. Geração e Uso do Código C
+O nanopb (integrado ao build do Zephyr) gera os arquivos app_protocol.pb.c e app_protocol.pb.h a partir do .proto.
+
+Esses arquivos contêm as funções pb_encode e pb_decode para serializar e desserializar as structs C.
+
+Modificações no main.c (Lógica de Callback do NUS):
+
+Substituímos o parser de string por um decoder nanopb.
+
+C
+
+/* ... includes de nanopb (pb_encode.h, pb_decode.h) ... */
+#include "proto/app_protocol.pb.h"
+
+/* Callback de quando recebemos dados via NUS */
+static void nus_data_received(struct bt_nus_client *client, const uint8_t *data, uint16_t len)
+{
+    // 1. Criar um stream de input para o nanopb
+    pb_istream_t stream = pb_istream_from_buffer(data, len);
+    
+    // 2. Instanciar nossa struct de comando
+    ComandoBT comando = ComandoBT_init_zero;
+
+    // 3. Decodificar (parse) a mensagem binária
+    if (!pb_decode(&stream, ComandoBT_fields, &comando)) {
+        printk("Erro ao decodificar Protobuf: %s\n", PB_GET_ERROR(&stream));
+        return;
+    }
+
+    // 4. Agir sobre o comando
+    switch (comando.which_payload) {
+        case ComandoBT_led_tag:
+            printk("Comando LED: ID=%d, Estado=%d\n", 
+                   comando.payload.led.id_led, 
+                   comando.payload.led.estado);
+            // ... lógica para ligar/desligar o LED ...
+            break;
+        
+        case ComandoBT_sensor_tag:
+            printk("Requisicao Sensor: ID=%d\n", comando.payload.sensor.id_sensor);
+            // ... lógica para ler o sensor e ENVIAR uma resposta (pb_encode) ...
+            break;
+        
+        default:
+            printk("Comando desconhecido.\n");
+            break;
+    }
+}
+Resultado: A comunicação BLE agora é robusta, eficiente e à prova de falhas de formato. O payload binário economiza bytes no pacote BLE (max 251 bytes) e o decoder é muito mais rápido que sscanf ou cJSON.

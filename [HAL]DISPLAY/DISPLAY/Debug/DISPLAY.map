@@ -544,7 +544,7 @@ Discarded input sections
  .debug_macro   0x00000000     0x1fb0 Device_Startup/system_samd21.o
  .debug_macro   0x00000000       0x6d Device_Startup/system_samd21.o
  .debug_line    0x00000000      0x6f4 Device_Startup/system_samd21.o
- .debug_str     0x00000000    0x7060d Device_Startup/system_samd21.o
+ .debug_str     0x00000000    0x70616 Device_Startup/system_samd21.o
  .comment       0x00000000       0x5a Device_Startup/system_samd21.o
  .debug_frame   0x00000000       0x30 Device_Startup/system_samd21.o
  .ARM.attributes
@@ -757,7 +757,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xca driver_init.o
  .debug_macro   0x00000000       0x1c driver_init.o
  .debug_macro   0x00000000       0x16 driver_init.o
- .debug_macro   0x00000000       0x58 driver_init.o
+ .debug_macro   0x00000000       0x7c driver_init.o
  .debug_macro   0x00000000       0xc9 driver_init.o
  .group         0x00000000        0x8 examples/driver_examples.o
  .group         0x00000000        0x8 examples/driver_examples.o
@@ -975,10 +975,10 @@ Discarded input sections
  .debug_macro   0x00000000       0xca examples/driver_examples.o
  .debug_macro   0x00000000       0x1c examples/driver_examples.o
  .debug_macro   0x00000000       0x16 examples/driver_examples.o
- .debug_macro   0x00000000       0x58 examples/driver_examples.o
+ .debug_macro   0x00000000       0x7c examples/driver_examples.o
  .debug_macro   0x00000000       0xc9 examples/driver_examples.o
  .debug_line    0x00000000      0xa8f examples/driver_examples.o
- .debug_str     0x00000000    0x79baa examples/driver_examples.o
+ .debug_str     0x00000000    0x79c55 examples/driver_examples.o
  .comment       0x00000000       0x5a examples/driver_examples.o
  .debug_frame   0x00000000       0x2c examples/driver_examples.o
  .ARM.attributes
@@ -2240,7 +2240,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xca gfx_mono/display_controller/ssd1306/ssd1306_font.o
  .debug_macro   0x00000000       0x10 gfx_mono/display_controller/ssd1306/ssd1306_font.o
  .debug_line    0x00000000      0x954 gfx_mono/display_controller/ssd1306/ssd1306_font.o
- .debug_str     0x00000000    0x796f8 gfx_mono/display_controller/ssd1306/ssd1306_font.o
+ .debug_str     0x00000000    0x79701 gfx_mono/display_controller/ssd1306/ssd1306_font.o
  .comment       0x00000000       0x5a gfx_mono/display_controller/ssd1306/ssd1306_font.o
  .ARM.attributes
                 0x00000000       0x32 gfx_mono/display_controller/ssd1306/ssd1306_font.o
@@ -3083,7 +3083,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xca gfx_mono_main.o
  .debug_macro   0x00000000       0x1c gfx_mono_main.o
  .debug_macro   0x00000000       0x16 gfx_mono_main.o
- .debug_macro   0x00000000       0x58 gfx_mono_main.o
+ .debug_macro   0x00000000       0x7c gfx_mono_main.o
  .debug_macro   0x00000000       0xc9 gfx_mono_main.o
  .debug_macro   0x00000000       0x16 gfx_mono_main.o
  .debug_macro   0x00000000       0xd0 gfx_mono_main.o
@@ -3305,7 +3305,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xca hal/src/hal_atomic.o
  .debug_macro   0x00000000       0x10 hal/src/hal_atomic.o
  .debug_line    0x00000000      0x986 hal/src/hal_atomic.o
- .debug_str     0x00000000    0x79249 hal/src/hal_atomic.o
+ .debug_str     0x00000000    0x79252 hal/src/hal_atomic.o
  .comment       0x00000000       0x5a hal/src/hal_atomic.o
  .debug_frame   0x00000000       0x40 hal/src/hal_atomic.o
  .ARM.attributes
@@ -3413,8 +3413,6 @@ Discarded input sections
  .data          0x00000000        0x0 hal/src/hal_delay.o
  .text.delay_init
                 0x00000000       0x14 hal/src/hal_delay.o
- .text.delay_ms
-                0x00000000       0x20 hal/src/hal_delay.o
  .text.delay_get_version
                 0x00000000        0x4 hal/src/hal_delay.o
  .debug_macro   0x00000000      0x89e hal/src/hal_delay.o
@@ -3730,7 +3728,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x1c hal/src/hal_gpio.o
  .debug_macro   0x00000000       0x16 hal/src/hal_gpio.o
  .debug_line    0x00000000      0x97f hal/src/hal_gpio.o
- .debug_str     0x00000000    0x79313 hal/src/hal_gpio.o
+ .debug_str     0x00000000    0x7931c hal/src/hal_gpio.o
  .comment       0x00000000       0x5a hal/src/hal_gpio.o
  .debug_frame   0x00000000       0x20 hal/src/hal_gpio.o
  .ARM.attributes
@@ -3945,7 +3943,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 hal/src/hal_init.o
  .debug_macro   0x00000000       0xca hal/src/hal_init.o
  .debug_line    0x00000000      0x94e hal/src/hal_init.o
- .debug_str     0x00000000    0x791f4 hal/src/hal_init.o
+ .debug_str     0x00000000    0x791fd hal/src/hal_init.o
  .comment       0x00000000       0x5a hal/src/hal_init.o
  .debug_frame   0x00000000       0x20 hal/src/hal_init.o
  .ARM.attributes
@@ -4168,7 +4166,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xca hal/src/hal_io.o
  .debug_macro   0x00000000       0x16 hal/src/hal_io.o
  .debug_line    0x00000000      0x99e hal/src/hal_io.o
- .debug_str     0x00000000    0x792f6 hal/src/hal_io.o
+ .debug_str     0x00000000    0x792ff hal/src/hal_io.o
  .comment       0x00000000       0x5a hal/src/hal_io.o
  .debug_frame   0x00000000       0x58 hal/src/hal_io.o
  .ARM.attributes
@@ -4385,7 +4383,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 hal/src/hal_sleep.o
  .debug_macro   0x00000000       0xca hal/src/hal_sleep.o
  .debug_line    0x00000000      0x966 hal/src/hal_sleep.o
- .debug_str     0x00000000    0x79230 hal/src/hal_sleep.o
+ .debug_str     0x00000000    0x79239 hal/src/hal_sleep.o
  .comment       0x00000000       0x5a hal/src/hal_sleep.o
  .debug_frame   0x00000000       0x38 hal/src/hal_sleep.o
  .ARM.attributes
@@ -5062,7 +5060,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 hal/utils/src/utils_event.o
  .debug_macro   0x00000000       0x35 hal/utils/src/utils_event.o
  .debug_line    0x00000000      0xabd hal/utils/src/utils_event.o
- .debug_str     0x00000000    0x7c5d2 hal/utils/src/utils_event.o
+ .debug_str     0x00000000    0x7c5db hal/utils/src/utils_event.o
  .comment       0x00000000       0x5a hal/utils/src/utils_event.o
  .debug_frame   0x00000000       0x70 hal/utils/src/utils_event.o
  .ARM.attributes
@@ -5292,7 +5290,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xca hal/utils/src/utils_list.o
  .debug_macro   0x00000000       0x16 hal/utils/src/utils_list.o
  .debug_line    0x00000000      0x9e9 hal/utils/src/utils_list.o
- .debug_str     0x00000000    0x79303 hal/utils/src/utils_list.o
+ .debug_str     0x00000000    0x7930c hal/utils/src/utils_list.o
  .comment       0x00000000       0x5a hal/utils/src/utils_list.o
  .debug_frame   0x00000000       0x88 hal/utils/src/utils_list.o
  .ARM.attributes
@@ -5387,7 +5385,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x35 hal/utils/src/utils_syscalls.o
  .debug_macro   0x00000000      0x122 hal/utils/src/utils_syscalls.o
  .debug_line    0x00000000      0x40b hal/utils/src/utils_syscalls.o
- .debug_str     0x00000000     0x72f8 hal/utils/src/utils_syscalls.o
+ .debug_str     0x00000000     0x7301 hal/utils/src/utils_syscalls.o
  .comment       0x00000000       0x5a hal/utils/src/utils_syscalls.o
  .debug_frame   0x00000000       0xa8 hal/utils/src/utils_syscalls.o
  .ARM.attributes
@@ -5515,8 +5513,6 @@ Discarded input sections
                 0x00000000       0x2c hpl/core/hpl_core_m0plus_base.o
  .text.Default_Handler
                 0x00000000        0x2 hpl/core/hpl_core_m0plus_base.o
- .text._get_cycles_for_ms
-                0x00000000       0x1c hpl/core/hpl_core_m0plus_base.o
  .text._delay_init
                 0x00000000        0x2 hpl/core/hpl_core_m0plus_base.o
  .rodata.str1.4
@@ -6050,7 +6046,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x6cc hpl/dmac/hpl_dmac.o
  .debug_macro   0x00000000      0x6ba hpl/dmac/hpl_dmac.o
  .debug_line    0x00000000      0x9ac hpl/dmac/hpl_dmac.o
- .debug_str     0x00000000    0x80365 hpl/dmac/hpl_dmac.o
+ .debug_str     0x00000000    0x8036e hpl/dmac/hpl_dmac.o
  .comment       0x00000000       0x5a hpl/dmac/hpl_dmac.o
  .ARM.attributes
                 0x00000000       0x32 hpl/dmac/hpl_dmac.o
@@ -7302,6 +7298,17 @@ Discarded input sections
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
@@ -7406,13 +7413,24 @@ Discarded input sections
  .debug_macro   0x00000000       0xca main.o
  .debug_macro   0x00000000       0x1c main.o
  .debug_macro   0x00000000       0x16 main.o
- .debug_macro   0x00000000       0x58 main.o
+ .debug_macro   0x00000000       0x7c main.o
  .debug_macro   0x00000000       0xc9 main.o
  .debug_macro   0x00000000       0x16 main.o
  .debug_macro   0x00000000       0xd0 main.o
  .debug_macro   0x00000000       0x22 main.o
  .debug_macro   0x00000000       0x70 main.o
  .debug_macro   0x00000000       0x28 main.o
+ .debug_macro   0x00000000       0x58 main.o
+ .debug_macro   0x00000000       0x35 main.o
+ .debug_macro   0x00000000       0x9c main.o
+ .debug_macro   0x00000000       0x58 main.o
+ .debug_macro   0x00000000       0x1f main.o
+ .debug_macro   0x00000000       0x43 main.o
+ .debug_macro   0x00000000       0x20 main.o
+ .debug_macro   0x00000000      0x187 main.o
+ .debug_macro   0x00000000      0x34d main.o
+ .debug_macro   0x00000000       0x10 main.o
+ .debug_macro   0x00000000       0x35 main.o
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
@@ -7896,7 +7914,7 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
                 0x00002000                STACK_SIZE = DEFINED (STACK_SIZE)?STACK_SIZE:DEFINED (__stack_size__)?__stack_size__:0x2000
 
-.text           0x00000000     0x18b4
+.text           0x00000000     0x1a3c
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                _sfixed = .
  *(.vectors .vectors.*)
@@ -7957,283 +7975,292 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
                 0x000002e8       0x28 driver_init.o
                 0x000002e8                DISPLAY_SPI_init
  .text.system_init
-                0x00000310       0x8c driver_init.o
+                0x00000310       0xf8 driver_init.o
                 0x00000310                system_init
  .text.display_mono_construct
-                0x0000039c        0xc gfx_mono/display/display_mono.o
-                0x0000039c                display_mono_construct
+                0x00000408        0xc gfx_mono/display/display_mono.o
+                0x00000408                display_mono_construct
  .text.display_mono_put_byte
-                0x000003a8       0x26 gfx_mono/display/display_mono.o
-                0x000003a8                display_mono_put_byte
+                0x00000414       0x26 gfx_mono/display/display_mono.o
+                0x00000414                display_mono_put_byte
  .text.display_mono_mask_byte
-                0x000003ce       0x46 gfx_mono/display/display_mono.o
-                0x000003ce                display_mono_mask_byte
+                0x0000043a       0x46 gfx_mono/display/display_mono.o
+                0x0000043a                display_mono_mask_byte
  .text.display_mono_draw_pixel
-                0x00000414       0x8c gfx_mono/display/display_mono.o
-                0x00000414                display_mono_draw_pixel
+                0x00000480       0x8c gfx_mono/display/display_mono.o
+                0x00000480                display_mono_draw_pixel
  .text.display_mono_put_page
-                0x000004a0       0x38 gfx_mono/display/display_mono.o
-                0x000004a0                display_mono_put_page
+                0x0000050c       0x38 gfx_mono/display/display_mono.o
+                0x0000050c                display_mono_put_page
  .text.display_mono_init
-                0x000004d8       0x4a gfx_mono/display/display_mono.o
-                0x000004d8                display_mono_init
+                0x00000544       0x4a gfx_mono/display/display_mono.o
+                0x00000544                display_mono_init
  .text.framebuffer_put_page
-                0x00000522       0x22 gfx_mono/display/framebuffer.o
-                0x00000522                framebuffer_put_page
+                0x0000058e       0x22 gfx_mono/display/framebuffer.o
+                0x0000058e                framebuffer_put_page
  .text.framebuffer_put_byte
-                0x00000544        0xe gfx_mono/display/framebuffer.o
-                0x00000544                framebuffer_put_byte
+                0x000005b0        0xe gfx_mono/display/framebuffer.o
+                0x000005b0                framebuffer_put_byte
  .text.framebuffer_get_byte
-                0x00000552        0xe gfx_mono/display/framebuffer.o
-                0x00000552                framebuffer_get_byte
+                0x000005be        0xe gfx_mono/display/framebuffer.o
+                0x000005be                framebuffer_get_byte
  .text.framebuffer_draw_pixel
-                0x00000560       0x1c gfx_mono/display/framebuffer.o
-                0x00000560                framebuffer_draw_pixel
+                0x000005cc       0x1c gfx_mono/display/framebuffer.o
+                0x000005cc                framebuffer_draw_pixel
  .text.framebuffer_mask_byte
-                0x0000057c       0x18 gfx_mono/display/framebuffer.o
-                0x0000057c                framebuffer_mask_byte
+                0x000005e8       0x18 gfx_mono/display/framebuffer.o
+                0x000005e8                framebuffer_mask_byte
  .text.framebuffer_construct
-                0x00000594       0x24 gfx_mono/display/framebuffer.o
-                0x00000594                framebuffer_construct
+                0x00000600       0x24 gfx_mono/display/framebuffer.o
+                0x00000600                framebuffer_construct
  .text.ug2832hsweg04_put_page
-                0x000005b8       0x34 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
-                0x000005b8                ug2832hsweg04_put_page
+                0x00000624       0x34 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+                0x00000624                ug2832hsweg04_put_page
  .text.ug2832hsweg04_draw_pixel
-                0x000005ec       0x1c gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
-                0x000005ec                ug2832hsweg04_draw_pixel
+                0x00000658       0x1c gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+                0x00000658                ug2832hsweg04_draw_pixel
  .text.ug2832hsweg04_put_byte
-                0x00000608       0x2c gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
-                0x00000608                ug2832hsweg04_put_byte
+                0x00000674       0x2c gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+                0x00000674                ug2832hsweg04_put_byte
  .text.ug2832hsweg04_get_byte
-                0x00000634       0x10 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
-                0x00000634                ug2832hsweg04_get_byte
+                0x000006a0       0x10 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+                0x000006a0                ug2832hsweg04_get_byte
  .text.ug2832hsweg04_mask_byte
-                0x00000644       0x18 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
-                0x00000644                ug2832hsweg04_mask_byte
+                0x000006b0       0x18 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+                0x000006b0                ug2832hsweg04_mask_byte
  .text.ug2832hsweg04_construct
-                0x0000065c       0x78 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
-                0x0000065c                ug2832hsweg04_construct
+                0x000006c8       0x78 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+                0x000006c8                ug2832hsweg04_construct
  .text.display_ctrl_mono_construct
-                0x000006d4        0x6 gfx_mono/display_controller/display_ctrl_mono.o
-                0x000006d4                display_ctrl_mono_construct
- *fill*         0x000006da        0x2 
+                0x00000740        0x6 gfx_mono/display_controller/display_ctrl_mono.o
+                0x00000740                display_ctrl_mono_construct
+ *fill*         0x00000746        0x2 
  .text.display_ctrl_mono_hard_reset
-                0x000006dc       0x2c gfx_mono/display_controller/display_ctrl_mono.o
-                0x000006dc                display_ctrl_mono_hard_reset
+                0x00000748       0x2c gfx_mono/display_controller/display_ctrl_mono.o
+                0x00000748                display_ctrl_mono_hard_reset
  .text.ssd1306_write_data
-                0x00000708       0x5a gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x00000708                ssd1306_write_data
+                0x00000774       0x5a gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x00000774                ssd1306_write_data
  .text.ssd1306_read_data
-                0x00000762        0x4 gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x00000762                ssd1306_read_data
+                0x000007ce        0x4 gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x000007ce                ssd1306_read_data
  .text.ssd1306_write_command
-                0x00000766       0x5a gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x00000766                ssd1306_write_command
+                0x000007d2       0x5a gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x000007d2                ssd1306_write_command
  .text.ssd1306_set_page_address
-                0x000007c0       0x1c gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x000007c0                ssd1306_set_page_address
+                0x0000082c       0x1c gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x0000082c                ssd1306_set_page_address
  .text.ssd1306_set_column_address
-                0x000007dc       0x24 gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x000007dc                ssd1306_set_column_address
+                0x00000848       0x24 gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x00000848                ssd1306_set_column_address
  .text.ssd1306_set_start_line_address
-                0x00000800       0x1c gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x00000800                ssd1306_set_start_line_address
+                0x0000086c       0x1c gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x0000086c                ssd1306_set_start_line_address
  .text.ssd1306_hard_reset
-                0x0000081c       0x10 gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x0000081c                ssd1306_hard_reset
+                0x00000888       0x10 gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x00000888                ssd1306_hard_reset
  .text.ssd1306_on
-                0x0000082c       0x10 gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x0000082c                ssd1306_on
+                0x00000898       0x10 gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x00000898                ssd1306_on
  .text.ssd1306_set_contrast
-                0x0000083c       0x1c gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x0000083c                ssd1306_set_contrast
+                0x000008a8       0x1c gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x000008a8                ssd1306_set_contrast
  .text.ssd1306_init
-                0x00000858       0x9c gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x000008c4       0x9c gfx_mono/display_controller/ssd1306/ssd1306.o
  .text.ssd1306_construct
-                0x000008f4       0x30 gfx_mono/display_controller/ssd1306/ssd1306.o
-                0x000008f4                ssd1306_construct
+                0x00000960       0x30 gfx_mono/display_controller/ssd1306/ssd1306.o
+                0x00000960                ssd1306_construct
  .text.gfx_mono_construct
-                0x00000924        0x4 gfx_mono/gfx_mono.o
-                0x00000924                gfx_mono_construct
+                0x00000990        0x4 gfx_mono/gfx_mono.o
+                0x00000990                gfx_mono_construct
  .text.gfx_mono_draw_horizontal_line
-                0x00000928       0xf0 gfx_mono/gfx_mono.o
-                0x00000928                gfx_mono_draw_horizontal_line
+                0x00000994       0xf0 gfx_mono/gfx_mono.o
+                0x00000994                gfx_mono_draw_horizontal_line
  .text.gfx_mono_draw_vertical_line
-                0x00000a18       0xbe gfx_mono/gfx_mono.o
-                0x00000a18                gfx_mono_draw_vertical_line
- *fill*         0x00000ad6        0x2 
+                0x00000a84       0xbe gfx_mono/gfx_mono.o
+                0x00000a84                gfx_mono_draw_vertical_line
+ *fill*         0x00000b42        0x2 
  .text.gfx_mono_draw_rect
-                0x00000ad8       0x64 gfx_mono/gfx_mono.o
-                0x00000ad8                gfx_mono_draw_rect
+                0x00000b44       0x64 gfx_mono/gfx_mono.o
+                0x00000b44                gfx_mono_draw_rect
  .text.gfx_mono_draw_filled_rect
-                0x00000b3c       0x3c gfx_mono/gfx_mono.o
-                0x00000b3c                gfx_mono_draw_filled_rect
+                0x00000ba8       0x3c gfx_mono/gfx_mono.o
+                0x00000ba8                gfx_mono_draw_filled_rect
  .text.gfx_mono_text_draw_char_progmem
-                0x00000b78       0xc0 gfx_mono/gfx_mono_text.o
+                0x00000be4       0xc0 gfx_mono/gfx_mono_text.o
  .text.gfx_mono_text_construct
-                0x00000c38        0x4 gfx_mono/gfx_mono_text.o
-                0x00000c38                gfx_mono_text_construct
+                0x00000ca4        0x4 gfx_mono/gfx_mono_text.o
+                0x00000ca4                gfx_mono_text_construct
  .text.gfx_mono_text_draw_char
-                0x00000c3c       0x58 gfx_mono/gfx_mono_text.o
-                0x00000c3c                gfx_mono_text_draw_char
+                0x00000ca8       0x58 gfx_mono/gfx_mono_text.o
+                0x00000ca8                gfx_mono_text_draw_char
  .text.gfx_mono_text_draw_string
-                0x00000c94       0x8c gfx_mono/gfx_mono_text.o
-                0x00000c94                gfx_mono_text_draw_string
+                0x00000d00       0x8c gfx_mono/gfx_mono_text.o
+                0x00000d00                gfx_mono_text_draw_string
  .text.gfx_mono_init
-                0x00000d20       0x98 gfx_mono_main.o
-                0x00000d20                gfx_mono_init
+                0x00000d8c       0x98 gfx_mono_main.o
+                0x00000d8c                gfx_mono_init
  .text.delay_us
-                0x00000db8       0x20 hal/src/hal_delay.o
-                0x00000db8                delay_us
+                0x00000e24       0x20 hal/src/hal_delay.o
+                0x00000e24                delay_us
+ .text.delay_ms
+                0x00000e44       0x20 hal/src/hal_delay.o
+                0x00000e44                delay_ms
  .text.spi_m_sync_init
-                0x00000dd8       0x58 hal/src/hal_spi_m_sync.o
-                0x00000dd8                spi_m_sync_init
+                0x00000e64       0x58 hal/src/hal_spi_m_sync.o
+                0x00000e64                spi_m_sync_init
  .text.spi_m_sync_enable
-                0x00000e30       0x28 hal/src/hal_spi_m_sync.o
-                0x00000e30                spi_m_sync_enable
+                0x00000ebc       0x28 hal/src/hal_spi_m_sync.o
+                0x00000ebc                spi_m_sync_enable
  .text.spi_m_sync_transfer
-                0x00000e58       0x48 hal/src/hal_spi_m_sync.o
-                0x00000e58                spi_m_sync_transfer
+                0x00000ee4       0x48 hal/src/hal_spi_m_sync.o
+                0x00000ee4                spi_m_sync_transfer
  .text._spi_m_sync_io_write
-                0x00000ea0       0x3c hal/src/hal_spi_m_sync.o
+                0x00000f2c       0x3c hal/src/hal_spi_m_sync.o
  .text._spi_m_sync_io_read
-                0x00000edc       0x3c hal/src/hal_spi_m_sync.o
- .text.assert   0x00000f18        0x8 hal/utils/src/utils_assert.o
-                0x00000f18                assert
+                0x00000f68       0x3c hal/src/hal_spi_m_sync.o
+ .text.assert   0x00000fa4        0x8 hal/utils/src/utils_assert.o
+                0x00000fa4                assert
  .text._get_cycles_for_us
-                0x00000f20       0x1c hpl/core/hpl_core_m0plus_base.o
-                0x00000f20                _get_cycles_for_us
+                0x00000fac       0x1c hpl/core/hpl_core_m0plus_base.o
+                0x00000fac                _get_cycles_for_us
+ .text._get_cycles_for_ms
+                0x00000fc8       0x1c hpl/core/hpl_core_m0plus_base.o
+                0x00000fc8                _get_cycles_for_ms
  .text._delay_cycles
-                0x00000f3c        0x6 hpl/core/hpl_core_m0plus_base.o
-                0x00000f3c                _delay_cycles
- *fill*         0x00000f42        0x2 
+                0x00000fe4        0x6 hpl/core/hpl_core_m0plus_base.o
+                0x00000fe4                _delay_cycles
+ *fill*         0x00000fea        0x2 
  .text._init_chip
-                0x00000f44       0x30 hpl/core/hpl_init.o
-                0x00000f44                _init_chip
+                0x00000fec       0x30 hpl/core/hpl_init.o
+                0x00000fec                _init_chip
  .text._gclk_init_generators_by_fref
-                0x00000f74       0x20 hpl/gclk/hpl_gclk.o
-                0x00000f74                _gclk_init_generators_by_fref
+                0x0000101c       0x20 hpl/gclk/hpl_gclk.o
+                0x0000101c                _gclk_init_generators_by_fref
  .text._pm_init
-                0x00000f94       0x20 hpl/pm/hpl_pm.o
-                0x00000f94                _pm_init
+                0x0000103c       0x20 hpl/pm/hpl_pm.o
+                0x0000103c                _pm_init
  .text._sercom_get_hardware_index
-                0x00000fb4       0x10 hpl/sercom/hpl_sercom.o
+                0x0000105c       0x10 hpl/sercom/hpl_sercom.o
  .text._spi_sync_enable
-                0x00000fc4       0x1e hpl/sercom/hpl_sercom.o
- *fill*         0x00000fe2        0x2 
+                0x0000106c       0x1e hpl/sercom/hpl_sercom.o
+ *fill*         0x0000108a        0x2 
  .text._spi_m_sync_init
-                0x00000fe4      0x1fc hpl/sercom/hpl_sercom.o
-                0x00000fe4                _spi_m_sync_init
+                0x0000108c      0x1fc hpl/sercom/hpl_sercom.o
+                0x0000108c                _spi_m_sync_init
  .text._spi_m_sync_enable
-                0x000011e0       0x34 hpl/sercom/hpl_sercom.o
-                0x000011e0                _spi_m_sync_enable
+                0x00001288       0x34 hpl/sercom/hpl_sercom.o
+                0x00001288                _spi_m_sync_enable
  .text._spi_m_sync_trans
-                0x00001214      0x114 hpl/sercom/hpl_sercom.o
-                0x00001214                _spi_m_sync_trans
+                0x000012bc      0x114 hpl/sercom/hpl_sercom.o
+                0x000012bc                _spi_m_sync_trans
  .text._sysctrl_init_sources
-                0x00001328       0x4c hpl/sysctrl/hpl_sysctrl.o
-                0x00001328                _sysctrl_init_sources
+                0x000013d0       0x4c hpl/sysctrl/hpl_sysctrl.o
+                0x000013d0                _sysctrl_init_sources
  .text._sysctrl_init_referenced_generators
-                0x00001374       0x10 hpl/sysctrl/hpl_sysctrl.o
-                0x00001374                _sysctrl_init_referenced_generators
- .text.main     0x00001384       0x6c main.o
-                0x00001384                main
- .text          0x000013f0      0x114 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
-                0x000013f0                __aeabi_uidiv
-                0x000013f0                __udivsi3
-                0x000014fc                __aeabi_uidivmod
- .text          0x00001504        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
-                0x00001504                __aeabi_idiv0
-                0x00001504                __aeabi_ldiv0
+                0x0000141c       0x10 hpl/sysctrl/hpl_sysctrl.o
+                0x0000141c                _sysctrl_init_referenced_generators
+ .text.clear_text_area
+                0x0000142c       0x24 main.o
+                0x0000142c                clear_text_area
+ .text.main     0x00001450      0x104 main.o
+                0x00001450                main
+ .text          0x00001554      0x114 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
+                0x00001554                __aeabi_uidiv
+                0x00001554                __udivsi3
+                0x00001660                __aeabi_uidivmod
+ .text          0x00001668        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
+                0x00001668                __aeabi_idiv0
+                0x00001668                __aeabi_ldiv0
  .text.__libc_init_array
-                0x00001508       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
-                0x00001508                __libc_init_array
+                0x0000166c       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
+                0x0000166c                __libc_init_array
  *(.glue_7t)
- .glue_7t       0x00001550        0x0 linker stubs
+ .glue_7t       0x000016b4        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x00001550        0x0 linker stubs
+ .glue_7        0x000016b4        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
- .rodata        0x00001550      0x292 gfx_mono/fonts/gfx_mono_font_basic_6x7.o
- *fill*         0x000017e2        0x2 
+ .rodata        0x000016b4      0x292 gfx_mono/fonts/gfx_mono_font_basic_6x7.o
+ *fill*         0x00001946        0x2 
  .rodata.str1.4
-                0x000017e4       0x1c gfx_mono/gfx_mono_text.o
+                0x00001948       0x1c gfx_mono/gfx_mono_text.o
  .rodata.str1.4
-                0x00001800       0x1c hal/src/hal_spi_m_sync.o
- .rodata        0x0000181c       0x4d hpl/sercom/hpl_sercom.o
- *fill*         0x00001869        0x3 
+                0x00001964       0x1c hal/src/hal_spi_m_sync.o
+ .rodata        0x00001980       0x4d hpl/sercom/hpl_sercom.o
+ *fill*         0x000019cd        0x3 
  .rodata.str1.4
-                0x0000186c       0x1b hpl/sercom/hpl_sercom.o
- *fill*         0x00001887        0x1 
+                0x000019d0       0x1b hpl/sercom/hpl_sercom.o
+ *fill*         0x000019eb        0x1 
  .rodata.str1.4
-                0x00001888        0xc main.o
+                0x000019ec       0x30 main.o
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00001894                . = ALIGN (0x4)
+                0x00001a1c                . = ALIGN (0x4)
  *(.init)
- .init          0x00001894        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x00001894                _init
- .init          0x00001898        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x000018a0                . = ALIGN (0x4)
-                0x000018a0                __preinit_array_start = .
+ .init          0x00001a1c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x00001a1c                _init
+ .init          0x00001a20        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x00001a28                . = ALIGN (0x4)
+                0x00001a28                __preinit_array_start = .
  *(.preinit_array)
-                0x000018a0                __preinit_array_end = .
-                0x000018a0                . = ALIGN (0x4)
-                0x000018a0                __init_array_start = .
+                0x00001a28                __preinit_array_end = .
+                0x00001a28                . = ALIGN (0x4)
+                0x00001a28                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x000018a0        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
-                0x000018a4                __init_array_end = .
-                0x000018a4                . = ALIGN (0x4)
+ .init_array    0x00001a28        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+                0x00001a2c                __init_array_end = .
+                0x00001a2c                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x000018a4                . = ALIGN (0x4)
+                0x00001a2c                . = ALIGN (0x4)
  *(.fini)
- .fini          0x000018a4        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x000018a4                _fini
- .fini          0x000018a8        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x000018b0                . = ALIGN (0x4)
-                0x000018b0                __fini_array_start = .
+ .fini          0x00001a2c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x00001a2c                _fini
+ .fini          0x00001a30        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x00001a38                . = ALIGN (0x4)
+                0x00001a38                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x000018b0        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .fini_array    0x00001a38        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x000018b4                __fini_array_end = .
+                0x00001a3c                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x000018b4                . = ALIGN (0x4)
-                0x000018b4                _efixed = .
+                0x00001a3c                . = ALIGN (0x4)
+                0x00001a3c                _efixed = .
                 [!provide]                PROVIDE (__exidx_start, .)
 
-.vfp11_veneer   0x000018b4        0x0
- .vfp11_veneer  0x000018b4        0x0 linker stubs
+.vfp11_veneer   0x00001a3c        0x0
+ .vfp11_veneer  0x00001a3c        0x0 linker stubs
 
-.v4_bx          0x000018b4        0x0
- .v4_bx         0x000018b4        0x0 linker stubs
+.v4_bx          0x00001a3c        0x0
+ .v4_bx         0x00001a3c        0x0 linker stubs
 
-.iplt           0x000018b4        0x0
- .iplt          0x000018b4        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x00001a3c        0x0
+ .iplt          0x00001a3c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.eh_frame       0x000018b4        0x0
- .eh_frame      0x000018b4        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.eh_frame       0x00001a3c        0x0
+ .eh_frame      0x00001a3c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.rel.dyn        0x000018b4        0x0
- .rel.iplt      0x000018b4        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x00001a3c        0x0
+ .rel.iplt      0x00001a3c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.jcr            0x000018b4        0x0
- .jcr           0x000018b4        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.jcr            0x00001a3c        0x0
+ .jcr           0x00001a3c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.igot.plt       0x000018b4        0x0
- .igot.plt      0x000018b4        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.igot.plt       0x00001a3c        0x0
+ .igot.plt      0x00001a3c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 [!provide]                PROVIDE (__exidx_end, .)
-                0x000018b4                . = ALIGN (0x4)
-                0x000018b4                _etext = .
+                0x00001a3c                . = ALIGN (0x4)
+                0x00001a3c                _etext = .
 
-.relocate       0x20000000       0x4c load address 0x000018b4
+.relocate       0x20000000       0x4c load address 0x00001a3c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -8246,7 +8273,7 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
                 0x2000004c                . = ALIGN (0x4)
                 0x2000004c                _erelocate = .
 
-.bss            0x2000004c      0x268 load address 0x00001900
+.bss            0x2000004c      0x268 load address 0x00001a88
                 0x2000004c                . = ALIGN (0x4)
                 0x2000004c                _sbss = .
                 0x2000004c                _szero = .
@@ -8264,7 +8291,7 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin
                 0x200002b4                _ebss = .
                 0x200002b4                _ezero = .
 
-.stack          0x200002b4     0x2004 load address 0x00001b68
+.stack          0x200002b4     0x2004 load address 0x00001cf0
                 0x200002b8                . = ALIGN (0x8)
  *fill*         0x200002b4        0x4 
                 0x200002b8                _sstack = .
@@ -8360,77 +8387,77 @@ OUTPUT(DISPLAY.elf elf32-littlearm)
  .comment       0x00000059       0x5a hpl/sysctrl/hpl_sysctrl.o
  .comment       0x00000059       0x5a main.o
 
-.debug_info     0x00000000    0x22ed5
+.debug_info     0x00000000    0x248a1
  .debug_info    0x00000000      0x5e3 atmel_start.o
  .debug_info    0x000005e3     0x3a2c Device_Startup/startup_samd21.o
- .debug_info    0x0000400f     0x81c2 driver_init.o
- .debug_info    0x0000c1d1      0x9b6 gfx_mono/display/display_mono.o
- .debug_info    0x0000cb87      0x866 gfx_mono/display/framebuffer.o
- .debug_info    0x0000d3ed      0xab5 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
- .debug_info    0x0000dea2      0xb4a gfx_mono/display_controller/display_ctrl_mono.o
- .debug_info    0x0000e9ec     0x1a95 gfx_mono/display_controller/ssd1306/ssd1306.o
- .debug_info    0x00010481      0x18e gfx_mono/fonts/gfx_mono_font_basic_6x7.o
- .debug_info    0x0001060f      0xff4 gfx_mono/gfx_mono.o
- .debug_info    0x00011603      0xb10 gfx_mono/gfx_mono_text.o
- .debug_info    0x00012113     0x138f gfx_mono_main.o
- .debug_info    0x000134a2      0x1dc hal/src/hal_delay.o
- .debug_info    0x0001367e      0x9c9 hal/src/hal_spi_m_sync.o
- .debug_info    0x00014047      0x107 hal/utils/src/utils_assert.o
- .debug_info    0x0001414e      0x871 hpl/core/hpl_core_m0plus_base.o
- .debug_info    0x000149bf      0x677 hpl/core/hpl_init.o
- .debug_info    0x00015036      0x4e1 hpl/gclk/hpl_gclk.o
- .debug_info    0x00015517      0xc6d hpl/pm/hpl_pm.o
- .debug_info    0x00016184     0xb27e hpl/sercom/hpl_sercom.o
- .debug_info    0x00021402     0x1454 hpl/sysctrl/hpl_sysctrl.o
- .debug_info    0x00022856      0x67f main.o
+ .debug_info    0x0000400f     0x87a4 driver_init.o
+ .debug_info    0x0000c7b3      0x9b6 gfx_mono/display/display_mono.o
+ .debug_info    0x0000d169      0x866 gfx_mono/display/framebuffer.o
+ .debug_info    0x0000d9cf      0xab5 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+ .debug_info    0x0000e484      0xb4a gfx_mono/display_controller/display_ctrl_mono.o
+ .debug_info    0x0000efce     0x1a95 gfx_mono/display_controller/ssd1306/ssd1306.o
+ .debug_info    0x00010a63      0x18e gfx_mono/fonts/gfx_mono_font_basic_6x7.o
+ .debug_info    0x00010bf1      0xff4 gfx_mono/gfx_mono.o
+ .debug_info    0x00011be5      0xb10 gfx_mono/gfx_mono_text.o
+ .debug_info    0x000126f5     0x138f gfx_mono_main.o
+ .debug_info    0x00013a84      0x1dc hal/src/hal_delay.o
+ .debug_info    0x00013c60      0x9c9 hal/src/hal_spi_m_sync.o
+ .debug_info    0x00014629      0x107 hal/utils/src/utils_assert.o
+ .debug_info    0x00014730      0x871 hpl/core/hpl_core_m0plus_base.o
+ .debug_info    0x00014fa1      0x677 hpl/core/hpl_init.o
+ .debug_info    0x00015618      0x4e1 hpl/gclk/hpl_gclk.o
+ .debug_info    0x00015af9      0xc6d hpl/pm/hpl_pm.o
+ .debug_info    0x00016766     0xb27e hpl/sercom/hpl_sercom.o
+ .debug_info    0x000219e4     0x1454 hpl/sysctrl/hpl_sysctrl.o
+ .debug_info    0x00022e38     0x1a69 main.o
 
-.debug_abbrev   0x00000000     0x2d98
+.debug_abbrev   0x00000000     0x2f6b
  .debug_abbrev  0x00000000      0x120 atmel_start.o
  .debug_abbrev  0x00000120      0x227 Device_Startup/startup_samd21.o
- .debug_abbrev  0x00000347      0x370 driver_init.o
- .debug_abbrev  0x000006b7      0x1e1 gfx_mono/display/display_mono.o
- .debug_abbrev  0x00000898      0x169 gfx_mono/display/framebuffer.o
- .debug_abbrev  0x00000a01      0x179 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
- .debug_abbrev  0x00000b7a      0x2d9 gfx_mono/display_controller/display_ctrl_mono.o
- .debug_abbrev  0x00000e53      0x34e gfx_mono/display_controller/ssd1306/ssd1306.o
- .debug_abbrev  0x000011a1       0xd7 gfx_mono/fonts/gfx_mono_font_basic_6x7.o
- .debug_abbrev  0x00001278      0x204 gfx_mono/gfx_mono.o
- .debug_abbrev  0x0000147c      0x1db gfx_mono/gfx_mono_text.o
- .debug_abbrev  0x00001657      0x2ce gfx_mono_main.o
- .debug_abbrev  0x00001925       0xe1 hal/src/hal_delay.o
- .debug_abbrev  0x00001a06      0x1b1 hal/src/hal_spi_m_sync.o
- .debug_abbrev  0x00001bb7       0x86 hal/utils/src/utils_assert.o
- .debug_abbrev  0x00001c3d      0x2c6 hpl/core/hpl_core_m0plus_base.o
- .debug_abbrev  0x00001f03      0x1cc hpl/core/hpl_init.o
- .debug_abbrev  0x000020cf      0x1c3 hpl/gclk/hpl_gclk.o
- .debug_abbrev  0x00002292      0x211 hpl/pm/hpl_pm.o
- .debug_abbrev  0x000024a3      0x593 hpl/sercom/hpl_sercom.o
- .debug_abbrev  0x00002a36      0x1fb hpl/sysctrl/hpl_sysctrl.o
- .debug_abbrev  0x00002c31      0x167 main.o
+ .debug_abbrev  0x00000347      0x379 driver_init.o
+ .debug_abbrev  0x000006c0      0x1e1 gfx_mono/display/display_mono.o
+ .debug_abbrev  0x000008a1      0x169 gfx_mono/display/framebuffer.o
+ .debug_abbrev  0x00000a0a      0x179 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+ .debug_abbrev  0x00000b83      0x2d9 gfx_mono/display_controller/display_ctrl_mono.o
+ .debug_abbrev  0x00000e5c      0x34e gfx_mono/display_controller/ssd1306/ssd1306.o
+ .debug_abbrev  0x000011aa       0xd7 gfx_mono/fonts/gfx_mono_font_basic_6x7.o
+ .debug_abbrev  0x00001281      0x204 gfx_mono/gfx_mono.o
+ .debug_abbrev  0x00001485      0x1db gfx_mono/gfx_mono_text.o
+ .debug_abbrev  0x00001660      0x2ce gfx_mono_main.o
+ .debug_abbrev  0x0000192e       0xe1 hal/src/hal_delay.o
+ .debug_abbrev  0x00001a0f      0x1b1 hal/src/hal_spi_m_sync.o
+ .debug_abbrev  0x00001bc0       0x86 hal/utils/src/utils_assert.o
+ .debug_abbrev  0x00001c46      0x2c6 hpl/core/hpl_core_m0plus_base.o
+ .debug_abbrev  0x00001f0c      0x1cc hpl/core/hpl_init.o
+ .debug_abbrev  0x000020d8      0x1c3 hpl/gclk/hpl_gclk.o
+ .debug_abbrev  0x0000229b      0x211 hpl/pm/hpl_pm.o
+ .debug_abbrev  0x000024ac      0x593 hpl/sercom/hpl_sercom.o
+ .debug_abbrev  0x00002a3f      0x1fb hpl/sysctrl/hpl_sysctrl.o
+ .debug_abbrev  0x00002c3a      0x331 main.o
 
-.debug_loc      0x00000000     0xd76a
+.debug_loc      0x00000000     0xddf9
  .debug_loc     0x00000000       0x20 atmel_start.o
  .debug_loc     0x00000020       0x78 Device_Startup/startup_samd21.o
- .debug_loc     0x00000098      0xb14 driver_init.o
- .debug_loc     0x00000bac      0x9f2 gfx_mono/display/display_mono.o
- .debug_loc     0x0000159e      0x733 gfx_mono/display/framebuffer.o
- .debug_loc     0x00001cd1      0x7b9 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
- .debug_loc     0x0000248a      0x11e gfx_mono/display_controller/display_ctrl_mono.o
- .debug_loc     0x000025a8      0xb58 gfx_mono/display_controller/ssd1306/ssd1306.o
- .debug_loc     0x00003100      0xf51 gfx_mono/gfx_mono.o
- .debug_loc     0x00004051      0x807 gfx_mono/gfx_mono_text.o
- .debug_loc     0x00004858      0x368 gfx_mono_main.o
- .debug_loc     0x00004bc0       0xc3 hal/src/hal_delay.o
- .debug_loc     0x00004c83      0x728 hal/src/hal_spi_m_sync.o
- .debug_loc     0x000053ab      0x2a1 hpl/core/hpl_core_m0plus_base.o
- .debug_loc     0x0000564c       0x4c hpl/core/hpl_init.o
- .debug_loc     0x00005698       0xa3 hpl/gclk/hpl_gclk.o
- .debug_loc     0x0000573b      0x11b hpl/pm/hpl_pm.o
- .debug_loc     0x00005856     0x7d95 hpl/sercom/hpl_sercom.o
- .debug_loc     0x0000d5eb      0x153 hpl/sysctrl/hpl_sysctrl.o
- .debug_loc     0x0000d73e       0x2c main.o
+ .debug_loc     0x00000098      0xfa6 driver_init.o
+ .debug_loc     0x0000103e      0x9f2 gfx_mono/display/display_mono.o
+ .debug_loc     0x00001a30      0x733 gfx_mono/display/framebuffer.o
+ .debug_loc     0x00002163      0x7b9 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+ .debug_loc     0x0000291c      0x11e gfx_mono/display_controller/display_ctrl_mono.o
+ .debug_loc     0x00002a3a      0xb58 gfx_mono/display_controller/ssd1306/ssd1306.o
+ .debug_loc     0x00003592      0xf51 gfx_mono/gfx_mono.o
+ .debug_loc     0x000044e3      0x807 gfx_mono/gfx_mono_text.o
+ .debug_loc     0x00004cea      0x368 gfx_mono_main.o
+ .debug_loc     0x00005052       0xc3 hal/src/hal_delay.o
+ .debug_loc     0x00005115      0x728 hal/src/hal_spi_m_sync.o
+ .debug_loc     0x0000583d      0x2a1 hpl/core/hpl_core_m0plus_base.o
+ .debug_loc     0x00005ade       0x4c hpl/core/hpl_init.o
+ .debug_loc     0x00005b2a       0xa3 hpl/gclk/hpl_gclk.o
+ .debug_loc     0x00005bcd      0x11b hpl/pm/hpl_pm.o
+ .debug_loc     0x00005ce8     0x7d95 hpl/sercom/hpl_sercom.o
+ .debug_loc     0x0000da7d      0x153 hpl/sysctrl/hpl_sysctrl.o
+ .debug_loc     0x0000dbd0      0x229 main.o
 
-.debug_aranges  0x00000000      0xa78
+.debug_aranges  0x00000000      0xa80
  .debug_aranges
                 0x00000000       0x20 atmel_start.o
  .debug_aranges
@@ -8474,9 +8501,9 @@ OUTPUT(DISPLAY.elf elf32-littlearm)
  .debug_aranges
                 0x00000a30       0x28 hpl/sysctrl/hpl_sysctrl.o
  .debug_aranges
-                0x00000a58       0x20 main.o
+                0x00000a58       0x28 main.o
 
-.debug_ranges   0x00000000      0xb10
+.debug_ranges   0x00000000      0xb18
  .debug_ranges  0x00000000       0x10 atmel_start.o
  .debug_ranges  0x00000010       0x18 Device_Startup/startup_samd21.o
  .debug_ranges  0x00000028       0x28 driver_init.o
@@ -8497,9 +8524,9 @@ OUTPUT(DISPLAY.elf elf32-littlearm)
  .debug_ranges  0x00000400       0x20 hpl/pm/hpl_pm.o
  .debug_ranges  0x00000420      0x6c8 hpl/sercom/hpl_sercom.o
  .debug_ranges  0x00000ae8       0x18 hpl/sysctrl/hpl_sysctrl.o
- .debug_ranges  0x00000b00       0x10 main.o
+ .debug_ranges  0x00000b00       0x18 main.o
 
-.debug_macro    0x00000000    0x199ba
+.debug_macro    0x00000000    0x19ab6
  .debug_macro   0x00000000      0x58d atmel_start.o
  .debug_macro   0x0000058d      0x89e atmel_start.o
  .debug_macro   0x00000e2b      0x16d atmel_start.o
@@ -8602,143 +8629,143 @@ OUTPUT(DISPLAY.elf elf32-littlearm)
  .debug_macro   0x0001263a       0xca atmel_start.o
  .debug_macro   0x00012704       0x1c atmel_start.o
  .debug_macro   0x00012720       0x16 atmel_start.o
- .debug_macro   0x00012736       0x58 atmel_start.o
- .debug_macro   0x0001278e       0xc9 atmel_start.o
- .debug_macro   0x00012857       0x16 atmel_start.o
- .debug_macro   0x0001286d       0xd0 atmel_start.o
- .debug_macro   0x0001293d       0x22 atmel_start.o
- .debug_macro   0x0001295f       0x70 atmel_start.o
- .debug_macro   0x000129cf       0x28 atmel_start.o
- .debug_macro   0x000129f7      0x310 Device_Startup/startup_samd21.o
- .debug_macro   0x00012d07       0x39 Device_Startup/startup_samd21.o
- .debug_macro   0x00012d40      0x528 driver_init.o
- .debug_macro   0x00013268       0x28 driver_init.o
- .debug_macro   0x00013290      0x456 gfx_mono/display/display_mono.o
- .debug_macro   0x000136e6      0x460 gfx_mono/display/framebuffer.o
- .debug_macro   0x00013b46      0x481 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
- .debug_macro   0x00013fc7      0x499 gfx_mono/display_controller/display_ctrl_mono.o
- .debug_macro   0x00014460       0x22 gfx_mono/display_controller/display_ctrl_mono.o
- .debug_macro   0x00014482      0x483 gfx_mono/display_controller/ssd1306/ssd1306.o
- .debug_macro   0x00014905       0x10 gfx_mono/display_controller/ssd1306/ssd1306.o
- .debug_macro   0x00014915      0x45a gfx_mono/fonts/gfx_mono_font_basic_6x7.o
- .debug_macro   0x00014d6f       0x22 gfx_mono/fonts/gfx_mono_font_basic_6x7.o
- .debug_macro   0x00014d91      0x46e gfx_mono/gfx_mono.o
- .debug_macro   0x000151ff       0x6a gfx_mono/gfx_mono.o
- .debug_macro   0x00015269      0x491 gfx_mono/gfx_mono_text.o
- .debug_macro   0x000156fa      0x58d gfx_mono_main.o
- .debug_macro   0x00015c87      0x470 hal/src/hal_delay.o
- .debug_macro   0x000160f7      0x494 hal/src/hal_spi_m_sync.o
- .debug_macro   0x0001658b      0x447 hal/utils/src/utils_assert.o
- .debug_macro   0x000169d2       0x10 hal/utils/src/utils_assert.o
- .debug_macro   0x000169e2      0x495 hpl/core/hpl_core_m0plus_base.o
- .debug_macro   0x00016e77      0x4b8 hpl/core/hpl_init.o
- .debug_macro   0x0001732f       0x2e hpl/core/hpl_init.o
- .debug_macro   0x0001735d      0x6ec hpl/core/hpl_init.o
- .debug_macro   0x00017a49      0x45a hpl/gclk/hpl_gclk.o
- .debug_macro   0x00017ea3      0x1f3 hpl/gclk/hpl_gclk.o
- .debug_macro   0x00018096      0x47d hpl/pm/hpl_pm.o
- .debug_macro   0x00018513      0x685 hpl/sercom/hpl_sercom.o
- .debug_macro   0x00018b98       0x70 hpl/sercom/hpl_sercom.o
- .debug_macro   0x00018c08       0x94 hpl/sercom/hpl_sercom.o
- .debug_macro   0x00018c9c       0x10 hpl/sercom/hpl_sercom.o
- .debug_macro   0x00018cac       0x1c hpl/sercom/hpl_sercom.o
- .debug_macro   0x00018cc8       0x22 hpl/sercom/hpl_sercom.o
- .debug_macro   0x00018cea       0x10 hpl/sercom/hpl_sercom.o
- .debug_macro   0x00018cfa      0x454 hpl/sysctrl/hpl_sysctrl.o
- .debug_macro   0x0001914e      0x2da hpl/sysctrl/hpl_sysctrl.o
- .debug_macro   0x00019428      0x592 main.o
+ .debug_macro   0x00012736       0x7c atmel_start.o
+ .debug_macro   0x000127b2       0xc9 atmel_start.o
+ .debug_macro   0x0001287b       0x16 atmel_start.o
+ .debug_macro   0x00012891       0xd0 atmel_start.o
+ .debug_macro   0x00012961       0x22 atmel_start.o
+ .debug_macro   0x00012983       0x70 atmel_start.o
+ .debug_macro   0x000129f3       0x28 atmel_start.o
+ .debug_macro   0x00012a1b      0x310 Device_Startup/startup_samd21.o
+ .debug_macro   0x00012d2b       0x39 Device_Startup/startup_samd21.o
+ .debug_macro   0x00012d64      0x528 driver_init.o
+ .debug_macro   0x0001328c       0x28 driver_init.o
+ .debug_macro   0x000132b4      0x456 gfx_mono/display/display_mono.o
+ .debug_macro   0x0001370a      0x460 gfx_mono/display/framebuffer.o
+ .debug_macro   0x00013b6a      0x481 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+ .debug_macro   0x00013feb      0x499 gfx_mono/display_controller/display_ctrl_mono.o
+ .debug_macro   0x00014484       0x22 gfx_mono/display_controller/display_ctrl_mono.o
+ .debug_macro   0x000144a6      0x483 gfx_mono/display_controller/ssd1306/ssd1306.o
+ .debug_macro   0x00014929       0x10 gfx_mono/display_controller/ssd1306/ssd1306.o
+ .debug_macro   0x00014939      0x45a gfx_mono/fonts/gfx_mono_font_basic_6x7.o
+ .debug_macro   0x00014d93       0x22 gfx_mono/fonts/gfx_mono_font_basic_6x7.o
+ .debug_macro   0x00014db5      0x46e gfx_mono/gfx_mono.o
+ .debug_macro   0x00015223       0x6a gfx_mono/gfx_mono.o
+ .debug_macro   0x0001528d      0x491 gfx_mono/gfx_mono_text.o
+ .debug_macro   0x0001571e      0x58d gfx_mono_main.o
+ .debug_macro   0x00015cab      0x470 hal/src/hal_delay.o
+ .debug_macro   0x0001611b      0x494 hal/src/hal_spi_m_sync.o
+ .debug_macro   0x000165af      0x447 hal/utils/src/utils_assert.o
+ .debug_macro   0x000169f6       0x10 hal/utils/src/utils_assert.o
+ .debug_macro   0x00016a06      0x495 hpl/core/hpl_core_m0plus_base.o
+ .debug_macro   0x00016e9b      0x4b8 hpl/core/hpl_init.o
+ .debug_macro   0x00017353       0x2e hpl/core/hpl_init.o
+ .debug_macro   0x00017381      0x6ec hpl/core/hpl_init.o
+ .debug_macro   0x00017a6d      0x45a hpl/gclk/hpl_gclk.o
+ .debug_macro   0x00017ec7      0x1f3 hpl/gclk/hpl_gclk.o
+ .debug_macro   0x000180ba      0x47d hpl/pm/hpl_pm.o
+ .debug_macro   0x00018537      0x685 hpl/sercom/hpl_sercom.o
+ .debug_macro   0x00018bbc       0x70 hpl/sercom/hpl_sercom.o
+ .debug_macro   0x00018c2c       0x94 hpl/sercom/hpl_sercom.o
+ .debug_macro   0x00018cc0       0x10 hpl/sercom/hpl_sercom.o
+ .debug_macro   0x00018cd0       0x1c hpl/sercom/hpl_sercom.o
+ .debug_macro   0x00018cec       0x22 hpl/sercom/hpl_sercom.o
+ .debug_macro   0x00018d0e       0x10 hpl/sercom/hpl_sercom.o
+ .debug_macro   0x00018d1e      0x454 hpl/sysctrl/hpl_sysctrl.o
+ .debug_macro   0x00019172      0x2da hpl/sysctrl/hpl_sysctrl.o
+ .debug_macro   0x0001944c      0x66a main.o
 
-.debug_line     0x00000000    0x1061b
+.debug_line     0x00000000    0x10744
  .debug_line    0x00000000      0xbff atmel_start.o
  .debug_line    0x00000bff      0x70c Device_Startup/startup_samd21.o
- .debug_line    0x0000130b      0xba3 driver_init.o
- .debug_line    0x00001eae      0xad0 gfx_mono/display/display_mono.o
- .debug_line    0x0000297e      0xa4b gfx_mono/display/framebuffer.o
- .debug_line    0x000033c9      0xab5 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
- .debug_line    0x00003e7e      0xa29 gfx_mono/display_controller/display_ctrl_mono.o
- .debug_line    0x000048a7      0xbea gfx_mono/display_controller/ssd1306/ssd1306.o
- .debug_line    0x00005491      0x97f gfx_mono/fonts/gfx_mono_font_basic_6x7.o
- .debug_line    0x00005e10      0xb56 gfx_mono/gfx_mono.o
- .debug_line    0x00006966      0xae1 gfx_mono/gfx_mono_text.o
- .debug_line    0x00007447      0xc1b gfx_mono_main.o
- .debug_line    0x00008062      0x9b1 hal/src/hal_delay.o
- .debug_line    0x00008a13      0xb04 hal/src/hal_spi_m_sync.o
- .debug_line    0x00009517      0x950 hal/utils/src/utils_assert.o
- .debug_line    0x00009e67      0xb24 hpl/core/hpl_core_m0plus_base.o
- .debug_line    0x0000a98b      0xa30 hpl/core/hpl_init.o
- .debug_line    0x0000b3bb      0x9aa hpl/gclk/hpl_gclk.o
- .debug_line    0x0000bd65      0x9f6 hpl/pm/hpl_pm.o
- .debug_line    0x0000c75b     0x28d7 hpl/sercom/hpl_sercom.o
- .debug_line    0x0000f032      0x9d9 hpl/sysctrl/hpl_sysctrl.o
- .debug_line    0x0000fa0b      0xc10 main.o
+ .debug_line    0x0000130b      0xbd9 driver_init.o
+ .debug_line    0x00001ee4      0xad0 gfx_mono/display/display_mono.o
+ .debug_line    0x000029b4      0xa4b gfx_mono/display/framebuffer.o
+ .debug_line    0x000033ff      0xab5 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+ .debug_line    0x00003eb4      0xa29 gfx_mono/display_controller/display_ctrl_mono.o
+ .debug_line    0x000048dd      0xbea gfx_mono/display_controller/ssd1306/ssd1306.o
+ .debug_line    0x000054c7      0x97f gfx_mono/fonts/gfx_mono_font_basic_6x7.o
+ .debug_line    0x00005e46      0xb56 gfx_mono/gfx_mono.o
+ .debug_line    0x0000699c      0xae1 gfx_mono/gfx_mono_text.o
+ .debug_line    0x0000747d      0xc1b gfx_mono_main.o
+ .debug_line    0x00008098      0x9b1 hal/src/hal_delay.o
+ .debug_line    0x00008a49      0xb04 hal/src/hal_spi_m_sync.o
+ .debug_line    0x0000954d      0x950 hal/utils/src/utils_assert.o
+ .debug_line    0x00009e9d      0xb24 hpl/core/hpl_core_m0plus_base.o
+ .debug_line    0x0000a9c1      0xa30 hpl/core/hpl_init.o
+ .debug_line    0x0000b3f1      0x9aa hpl/gclk/hpl_gclk.o
+ .debug_line    0x0000bd9b      0x9f6 hpl/pm/hpl_pm.o
+ .debug_line    0x0000c791     0x28d7 hpl/sercom/hpl_sercom.o
+ .debug_line    0x0000f068      0x9d9 hpl/sysctrl/hpl_sysctrl.o
+ .debug_line    0x0000fa41      0xd03 main.o
 
-.debug_str      0x00000000    0x856df
- .debug_str     0x00000000    0x7a29d atmel_start.o
-                              0x7a7bb (size before relaxing)
- .debug_str     0x0007a29d     0x10b4 Device_Startup/startup_samd21.o
-                              0x7178d (size before relaxing)
- .debug_str     0x0007b351     0x1197 driver_init.o
-                              0x7bb06 (size before relaxing)
- .debug_str     0x0007c4e8      0x13d gfx_mono/display/display_mono.o
-                              0x794c2 (size before relaxing)
- .debug_str     0x0007c625      0x112 gfx_mono/display/framebuffer.o
-                              0x7952d (size before relaxing)
- .debug_str     0x0007c737      0x145 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
-                              0x79d11 (size before relaxing)
- .debug_str     0x0007c87c       0x7b gfx_mono/display_controller/display_ctrl_mono.o
-                              0x79720 (size before relaxing)
- .debug_str     0x0007c8f7      0x6db gfx_mono/display_controller/ssd1306/ssd1306.o
-                              0x7a311 (size before relaxing)
- .debug_str     0x0007cfd2       0x3d gfx_mono/fonts/gfx_mono_font_basic_6x7.o
-                              0x797b9 (size before relaxing)
- .debug_str     0x0007d00f      0x1da gfx_mono/gfx_mono.o
-                              0x79c63 (size before relaxing)
- .debug_str     0x0007d1e9      0x1cb gfx_mono/gfx_mono_text.o
-                              0x79d50 (size before relaxing)
- .debug_str     0x0007d3b4       0x4d gfx_mono_main.o
-                              0x7abae (size before relaxing)
- .debug_str     0x0007d401       0x92 hal/src/hal_delay.o
-                              0x792b3 (size before relaxing)
- .debug_str     0x0007d493      0x2ef hal/src/hal_spi_m_sync.o
-                              0x79be3 (size before relaxing)
- .debug_str     0x0007d782       0x2f hal/utils/src/utils_assert.o
-                              0x79259 (size before relaxing)
- .debug_str     0x0007d7b1      0x332 hpl/core/hpl_core_m0plus_base.o
-                              0x79c54 (size before relaxing)
- .debug_str     0x0007dae3     0x17d7 hpl/core/hpl_init.o
-                              0x7ad91 (size before relaxing)
- .debug_str     0x0007f2ba      0x84a hpl/gclk/hpl_gclk.o
-                              0x79b71 (size before relaxing)
- .debug_str     0x0007fb04      0x194 hpl/pm/hpl_pm.o
-                              0x798f0 (size before relaxing)
- .debug_str     0x0007fc98     0x4861 hpl/sercom/hpl_sercom.o
-                              0x7ed31 (size before relaxing)
- .debug_str     0x000844f9     0x11da hpl/sysctrl/hpl_sysctrl.o
-                              0x7a528 (size before relaxing)
- .debug_str     0x000856d3        0xc main.o
-                              0x7a7ec (size before relaxing)
+.debug_str      0x00000000    0x88412
+ .debug_str     0x00000000    0x7a33e atmel_start.o
+                              0x7a866 (size before relaxing)
+ .debug_str     0x0007a33e     0x10b4 Device_Startup/startup_samd21.o
+                              0x71796 (size before relaxing)
+ .debug_str     0x0007b3f2     0x1197 driver_init.o
+                              0x7bbb1 (size before relaxing)
+ .debug_str     0x0007c589      0x13d gfx_mono/display/display_mono.o
+                              0x794cb (size before relaxing)
+ .debug_str     0x0007c6c6      0x112 gfx_mono/display/framebuffer.o
+                              0x79536 (size before relaxing)
+ .debug_str     0x0007c7d8      0x145 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+                              0x79d1a (size before relaxing)
+ .debug_str     0x0007c91d       0x7b gfx_mono/display_controller/display_ctrl_mono.o
+                              0x79729 (size before relaxing)
+ .debug_str     0x0007c998      0x6db gfx_mono/display_controller/ssd1306/ssd1306.o
+                              0x7a31a (size before relaxing)
+ .debug_str     0x0007d073       0x3d gfx_mono/fonts/gfx_mono_font_basic_6x7.o
+                              0x797c2 (size before relaxing)
+ .debug_str     0x0007d0b0      0x1da gfx_mono/gfx_mono.o
+                              0x79c6c (size before relaxing)
+ .debug_str     0x0007d28a      0x1cb gfx_mono/gfx_mono_text.o
+                              0x79d59 (size before relaxing)
+ .debug_str     0x0007d455       0x4d gfx_mono_main.o
+                              0x7ac59 (size before relaxing)
+ .debug_str     0x0007d4a2       0x92 hal/src/hal_delay.o
+                              0x792bc (size before relaxing)
+ .debug_str     0x0007d534      0x2ef hal/src/hal_spi_m_sync.o
+                              0x79bec (size before relaxing)
+ .debug_str     0x0007d823       0x2a hal/utils/src/utils_assert.o
+                              0x79262 (size before relaxing)
+ .debug_str     0x0007d84d      0x32b hpl/core/hpl_core_m0plus_base.o
+                              0x79c5d (size before relaxing)
+ .debug_str     0x0007db78     0x17d7 hpl/core/hpl_init.o
+                              0x7ad9a (size before relaxing)
+ .debug_str     0x0007f34f      0x84a hpl/gclk/hpl_gclk.o
+                              0x79b7a (size before relaxing)
+ .debug_str     0x0007fb99      0x194 hpl/pm/hpl_pm.o
+                              0x798f9 (size before relaxing)
+ .debug_str     0x0007fd2d     0x4861 hpl/sercom/hpl_sercom.o
+                              0x7ed3a (size before relaxing)
+ .debug_str     0x0008458e     0x11da hpl/sysctrl/hpl_sysctrl.o
+                              0x7a531 (size before relaxing)
+ .debug_str     0x00085768     0x2caa main.o
+                              0x7d828 (size before relaxing)
 
-.debug_frame    0x00000000     0x1be0
+.debug_frame    0x00000000     0x1c10
  .debug_frame   0x00000000       0x28 atmel_start.o
  .debug_frame   0x00000028       0x40 Device_Startup/startup_samd21.o
- .debug_frame   0x00000068       0x84 driver_init.o
- .debug_frame   0x000000ec      0x14c gfx_mono/display/display_mono.o
- .debug_frame   0x00000238       0xec gfx_mono/display/framebuffer.o
- .debug_frame   0x00000324      0x100 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
- .debug_frame   0x00000424       0x40 gfx_mono/display_controller/display_ctrl_mono.o
- .debug_frame   0x00000464      0x1e8 gfx_mono/display_controller/ssd1306/ssd1306.o
- .debug_frame   0x0000064c      0x168 gfx_mono/gfx_mono.o
- .debug_frame   0x000007b4      0x114 gfx_mono/gfx_mono_text.o
- .debug_frame   0x000008c8       0x30 gfx_mono_main.o
- .debug_frame   0x000008f8       0x68 hal/src/hal_delay.o
- .debug_frame   0x00000960      0x188 hal/src/hal_spi_m_sync.o
- .debug_frame   0x00000ae8       0x20 hal/utils/src/utils_assert.o
- .debug_frame   0x00000b08       0xfc hpl/core/hpl_core_m0plus_base.o
- .debug_frame   0x00000c04       0x28 hpl/core/hpl_init.o
- .debug_frame   0x00000c2c       0x30 hpl/gclk/hpl_gclk.o
- .debug_frame   0x00000c5c       0x40 hpl/pm/hpl_pm.o
- .debug_frame   0x00000c9c      0xe9c hpl/sercom/hpl_sercom.o
- .debug_frame   0x00001b38       0x30 hpl/sysctrl/hpl_sysctrl.o
- .debug_frame   0x00001b68       0x2c main.o
- .debug_frame   0x00001b94       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
- .debug_frame   0x00001bb4       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00000068       0x88 driver_init.o
+ .debug_frame   0x000000f0      0x14c gfx_mono/display/display_mono.o
+ .debug_frame   0x0000023c       0xec gfx_mono/display/framebuffer.o
+ .debug_frame   0x00000328      0x100 gfx_mono/display/ug2832hsweg04/ug2832hsweg04.o
+ .debug_frame   0x00000428       0x40 gfx_mono/display_controller/display_ctrl_mono.o
+ .debug_frame   0x00000468      0x1e8 gfx_mono/display_controller/ssd1306/ssd1306.o
+ .debug_frame   0x00000650      0x168 gfx_mono/gfx_mono.o
+ .debug_frame   0x000007b8      0x114 gfx_mono/gfx_mono_text.o
+ .debug_frame   0x000008cc       0x30 gfx_mono_main.o
+ .debug_frame   0x000008fc       0x68 hal/src/hal_delay.o
+ .debug_frame   0x00000964      0x188 hal/src/hal_spi_m_sync.o
+ .debug_frame   0x00000aec       0x20 hal/utils/src/utils_assert.o
+ .debug_frame   0x00000b0c       0xfc hpl/core/hpl_core_m0plus_base.o
+ .debug_frame   0x00000c08       0x28 hpl/core/hpl_init.o
+ .debug_frame   0x00000c30       0x30 hpl/gclk/hpl_gclk.o
+ .debug_frame   0x00000c60       0x40 hpl/pm/hpl_pm.o
+ .debug_frame   0x00000ca0      0xe9c hpl/sercom/hpl_sercom.o
+ .debug_frame   0x00001b3c       0x30 hpl/sysctrl/hpl_sysctrl.o
+ .debug_frame   0x00001b6c       0x58 main.o
+ .debug_frame   0x00001bc4       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001be4       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)

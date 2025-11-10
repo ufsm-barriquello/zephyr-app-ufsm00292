@@ -529,7 +529,7 @@ drivers:
       RESERVED_InputFreq_id: Generic clock generator 3
       _$freq_output_8MHz Internal Oscillator (OSC8M): 1000000
       _$freq_output_Digital Frequency Locked Loop (DFLL48M): 48000000
-      _$freq_output_External Crystal Oscillator 0.4-32MHz (XOSC): '400000'
+      _$freq_output_External Crystal Oscillator 0.4-32MHz (XOSC): 400000
       _$freq_output_Fractional Digital Phase Locked Loop (FDPLL96M): 585925000
       dfll48m_arch_bplckc: false
       dfll48m_arch_calibration: false
@@ -610,6 +610,24 @@ pads:
     mode: Digital output
     user_label: RES_PIN
     configuration: {}
+  PA12:
+    name: PA12
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PA12
+    mode: Digital output
+    user_label: PA12
+    configuration: null
+  PA13:
+    name: PA13
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PA13
+    mode: Digital output
+    user_label: PA13
+    configuration: null
+  PA15:
+    name: PA15
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PA15
+    mode: Digital output
+    user_label: PA15
+    configuration: null
   PB16:
     name: PB16
     definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PB16

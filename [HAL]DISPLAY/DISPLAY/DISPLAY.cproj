@@ -140,7 +140,7 @@
           <AcmeProjectActionInfo Action="File" Source="gfx_mono/gfx_mono_text.c" IsConfig="false" Hash="jSqSiwolc2QiRd+BriQECA" />
           <AcmeProjectActionInfo Action="File" Source="gfx_mono/gfx_mono_text.h" IsConfig="false" Hash="mkTPo2Hdmcd0FEyHGsuZjg" />
           <AcmeProjectActionInfo Action="File" Source="main.c" IsConfig="false" Hash="k0AH7j+BrmdFhBPzCCMptA" />
-          <AcmeProjectActionInfo Action="File" Source="driver_init.c" IsConfig="false" Hash="HI600nd8HtttVjzLR0hRbA" />
+          <AcmeProjectActionInfo Action="File" Source="driver_init.c" IsConfig="false" Hash="TKo9qlV26SEkgJdR5e3tww" />
           <AcmeProjectActionInfo Action="File" Source="driver_init.h" IsConfig="false" Hash="qMFY+m0+Mi5nhpr9Y/UbLw" />
           <AcmeProjectActionInfo Action="File" Source="atmel_start_pins.h" IsConfig="false" Hash="VJ7pF5F/xnFafSQB2bZ9sw" />
           <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.h" IsConfig="false" Hash="FVtUMrZTRgYfz8skp36UUw" />

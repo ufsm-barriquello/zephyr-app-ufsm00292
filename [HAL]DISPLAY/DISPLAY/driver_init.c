@@ -87,6 +87,36 @@ void system_init(void)
 
 	gpio_set_pin_function(RES_PIN, GPIO_PIN_FUNCTION_OFF);
 
+	// GPIO on PA02
+
+	// Set pin direction to input
+	gpio_set_pin_direction(DISPLAY_BUTTON_2, GPIO_DIRECTION_IN);
+
+	gpio_set_pin_pull_mode(DISPLAY_BUTTON_2,
+	                       // <y> Pull configuration
+	                       // <id> pad_pull_config
+	                       // <GPIO_PULL_OFF"> Off
+	                       // <GPIO_PULL_UP"> Pull-up
+	                       // <GPIO_PULL_DOWN"> Pull-down
+	                       GPIO_PULL_OFF);
+
+	gpio_set_pin_function(DISPLAY_BUTTON_2, GPIO_PIN_FUNCTION_OFF);
+
+	// GPIO on PA03
+
+	// Set pin direction to input
+	gpio_set_pin_direction(DISPLAY_BUTTON_3, GPIO_DIRECTION_IN);
+
+	gpio_set_pin_pull_mode(DISPLAY_BUTTON_3,
+	                       // <y> Pull configuration
+	                       // <id> pad_pull_config
+	                       // <GPIO_PULL_OFF"> Off
+	                       // <GPIO_PULL_UP"> Pull-up
+	                       // <GPIO_PULL_DOWN"> Pull-down
+	                       GPIO_PULL_OFF);
+
+	gpio_set_pin_function(DISPLAY_BUTTON_3, GPIO_PIN_FUNCTION_OFF);
+
 	// GPIO on PA12
 
 	gpio_set_pin_level(PA12,
@@ -128,6 +158,21 @@ void system_init(void)
 	gpio_set_pin_direction(PA15, GPIO_DIRECTION_OUT);
 
 	gpio_set_pin_function(PA15, GPIO_PIN_FUNCTION_OFF);
+
+	// GPIO on PA28
+
+	// Set pin direction to input
+	gpio_set_pin_direction(DISPLAY_BUTTON_1, GPIO_DIRECTION_IN);
+
+	gpio_set_pin_pull_mode(DISPLAY_BUTTON_1,
+	                       // <y> Pull configuration
+	                       // <id> pad_pull_config
+	                       // <GPIO_PULL_OFF"> Off
+	                       // <GPIO_PULL_UP"> Pull-up
+	                       // <GPIO_PULL_DOWN"> Pull-down
+	                       GPIO_PULL_OFF);
+
+	gpio_set_pin_function(DISPLAY_BUTTON_1, GPIO_PIN_FUNCTION_OFF);
 
 	// GPIO on PB17
 

@@ -610,6 +610,18 @@ pads:
     mode: Digital output
     user_label: RES_PIN
     configuration: {}
+  PA02:
+    name: PA02
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PA02
+    mode: Digital input
+    user_label: PA02
+    configuration: null
+  PA03:
+    name: PA03
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PA03
+    mode: Digital input
+    user_label: PA03
+    configuration: null
   PA12:
     name: PA12
     definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PA12
@@ -651,6 +663,12 @@ pads:
     definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PB23
     mode: Digital output
     user_label: PB23
+    configuration: null
+  PA28:
+    name: PA28
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PA28
+    mode: Digital input
+    user_label: PA28
     configuration: null
   DC_PIN:
     name: PB30

@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/zephyr/soc/soc/samd21j18a/cmake_install.cmake")
+  include("C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/zephyr/soc/soc/samr21g18a/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

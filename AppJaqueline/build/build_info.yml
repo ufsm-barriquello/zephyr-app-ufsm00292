@@ -3,16 +3,16 @@ cmake:
     configuration-dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline'
     source-dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline'
   board:
-    name: 'samd21_xpro'
+    name: 'samr21_xpro'
     path:
-     - 'C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro'
-    qualifiers: 'samd21j18a'
+     - 'C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro'
+    qualifiers: 'samr21g18a'
     revision: ''
   devicetree:
     bindings-dirs:
      - 'C:/my-workspace/zephyr/dts/bindings'
     files:
-     - 'C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro.dts'
+     - 'C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro.dts'
     include-dirs:
      - 'C:/my-workspace/modules/hal/ambiq/dts'
      - 'C:/my-workspace/modules/hal/atmel/include'
@@ -41,7 +41,7 @@ cmake:
      - 'C:/my-workspace/zephyr/dts'
   kconfig:
     files:
-     - 'C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro_defconfig'
+     - 'C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro_defconfig'
      - 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/prj.conf'
     user-files:
      - 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/prj.conf'
@@ -53,6 +53,6 @@ cmake:
     zephyr-base: 'C:/my-workspace/zephyr'
 version: '0.1.0'
 west:
-  command: 'C:\Users\Jaque\AppData\Roaming\Python\Python313\Scripts\west build -b samd21_xpro'
+  command: 'C:\Users\Jaque\AppData\Roaming\Python\Python313\Scripts\west build -b samr21_xpro'
   topdir: 'C:\my-workspace'
   version: '1.5.0'

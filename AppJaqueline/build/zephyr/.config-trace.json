@@ -38,11 +38,11 @@
     "CONFIG_MAIN_STACK_SIZE",
     "y",
     "int",
-    "1024",
-    "default",
+    "2048",
+    "assign",
     [
-      "C:\\my-workspace\\zephyr\\kernel\\Kconfig",
-      161
+      "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/prj.conf",
+      9
     ]
   ],
   [
@@ -52,7 +52,7 @@
     "y",
     "assign",
     [
-      "C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro_defconfig",
+      "C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro_defconfig",
       11
     ]
   ],
@@ -95,7 +95,7 @@
     "y",
     "assign",
     [
-      "C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro_defconfig",
+      "C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro_defconfig",
       13
     ]
   ],
@@ -114,7 +114,7 @@
     "28",
     "default",
     [
-      "C:/my-workspace/zephyr/soc/atmel/sam0\\samd21\\Kconfig.defconfig",
+      "C:/my-workspace/zephyr/soc/atmel/sam0\\samr21\\Kconfig.defconfig",
       10
     ]
   ],
@@ -169,7 +169,7 @@
     "y",
     "select",
     [
-      "SOC_SERIES_SAMD21 && SOC_FAMILY_ATMEL_SAM0"
+      "SOC_SERIES_SAMR21 && SOC_FAMILY_ATMEL_SAM0"
     ]
   ],
   [
@@ -365,7 +365,7 @@
     "y",
     "assign",
     [
-      "C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro_defconfig",
+      "C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro_defconfig",
       8
     ]
   ],
@@ -523,7 +523,7 @@
     "assign",
     [
       "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/prj.conf",
-      3
+      6
     ]
   ],
   [
@@ -592,17 +592,6 @@
     null
   ],
   [
-    "CONFIG_LOG_PROCESS_THREAD_STACK_SIZE",
-    "y",
-    "int",
-    "768",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.processing",
-      91
-    ]
-  ],
-  [
     "CONFIG_DEVICE_DEPS",
     "y",
     "bool",
@@ -644,7 +633,7 @@
     "y",
     "assign",
     [
-      "C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro_defconfig",
+      "C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro_defconfig",
       10
     ]
   ],
@@ -850,6 +839,28 @@
     ]
   ],
   [
+    "CONFIG_DT_HAS_ATMEL_RF2XX_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/Kconfig/Kconfig.dts",
+      1353
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ATMEL_SAM0_ADC_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/Kconfig/Kconfig.dts",
+      1513
+    ]
+  ],
+  [
     "CONFIG_DT_HAS_ATMEL_SAM0_EIC_ENABLED",
     "n",
     "bool",
@@ -1012,6 +1023,28 @@
     [
       "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/Kconfig/Kconfig.dts",
       1628
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ATMEL_XPLAINED_PRO_HEADER_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/Kconfig/Kconfig.dts",
+      1668
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_FIXED_PARTITIONS_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/Kconfig/Kconfig.dts",
+      2523
     ]
   ],
   [
@@ -2011,7 +2044,7 @@
     "CONFIG_BOARD",
     "n",
     "string",
-    "samd21_xpro",
+    "samr21_xpro",
     "default",
     [
       "C:\\my-workspace\\zephyr\\boards\\Kconfig",
@@ -2033,7 +2066,7 @@
     "CONFIG_BOARD_TARGET",
     "n",
     "string",
-    "samd21_xpro/samd21j18a",
+    "samr21_xpro/samr21g18a",
     "default",
     [
       "C:\\my-workspace\\zephyr\\boards\\Kconfig",
@@ -2049,7 +2082,7 @@
     null
   ],
   [
-    "CONFIG_BOARD_SAMD21_XPRO",
+    "CONFIG_BOARD_SAMR21_XPRO",
     "n",
     "bool",
     "y",
@@ -2060,7 +2093,7 @@
     ]
   ],
   [
-    "CONFIG_BOARD_SAMD21_XPRO_SAMD21J18A",
+    "CONFIG_BOARD_SAMR21_XPRO_SAMR21G18A",
     "n",
     "bool",
     "y",
@@ -2074,7 +2107,7 @@
     "CONFIG_BOARD_QUALIFIERS",
     "n",
     "string",
-    "samd21j18a",
+    "samr21g18a",
     "default",
     [
       "C:\\my-workspace\\zephyr\\boards\\Kconfig.v2",
@@ -2085,21 +2118,21 @@
     "CONFIG_SOC",
     "n",
     "string",
-    "samd21j18a",
+    "samr21g18a",
     "default",
     [
-      "C:/my-workspace/zephyr/soc/atmel/sam0\\samd21\\Kconfig.soc",
-      90
+      "C:/my-workspace/zephyr/soc/atmel/sam0\\samr21\\Kconfig.soc",
+      51
     ]
   ],
   [
     "CONFIG_SOC_SERIES",
     "n",
     "string",
-    "samd21",
+    "samr21",
     "default",
     [
-      "C:/my-workspace/zephyr/soc/atmel/sam0\\samd21\\Kconfig.soc",
+      "C:/my-workspace/zephyr/soc/atmel/sam0\\samr21\\Kconfig.soc",
       14
     ]
   ],
@@ -2121,7 +2154,7 @@
     "y",
     "select",
     [
-      "SOC_SERIES_SAMD21"
+      "SOC_SERIES_SAMR21"
     ]
   ],
   [
@@ -2136,23 +2169,23 @@
     ]
   ],
   [
-    "CONFIG_SOC_SERIES_SAMD21",
+    "CONFIG_SOC_SERIES_SAMR21",
     "n",
     "bool",
     "y",
     "select",
     [
-      "SOC_SAMD21J18A"
+      "SOC_SAMR21G18A"
     ]
   ],
   [
-    "CONFIG_SOC_SAMD21J18A",
+    "CONFIG_SOC_SAMR21G18A",
     "n",
     "bool",
     "y",
     "select",
     [
-      "BOARD_SAMD21_XPRO"
+      "BOARD_SAMR21_XPRO"
     ]
   ],
   [
@@ -2216,7 +2249,7 @@
     "y",
     "assign",
     [
-      "C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro_defconfig",
+      "C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro_defconfig",
       5
     ]
   ],
@@ -2492,7 +2525,7 @@
     "y",
     "select",
     [
-      "SOC_SERIES_SAMD21 && SOC_FAMILY_ATMEL_SAM0"
+      "SOC_SERIES_SAMR21 && SOC_FAMILY_ATMEL_SAM0"
     ]
   ],
   [
@@ -2502,7 +2535,7 @@
     "y",
     "select",
     [
-      "SOC_SERIES_SAMD21 && SOC_FAMILY_ATMEL_SAM0"
+      "SOC_SERIES_SAMR21 && SOC_FAMILY_ATMEL_SAM0"
     ]
   ],
   [
@@ -2512,7 +2545,7 @@
     "y",
     "select",
     [
-      "SOC_SERIES_SAMD21 && SOC_FAMILY_ATMEL_SAM0"
+      "SOC_SERIES_SAMR21 && SOC_FAMILY_ATMEL_SAM0"
     ]
   ],
   [
@@ -2551,7 +2584,7 @@
     "y",
     "select",
     [
-      "SOC_SERIES_SAMD21 && SOC_FAMILY_ATMEL_SAM0"
+      "SOC_SERIES_SAMR21 && SOC_FAMILY_ATMEL_SAM0"
     ]
   ],
   [
@@ -3370,9 +3403,10 @@
     "y",
     "bool",
     "y",
-    "select",
+    "default",
     [
-      "MPSC_PBUF"
+      "C:\\my-workspace\\zephyr\\kernel\\Kconfig",
+      851
     ]
   ],
   [
@@ -3654,7 +3688,7 @@
     "y",
     "assign",
     [
-      "C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro_defconfig",
+      "C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro_defconfig",
       12
     ]
   ],
@@ -4089,10 +4123,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\my-workspace\\zephyr\\drivers\\i2c\\Kconfig.sam0",
-      6
+      "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/prj.conf",
+      3
     ]
   ],
   [
@@ -5735,22 +5769,12 @@
     "CONFIG_MPSC_PBUF",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "LOG_MODE_DEFERRED && <choice LOG_MODE>"
-    ]
-  ],
-  [
-    "CONFIG_SPSC_PBUF",
-    "y",
-    "bool",
     null,
     "unset",
     null
   ],
   [
-    "CONFIG_MPSC_CLEAR_ALLOCATED",
+    "CONFIG_SPSC_PBUF",
     "y",
     "bool",
     null,
@@ -6553,19 +6577,16 @@
     "CONFIG_LOG_MODE_DEFERRED",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.mode",
-      9
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_LOG_MODE_IMMEDIATE",
     "y",
     "bool",
-    null,
-    "unset",
+    "y",
+    "assign",
     null
   ],
   [
@@ -6607,17 +6628,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_LOG_FLUSH_SLEEP_US",
-    "y",
-    "int",
-    "10000",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.mode",
-      83
-    ]
   ],
   [
     "CONFIG_LOG_RUNTIME_FILTERING",
@@ -6672,88 +6682,6 @@
     ]
   ],
   [
-    "CONFIG_LOG_MODE_OVERFLOW",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.processing",
-      19
-    ]
-  ],
-  [
-    "CONFIG_LOG_BLOCK_IN_THREAD",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LOG_PROCESS_TRIGGER_THRESHOLD",
-    "y",
-    "int",
-    "10",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.processing",
-      44
-    ]
-  ],
-  [
-    "CONFIG_LOG_PROCESS_THREAD",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.processing",
-      55
-    ]
-  ],
-  [
-    "CONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS",
-    "y",
-    "int",
-    "0",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.processing",
-      66
-    ]
-  ],
-  [
-    "CONFIG_LOG_PROCESS_THREAD_SLEEP_MS",
-    "y",
-    "int",
-    "1000",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.processing",
-      73
-    ]
-  ],
-  [
-    "CONFIG_LOG_PROCESS_THREAD_CUSTOM_PRIORITY",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LOG_BUFFER_SIZE",
-    "y",
-    "int",
-    "1024",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.processing",
-      123
-    ]
-  ],
-  [
     "CONFIG_LOG_TRACE_SHORT_TIMESTAMP",
     "y",
     "bool",
@@ -6774,14 +6702,6 @@
   ],
   [
     "CONFIG_LOG_TIMESTAMP_USE_REALTIME",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LOG_SPEED",
     "y",
     "bool",
     null,
@@ -6841,6 +6761,14 @@
   ],
   [
     "CONFIG_LOG_CUSTOM_FORMAT_SUPPORT",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_LOG_IMMEDIATE_CLEAN_OUTPUT",
     "y",
     "bool",
     null,
@@ -7076,9 +7004,12 @@
     "CONFIG_LOG_ALWAYS_RUNTIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.misc",
+      41
+    ]
   ],
   [
     "CONFIG_LOG_FMT_SECTION",
@@ -7095,25 +7026,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_LOG_MEM_UTILIZATION",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LOG_FAILURE_REPORT_PERIOD",
-    "y",
-    "int",
-    "1000",
-    "default",
-    [
-      "C:\\my-workspace\\zephyr\\subsys\\logging\\Kconfig.misc",
-      115
-    ]
   ],
   [
     "CONFIG_LOG_RATELIMIT",

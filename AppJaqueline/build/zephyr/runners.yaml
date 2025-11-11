@@ -1,16 +1,13 @@
 # Available runners configured by board.cmake.
 runners:
-- openocd
+- custom
 
 # Default flash runner if --runner is not given.
-flash-runner: openocd
-
-# Default debug runner if --runner is not given.
-debug-runner: openocd
+flash-runner: custom
 
 # Common runner configuration values.
 config:
-  board_dir: C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro
+  board_dir: C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro
   # Build outputs:
   elf_file: zephyr.elf
   hex_file: zephyr.hex
@@ -20,8 +17,13 @@ config:
 
 # Runner specific arguments
 args:
-  openocd:
-    - --cmd-load
-    - flash write_image erase
-    - --cmd-verify
-    - verify_image
+  custom:
+    - COMMAND
+    - C:/Downloads/edbg-windows/edbg.exe
+    - -t
+    - atmel_cm0p
+    - -p
+    - COM3
+    - -f
+    - C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/zephyr/zephyr.bin
+    - -r

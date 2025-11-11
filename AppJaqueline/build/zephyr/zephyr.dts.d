@@ -1,6 +1,6 @@
 empty_file.o: C:/my-workspace/zephyr/misc/empty_file.c \
- C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro.dts \
- C:/my-workspace/zephyr/dts/common/freq.h \
+ C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro.dts \
+ C:/my-workspace/zephyr/dts/arm/atmel/samr21.dtsi \
  C:/my-workspace/zephyr/dts/arm/atmel/samd21.dtsi \
  C:/my-workspace/zephyr/dts/arm/atmel/samd2x.dtsi \
  C:/my-workspace/zephyr/dts/common/mem.h \
@@ -20,7 +20,7 @@ empty_file.o: C:/my-workspace/zephyr/misc/empty_file.c \
  C:/my-workspace/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
  C:/my-workspace/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
  C:/my-workspace/zephyr/dts/arm/atmel/samx2xx18.dtsi \
- C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro-pinctrl.dtsi \
- C:/my-workspace/modules/hal/atmel/include/dt-bindings/pinctrl/samd21-da1jXabcd-pinctrl.h \
+ C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro-pinctrl.dtsi \
+ C:/my-workspace/modules/hal/atmel/include/dt-bindings/pinctrl/samr21g-pinctrl.h \
  C:/my-workspace/modules/hal/atmel/include/dt-bindings/pinctrl/atmel_sam_pinctrl.h \
  C:/my-workspace/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h

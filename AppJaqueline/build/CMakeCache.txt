@@ -33,10 +33,10 @@ AppJaqueline_IS_TOP_LEVEL:STATIC=ON
 AppJaqueline_SOURCE_DIR:STATIC=C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline
 
 //Selected board
-BOARD:STRING=samd21_xpro
+BOARD:STRING=samr21_xpro
 
-//Main board directory for board (samd21_xpro)
-BOARD_DIR:PATH=C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro
+//Main board directory for board (samr21_xpro)
+BOARD_DIR:PATH=C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro
 
 //Support board extensions
 BOARD_EXTENSIONS:BOOL=ON
@@ -54,7 +54,7 @@ BYPRODUCT_KERNEL_ELF_NAME:FILEPATH=C:/my-workspace/zephyr-app-ufsm00292/AppJaque
 BYPRODUCT_KERNEL_HEX_NAME:FILEPATH=C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/zephyr/zephyr.hex
 
 //Selected board
-CACHED_BOARD:STRING=samd21_xpro
+CACHED_BOARD:STRING=samr21_xpro
 
 //Selected shield
 CACHED_SHIELD:STRING=
@@ -464,8 +464,8 @@ __TINY_STDIO:BOOL=ON
 # INTERNAL cache entries
 ########################
 
-//List of board directories for board (samd21_xpro)
-BOARD_DIRECTORIES:INTERNAL=C:/my-workspace/zephyr/boards/atmel/sam0/samd21_xpro
+//List of board directories for board (samr21_xpro)
+BOARD_DIRECTORIES:INTERNAL=C:/my-workspace/zephyr/boards/atmel/sam0/samr21_xpro
 //DT bindings root directories
 CACHED_DTS_ROOT_BINDINGS:INTERNAL=C:/my-workspace/zephyr/dts/bindings
 //ADVANCED property for variable: CMAKE_ADDR2LINE
@@ -637,13 +637,13 @@ HWM:INTERNAL=v2
 //Zephyr hardware model
 HWMv2:INTERNAL=True
 KERNEL_META_PATH:INTERNAL=C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/zephyr/zephyr.meta
-//List of SoC directories for SoC (samd21j18a)
+//List of SoC directories for SoC (samr21g18a)
 SOC_DIRECTORIES:INTERNAL=C:/my-workspace/zephyr/soc/atmel/sam0
 SOC_LINKER_SCRIPT:INTERNAL=C:/my-workspace/zephyr/include/zephyr/arch/arm/cortex_m/scripts/linker.ld
 //West
 WEST:INTERNAL=C:/Users/Jaque/AppData/Local/Programs/Python/Python313/python.exe;-m;west
 //Cached environment variable ZEPHYR_SDK_INSTALL_DIR
-ZEPHYR_SDK_INSTALL_DIR:INTERNAL=C:\zephyr-sdk
+ZEPHYR_SDK_INSTALL_DIR:INTERNAL=C:\Users\Jaque\Downloads\zephyr-sdk-0.17.4_windows-x86_64
 //Cached environment variable ZEPHYR_TOOLCHAIN_VARIANT
 ZEPHYR_TOOLCHAIN_VARIANT:INTERNAL=gnuarmemb
 //Compiler reason failure

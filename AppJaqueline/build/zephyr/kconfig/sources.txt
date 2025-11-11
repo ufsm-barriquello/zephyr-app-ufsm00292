@@ -23,7 +23,7 @@ C:\my-workspace\zephyr-app-ufsm00292\AppJaqueline\build\Kconfig\Kconfig.modules
 C:\my-workspace\zephyr-app-ufsm00292\AppJaqueline\build\Kconfig\arch\Kconfig
 C:\my-workspace\zephyr-app-ufsm00292\AppJaqueline\build\Kconfig\boards\Kconfig
 C:\my-workspace\zephyr-app-ufsm00292\AppJaqueline\build\Kconfig\boards\Kconfig.defconfig
-C:\my-workspace\zephyr-app-ufsm00292\AppJaqueline\build\Kconfig\boards\Kconfig.samd21_xpro
+C:\my-workspace\zephyr-app-ufsm00292\AppJaqueline\build\Kconfig\boards\Kconfig.samr21_xpro
 C:\my-workspace\zephyr-app-ufsm00292\AppJaqueline\build\Kconfig\soc\Kconfig
 C:\my-workspace\zephyr-app-ufsm00292\AppJaqueline\build\Kconfig\soc\Kconfig.defconfig
 C:\my-workspace\zephyr-app-ufsm00292\AppJaqueline\build\Kconfig\soc\Kconfig.soc
@@ -64,7 +64,7 @@ C:\my-workspace\zephyr\arch\x86\core\Kconfig.intel64
 C:\my-workspace\zephyr\arch\xtensa\Kconfig
 C:\my-workspace\zephyr\boards\Kconfig
 C:\my-workspace\zephyr\boards\Kconfig.v2
-C:\my-workspace\zephyr\boards\atmel\sam0\samd21_xpro\Kconfig.samd21_xpro
+C:\my-workspace\zephyr\boards\atmel\sam0\samr21_xpro\Kconfig.samr21_xpro
 C:\my-workspace\zephyr\boards\shields\abrobot_esp32c3_oled\Kconfig.shield
 C:\my-workspace\zephyr\boards\shields\adafruit_24lc32\Kconfig.shield
 C:\my-workspace\zephyr\boards\shields\adafruit_2_8_tft_touch_v2\Kconfig.defconfig

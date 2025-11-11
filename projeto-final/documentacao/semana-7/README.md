@@ -22,6 +22,8 @@ Validar funcionamento do driver AT30TSE752A
 
 ## 📊 RESULTADOS OBTIDOS
 
+<img width="358" height="274" alt="teste" src="https://github.com/user-attachments/assets/722c5b35-21e1-4830-a834-e704d1af4bea" />
+
 ### Compilação:
 ```bash
 $ west build -b samd21_xplained_pro projeto-final/

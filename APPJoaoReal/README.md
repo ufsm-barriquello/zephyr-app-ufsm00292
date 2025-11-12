@@ -93,17 +93,21 @@ OBS: Ainda não foi realizado o commit dos arquivos de build e codigo fonte do s
 
   Para o Client:
 
-    Memory region         Used Size  Region Size  %age Used
-           FLASH:      176044 B       256 KB     67.16%
-             RAM:       24036 B        32 KB     73.35%
-        IDT_LIST:          0 GB        32 KB      0.00%
+    | **Memory Region** | **Used Size** | **Region Size** | **% Used** |
+    | ----------------- | ------------- | --------------- | ---------- |
+    | FLASH             | 165,180 B     | 256 KB          | 63.01 %    |
+    | RAM               | 23,516 B      | 32 KB           | 71.77 %    |
+    | IDT_LIST          | 0 B           | 32 KB           | 0.00 %     |
+
 
   Para o Server:
 
-    Memory region         Used Size  Region Size  %age Used
-           FLASH:      165180 B       256 KB     63.01%
-             RAM:       23516 B        32 KB     71.77%
-        IDT_LIST:          0 GB        32 KB      0.00%
+    | **Memory Region** | **Used Size** | **Region Size** | **% Used** |
+    | ----------------- | ------------- | --------------- | ---------- |
+    | FLASH             | 165,180 B     | 256 KB          | 63.01 %    |
+    | RAM               | 23,516 B      | 32 KB           | 71.77 %    |
+    | IDT_LIST          | 0 B           | 32 KB           | 0.00 %     |
+
 
 
 

@@ -80,6 +80,32 @@ OBS: Ainda não foi realizado o commit dos arquivos de build e codigo fonte do s
 - A depuração foi bem-sucedida. A comunicação entre as duas placas SAMR21 está a funcionar perfeitamente, com o cliente a enviar dados de um sensor simulado e o servidor a recebê-los e a imprimi-los. A base de comunicação para o projeto está completa e validada.
 
 
+---
+
+
+# Entrega 6 - Refinamento Final
+
+- Para fins de melhor execução da aplicação, através da análise via comando kernel do Zephyr, as Threads tanto do Client como do Server sofreram ajustes finos para balanceamento de memória RAM e liberação de espaço para futuras integrações com outros projetos.
+
+- Além disso, foi removido o uso TLS (Transport Layer Security) que utiliza certificados digitais durante a comunicação para fins de segurança. Como o projeto envia apenas dados de sensores em um ambiente acadêmico o seu uso foi removido priorizando o menor uso de memória da SAMR21.
+
+- Com estas alterações tivemos os seguintes resultados de uso de recursos de memória durante o build da aplicação:
+
+  Para o Client:
+
+    Memory region         Used Size  Region Size  %age Used
+           FLASH:      176044 B       256 KB     67.16%
+             RAM:       24036 B        32 KB     73.35%
+        IDT_LIST:          0 GB        32 KB      0.00%
+
+  Para o Server:
+
+    Memory region         Used Size  Region Size  %age Used
+           FLASH:      165180 B       256 KB     63.01%
+             RAM:       23516 B        32 KB     71.77%
+        IDT_LIST:          0 GB        32 KB      0.00%
+
+
 
 
 

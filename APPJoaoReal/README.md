@@ -95,8 +95,8 @@ OBS: Ainda não foi realizado o commit dos arquivos de build e codigo fonte do s
 
     | **Memory Region** | **Used Size** | **Region Size** | **% Used** |
     | ----------------- | ------------- | --------------- | ---------- |
-    | FLASH             | 165,180 B     | 256 KB          | 63.01 %    |
-    | RAM               | 23,516 B      | 32 KB           | 71.77 %    |
+    | FLASH             | 176,044 B     | 256 KB          | 67.16 %    |
+    | RAM               | 24,036 B      | 32 KB           | 73.35 %    |
     | IDT_LIST          | 0 B           | 32 KB           | 0.00 %     |
 
 

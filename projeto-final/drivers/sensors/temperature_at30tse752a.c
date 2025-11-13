@@ -135,7 +135,7 @@ static int temperature_sample_fetch(const struct device *dev, enum sensor_channe
     return 0;
 }
 
-// ✅ MANTIDO como placeholder para Semana 5 (igual da Semana 3)
+// ✅ SEMANA 5 - IMPLEMENTAÇÃO REAL DA CONVERSÃO
 static int temperature_channel_get(const struct device *dev, enum sensor_channel chan,
                                   struct sensor_value *val)
 {
@@ -145,9 +145,45 @@ static int temperature_channel_get(const struct device *dev, enum sensor_channel
         return -ENOTSUP;
     }
 
-    /* ✅ MANTIDO da Semana 3 - Placeholder para conversão real na Semana 5 */
-    LOG_INF("channel_get: Será implementado na semana 5 - Conversão temperatura");
-    return -ENOTSUP;
+    /* Converter dados brutos do AT30TSE752A para Celsius */
+    /* Especificação: 12-bit, 0.0625°C por LSB, big-endian */
+    
+    int16_t raw_temp = data->temperature;
+    
+    // Debug: mostrar valor bruto
+    LOG_DBG("Valor bruto do sensor: 0x%04X (%d)", raw_temp, raw_temp);
+    
+    // AT30TSE752A: dados são 12-bit em complemento de 2
+    // Os 4 bits mais significativos são sinal/extensão
+    
+    // Extrair valor de 12-bit com sinal
+    raw_temp = (raw_temp >> 4);
+    
+    // Verificar se é negativo (bit de sinal no bit 11)
+    if (raw_temp & 0x0800) {
+        // É negativo - fazer extensão de sinal para 16-bit
+        raw_temp |= 0xF000;
+    }
+    
+    // Converter para temperatura em Celsius
+    // Fórmula: temperatura = raw_temp * 0.0625
+    // Como sensor_value usa inteiros, multiplicamos por 625/10000
+    
+    int32_t temp_micro = raw_temp * 625;  // 0.0625 = 625/10000
+    
+    // Separar parte inteira e decimal
+    val->val1 = temp_micro / 10000;                    // Parte inteira
+    val->val2 = (temp_micro % 10000) * 100;           // Parte decimal em micros
+    
+    // Ajustar sinal se necessário
+    if (val->val1 < 0) {
+        val->val2 = -val->val2;
+    }
+    
+    LOG_INF("Temperatura convertida: %d.%06d°C (raw: 0x%04X)", 
+           val->val1, val->val2, data->temperature);
+    
+    return 0;
 }
 
 // ✅ MANTIDO da Semana 3

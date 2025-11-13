@@ -8061,9 +8061,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_0623d
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -o CMakeFiles/cmTC_0623d.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_0623d.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_0623d.a  CMakeFiles/cmTC_0623d.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_0623d.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_d7da5
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -o CMakeFiles/cmTC_d7da5.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_d7da5.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_d7da5.a  CMakeFiles/cmTC_d7da5.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_d7da5.a && cd ."
         
       exitCode: 0
   -
@@ -8086,10 +8086,10 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_5d4a1
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=unknown-attributes -o CMakeFiles/cmTC_5d4a1.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        FAILED: [code=1] CMakeFiles/cmTC_5d4a1.dir/simple-main.c.obj 
-        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=unknown-attributes -o CMakeFiles/cmTC_5d4a1.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_8a9bb
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=unknown-attributes -o CMakeFiles/cmTC_8a9bb.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: [code=1] CMakeFiles/cmTC_8a9bb.dir/simple-main.c.obj 
+        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=unknown-attributes -o CMakeFiles/cmTC_8a9bb.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
         cc1.exe: error: '-Werror=unknown-attributes': no option '-Wunknown-attributes'; did you mean '-Wno-attributes'?
         ninja: build stopped: subcommand failed.
         
@@ -8114,9 +8114,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_84a15
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=attributes -o CMakeFiles/cmTC_84a15.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_84a15.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_84a15.a  CMakeFiles/cmTC_84a15.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_84a15.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_e67eb
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=attributes -o CMakeFiles/cmTC_e67eb.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_e67eb.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_e67eb.a  CMakeFiles/cmTC_e67eb.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_e67eb.a && cd ."
         
       exitCode: 0
   -
@@ -8139,10 +8139,10 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_e25b5
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=unsupported-floating-point-opt -o CMakeFiles/cmTC_e25b5.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        FAILED: [code=1] CMakeFiles/cmTC_e25b5.dir/simple-main.c.obj 
-        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=unsupported-floating-point-opt -o CMakeFiles/cmTC_e25b5.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_0a3ca
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=unsupported-floating-point-opt -o CMakeFiles/cmTC_0a3ca.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: [code=1] CMakeFiles/cmTC_0a3ca.dir/simple-main.c.obj 
+        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=unsupported-floating-point-opt -o CMakeFiles/cmTC_0a3ca.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
         cc1.exe: error: '-Werror=unsupported-floating-point-opt': no option '-Wunsupported-floating-point-opt'
         ninja: build stopped: subcommand failed.
         
@@ -8167,10 +8167,10 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_1e868
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=ignored-optimization-argument -o CMakeFiles/cmTC_1e868.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        FAILED: [code=1] CMakeFiles/cmTC_1e868.dir/simple-main.c.obj 
-        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=ignored-optimization-argument -o CMakeFiles/cmTC_1e868.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_a2592
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=ignored-optimization-argument -o CMakeFiles/cmTC_a2592.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: [code=1] CMakeFiles/cmTC_a2592.dir/simple-main.c.obj 
+        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=ignored-optimization-argument -o CMakeFiles/cmTC_a2592.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
         cc1.exe: error: '-Werror=ignored-optimization-argument': no option '-Wignored-optimization-argument'
         ninja: build stopped: subcommand failed.
         
@@ -8195,10 +8195,10 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_b1f9b
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=attribute-optimize -o CMakeFiles/cmTC_b1f9b.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        FAILED: [code=1] CMakeFiles/cmTC_b1f9b.dir/simple-main.c.obj 
-        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=attribute-optimize -o CMakeFiles/cmTC_b1f9b.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_75cd8
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=attribute-optimize -o CMakeFiles/cmTC_75cd8.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: [code=1] CMakeFiles/cmTC_75cd8.dir/simple-main.c.obj 
+        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=attribute-optimize -o CMakeFiles/cmTC_75cd8.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
         cc1.exe: error: '-Werror=attribute-optimize': no option '-Wattribute-optimize'; did you mean '-Wattribute-alias='?
         ninja: build stopped: subcommand failed.
         
@@ -8223,9 +8223,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_61095
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=implicit-function-declaration -o CMakeFiles/cmTC_61095.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_61095.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_61095.a  CMakeFiles/cmTC_61095.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_61095.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_e6718
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=implicit-function-declaration -o CMakeFiles/cmTC_e6718.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_e6718.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_e6718.a  CMakeFiles/cmTC_e6718.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_e6718.a && cd ."
         
       exitCode: 0
   -
@@ -8248,9 +8248,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_1a6b5
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Wno-unused-command-line-argument -o CMakeFiles/cmTC_1a6b5.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_1a6b5.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_1a6b5.a  CMakeFiles/cmTC_1a6b5.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_1a6b5.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_36eae
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Wno-unused-command-line-argument -o CMakeFiles/cmTC_36eae.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_36eae.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_36eae.a  CMakeFiles/cmTC_36eae.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_36eae.a && cd ."
         
       exitCode: 0
   -
@@ -8272,9 +8272,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_2ab02
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -o CMakeFiles/cmTC_2ab02.dir/have-bitfields-in-packed-structs.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/have-bitfields-in-packed-structs.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_2ab02.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_2ab02.a  CMakeFiles/cmTC_2ab02.dir/have-bitfields-in-packed-structs.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_2ab02.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_8b780
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -o CMakeFiles/cmTC_8b780.dir/have-bitfields-in-packed-structs.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/have-bitfields-in-packed-structs.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_8b780.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_8b780.a  CMakeFiles/cmTC_8b780.dir/have-bitfields-in-packed-structs.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_8b780.a && cd ."
         
       exitCode: 0
   -
@@ -8296,9 +8296,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_fbb24
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -o CMakeFiles/cmTC_fbb24.dir/have-cc-inhibit-loop-to-libcall.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/have-cc-inhibit-loop-to-libcall.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_fbb24.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_fbb24.a  CMakeFiles/cmTC_fbb24.dir/have-cc-inhibit-loop-to-libcall.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_fbb24.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_89687
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -o CMakeFiles/cmTC_89687.dir/have-cc-inhibit-loop-to-libcall.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/have-cc-inhibit-loop-to-libcall.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_89687.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_89687.a  CMakeFiles/cmTC_89687.dir/have-cc-inhibit-loop-to-libcall.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_89687.a && cd ."
         
       exitCode: 0
   -
@@ -8320,9 +8320,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_267f0
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -o CMakeFiles/cmTC_267f0.dir/have-complex.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/have-complex.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_267f0.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_267f0.a  CMakeFiles/cmTC_267f0.dir/have-complex.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_267f0.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_f7196
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -o CMakeFiles/cmTC_f7196.dir/have-complex.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/have-complex.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_f7196.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_f7196.a  CMakeFiles/cmTC_f7196.dir/have-complex.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_f7196.a && cd ."
         
       exitCode: 0
   -
@@ -8331,8 +8331,8 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFile.cmake:165 (try_compile)"
       - "C:/my-workspace/modules/lib/picolibc/CMakeLists.txt:283 (CHECK_INCLUDE_FILE)"
     directories:
-      source: "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-ldx7zx"
-      binary: "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-ldx7zx"
+      source: "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-pe9dmk"
+      binary: "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-pe9dmk"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -8342,13 +8342,13 @@ events:
       variable: "_XTENSA_HAVE_CONFIG_CORE_ISA_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-ldx7zx'
+        Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-pe9dmk'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_edf0a
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -nostartfiles -nostdlib -isystem "C:/Users/Jaque/Downloads/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/include" -isystem "C:/Users/Jaque/Downloads/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -o CMakeFiles/cmTC_edf0a.dir/CheckIncludeFile.c.obj -c C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-ldx7zx/CheckIncludeFile.c
-        FAILED: [code=1] CMakeFiles/cmTC_edf0a.dir/CheckIncludeFile.c.obj 
-        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -nostartfiles -nostdlib -isystem "C:/Users/Jaque/Downloads/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/include" -isystem "C:/Users/Jaque/Downloads/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -o CMakeFiles/cmTC_edf0a.dir/CheckIncludeFile.c.obj -c C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-ldx7zx/CheckIncludeFile.c
-        C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-ldx7zx/CheckIncludeFile.c:1:10: fatal error: xtensa/config/core-isa.h: No such file or directory
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_71757
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -nostartfiles -nostdlib -isystem "C:/Users/Jaque/Downloads/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/include" -isystem "C:/Users/Jaque/Downloads/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -o CMakeFiles/cmTC_71757.dir/CheckIncludeFile.c.obj -c C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-pe9dmk/CheckIncludeFile.c
+        FAILED: [code=1] CMakeFiles/cmTC_71757.dir/CheckIncludeFile.c.obj 
+        C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -nostartfiles -nostdlib -isystem "C:/Users/Jaque/Downloads/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/include" -isystem "C:/Users/Jaque/Downloads/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -o CMakeFiles/cmTC_71757.dir/CheckIncludeFile.c.obj -c C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-pe9dmk/CheckIncludeFile.c
+        C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/CMakeFiles/CMakeScratch/TryCompile-pe9dmk/CheckIncludeFile.c:1:10: fatal error: xtensa/config/core-isa.h: No such file or directory
             1 | #include <xtensa/config/core-isa.h>
               |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
         compilation terminated.
@@ -8375,9 +8375,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_391d7
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fno-common -o CMakeFiles/cmTC_391d7.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_391d7.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_391d7.a  CMakeFiles/cmTC_391d7.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_391d7.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_686ae
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fno-common -o CMakeFiles/cmTC_686ae.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_686ae.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_686ae.a  CMakeFiles/cmTC_686ae.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_686ae.a && cd ."
         
       exitCode: 0
   -
@@ -8400,9 +8400,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_70d75
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fno-stack-protector -o CMakeFiles/cmTC_70d75.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_70d75.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_70d75.a  CMakeFiles/cmTC_70d75.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_70d75.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_f9fa1
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fno-stack-protector -o CMakeFiles/cmTC_f9fa1.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_f9fa1.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_f9fa1.a  CMakeFiles/cmTC_f9fa1.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_f9fa1.a && cd ."
         
       exitCode: 0
   -
@@ -8425,9 +8425,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_23886
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -ffunction-sections -o CMakeFiles/cmTC_23886.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_23886.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_23886.a  CMakeFiles/cmTC_23886.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_23886.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_a05d1
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -ffunction-sections -o CMakeFiles/cmTC_a05d1.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_a05d1.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_a05d1.a  CMakeFiles/cmTC_a05d1.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_a05d1.a && cd ."
         
       exitCode: 0
   -
@@ -8450,9 +8450,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_50472
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fdata-sections -o CMakeFiles/cmTC_50472.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_50472.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_50472.a  CMakeFiles/cmTC_50472.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_50472.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_6634d
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fdata-sections -o CMakeFiles/cmTC_6634d.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_6634d.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_6634d.a  CMakeFiles/cmTC_6634d.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_6634d.a && cd ."
         
       exitCode: 0
   -
@@ -8475,9 +8475,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_40d1d
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Wall -o CMakeFiles/cmTC_40d1d.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_40d1d.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_40d1d.a  CMakeFiles/cmTC_40d1d.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_40d1d.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_4f014
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Wall -o CMakeFiles/cmTC_4f014.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_4f014.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_4f014.a  CMakeFiles/cmTC_4f014.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_4f014.a && cd ."
         
       exitCode: 0
   -
@@ -8500,9 +8500,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_46a18
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Wextra -o CMakeFiles/cmTC_46a18.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_46a18.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_46a18.a  CMakeFiles/cmTC_46a18.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_46a18.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_ce88f
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Wextra -o CMakeFiles/cmTC_ce88f.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_ce88f.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_ce88f.a  CMakeFiles/cmTC_ce88f.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_ce88f.a && cd ."
         
       exitCode: 0
   -
@@ -8525,9 +8525,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_5107c
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Werror=implicit-function-declaration -o CMakeFiles/cmTC_5107c.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_5107c.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_5107c.a  CMakeFiles/cmTC_5107c.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_5107c.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_4189b
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Werror=implicit-function-declaration -o CMakeFiles/cmTC_4189b.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_4189b.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_4189b.a  CMakeFiles/cmTC_4189b.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_4189b.a && cd ."
         
       exitCode: 0
   -
@@ -8550,9 +8550,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_a34eb
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Werror=vla -o CMakeFiles/cmTC_a34eb.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_a34eb.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_a34eb.a  CMakeFiles/cmTC_a34eb.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_a34eb.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_90419
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Werror=vla -o CMakeFiles/cmTC_90419.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_90419.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_90419.a  CMakeFiles/cmTC_90419.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_90419.a && cd ."
         
       exitCode: 0
   -
@@ -8575,9 +8575,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_c27a3
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Warray-bounds -o CMakeFiles/cmTC_c27a3.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_c27a3.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_c27a3.a  CMakeFiles/cmTC_c27a3.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_c27a3.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_25fdd
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Warray-bounds -o CMakeFiles/cmTC_25fdd.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_25fdd.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_25fdd.a  CMakeFiles/cmTC_25fdd.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_25fdd.a && cd ."
         
       exitCode: 0
   -
@@ -8600,9 +8600,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_66f5d
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Wold-style-definition -o CMakeFiles/cmTC_66f5d.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_66f5d.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_66f5d.a  CMakeFiles/cmTC_66f5d.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_66f5d.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_b79bf
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Wold-style-definition -o CMakeFiles/cmTC_b79bf.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_b79bf.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_b79bf.a  CMakeFiles/cmTC_b79bf.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_b79bf.a && cd ."
         
       exitCode: 0
   -
@@ -8625,9 +8625,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_72349
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -frounding-math -o CMakeFiles/cmTC_72349.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_72349.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_72349.a  CMakeFiles/cmTC_72349.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_72349.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_06fd5
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -frounding-math -o CMakeFiles/cmTC_06fd5.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_06fd5.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_06fd5.a  CMakeFiles/cmTC_06fd5.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_06fd5.a && cd ."
         
       exitCode: 0
   -
@@ -8650,9 +8650,9 @@ events:
       stdout: |
         Change Dir: 'C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/build/modules/picolibc/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_933f2
-        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fsignaling-nans -o CMakeFiles/cmTC_933f2.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_933f2.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_933f2.a  CMakeFiles/cmTC_933f2.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_933f2.a && cd ."
+        Run Build Command(s): C:/Users/Jaque/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_9a22d
+        [1/2] C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fsignaling-nans -o CMakeFiles/cmTC_9a22d.dir/simple-main.c.obj -c C:/my-workspace/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f libcmTC_9a22d.a && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ar.exe qc libcmTC_9a22d.a  CMakeFiles/cmTC_9a22d.dir/simple-main.c.obj && C:\\Users\\Jaque\\Downloads\\arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-ranlib.exe libcmTC_9a22d.a && cd ."
         
       exitCode: 0
   -

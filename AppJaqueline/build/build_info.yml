@@ -53,6 +53,6 @@ cmake:
     zephyr-base: 'C:/my-workspace/zephyr'
 version: '0.1.0'
 west:
-  command: 'C:\Users\Jaque\AppData\Roaming\Python\Python313\Scripts\west build -b samr21_xpro'
+  command: 'C:\Users\Jaque\AppData\Roaming\Python\Python313\Scripts\west build -p always -b samr21_xpro'
   topdir: 'C:\my-workspace'
   version: '1.5.0'

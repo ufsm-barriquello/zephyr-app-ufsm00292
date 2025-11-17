@@ -1,0 +1,19 @@
+/ {
+    chosen {
+        zephyr,adc = &adc;
+    };
+};
+
+&adc {
+    status = "okay";
+
+    pinctrl-0 = <&adc_pa06>;
+    pinctrl-names = "default";
+};
+
+/* PA06 → ADC AIN6 */
+&pinctrl {
+    adc_pa06: adc_pa06 {
+        atmel,pins = <&porta 6 0x1 /* MUX B (AIN6) */ >;
+    };
+};

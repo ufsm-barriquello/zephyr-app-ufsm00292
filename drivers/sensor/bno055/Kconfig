@@ -1,0 +1,6 @@
+config BNO055
+    bool "Habilitar driver do sensor Bosch BNO055"
+    depends on I2C
+    depends on SENSOR
+    help
+      Habilita o driver para o sensor de orientação IMU BNO055.

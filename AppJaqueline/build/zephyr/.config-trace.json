@@ -42,7 +42,7 @@
     "assign",
     [
       "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/prj.conf",
-      10
+      13
     ]
   ],
   [
@@ -523,7 +523,7 @@
     "assign",
     [
       "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/prj.conf",
-      7
+      9
     ]
   ],
   [
@@ -5568,10 +5568,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\my-workspace\\zephyr\\lib\\libc\\Kconfig",
-      173
+      "C:/my-workspace/zephyr-app-ufsm00292/AppJaqueline/prj.conf",
+      7
     ]
   ],
   [

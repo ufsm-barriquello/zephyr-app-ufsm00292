@@ -90,7 +90,7 @@ void main(void)
 
     /* ---------- LOOP PRINCIPAL ---------- */
     while (1) {
-
+        LOG_INF("------------------------");
         /* --- EULER --- */
         uint8_t euler_raw[6];
         bno_read(i2c, REG_EULER_H_LSB, euler_raw, 6);
@@ -98,12 +98,12 @@ void main(void)
         int16_t heading = (int16_t)((euler_raw[1] << 8) | euler_raw[0]) / 16;
         int16_t roll    = (int16_t)((euler_raw[3] << 8) | euler_raw[2]) / 16;
         int16_t pitch   = (int16_t)((euler_raw[5] << 8) | euler_raw[4]) / 16;
-
+        printf("      ");
         LOG_INF("Euler - H=%d, R=%d, P=%d", heading, roll, pitch);
-        printf("EULER,%d,%d,%d\n", heading, roll, pitch);
+        printf("      ");
 
 
-
+        LOG_INF("------------------------");
         /* --- ACELERAÇÃO --- */
         uint8_t accel_raw[6];
         bno_read(i2c, REG_ACCEL_DATA_LSB, accel_raw, 6);
@@ -111,12 +111,13 @@ void main(void)
         int16_t ax = (accel_raw[1] << 8) | accel_raw[0];
         int16_t ay = (accel_raw[3] << 8) | accel_raw[2];
         int16_t az = (accel_raw[5] << 8) | accel_raw[4];
-
+        
+        printf("      ");
         LOG_INF("Aceleração - X=%d, Y=%d, Z=%d", ax, ay, az);
-        printf("ACCEL,%d,%d,%d\n", ax, ay, az);
+        printf("      ");
 
 
-
+        LOG_INF("------------------------");
         /* --- GIROSCÓPIO --- */
         uint8_t gyro_raw[6];
         bno_read(i2c, REG_GYRO_DATA_LSB, gyro_raw, 6);
@@ -124,12 +125,12 @@ void main(void)
         int16_t gx = (gyro_raw[1] << 8) | gyro_raw[0];
         int16_t gy = (gyro_raw[3] << 8) | gyro_raw[2];
         int16_t gz = (gyro_raw[5] << 8) | gyro_raw[4];
-
+        printf("      ");
         LOG_INF("Giroscopio - X=%d, Y=%d, Z=%d", gx, gy, gz);
-        printf("GYRO,%d,%d,%d\n", gx, gy, gz);
+        printf("      ");
 
 
-
+        LOG_INF("------------------------");
         /* --- MAGNETÔMETRO (NOVO!) --- */
         uint8_t mag_raw[6];
         bno_read(i2c, REG_MAG_DATA_LSB, mag_raw, 6);
@@ -137,20 +138,17 @@ void main(void)
         int16_t mx = (mag_raw[1] << 8) | mag_raw[0];
         int16_t my = (mag_raw[3] << 8) | mag_raw[2];
         int16_t mz = (mag_raw[5] << 8) | mag_raw[4];
-
+        printf("      ");
         LOG_INF("Magnetometro - X=%d, Y=%d, Z=%d", mx, my, mz);
-        printf("MAG,%d,%d,%d\n", mx, my, mz);
+        printf("      ");
 
-
-
+        LOG_INF("------------------------");
         /* --- TEMPERATURA --- */
         int8_t temp_raw = 0;
         bno_read(i2c, REG_TEMP, (uint8_t *)&temp_raw, 1);
-
-        LOG_INF("Temperatura: %d C", temp_raw);
-        printf("TEMP,%d\n", temp_raw);
-
-
+        printf("      ");
+        LOG_INF("Temperatura: %d °C", temp_raw);
+        printf("      ");
 
         LOG_INF("------------------------");
 

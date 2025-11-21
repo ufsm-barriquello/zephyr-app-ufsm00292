@@ -32,7 +32,6 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 #define REG_TEMP             0x34
 
 
-/* Funções auxiliares */
 static int bno_write(const struct device *i2c, uint8_t reg, uint8_t value)
 {
     uint8_t buf[2] = { reg, value };
@@ -86,9 +85,7 @@ void main(void)
     LOG_INF("BNO055 configurado em modo NDOF.");
     LOG_INF("Iniciando leituras...");
 
-
-
-    /* ---------- LOOP PRINCIPAL ---------- */
+    /* ---------- LOOP  ---------- */
     while (1) {
         LOG_INF("------------------------");
         /* --- EULER --- */

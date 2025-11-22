@@ -1,81 +1,83 @@
-**João Pedro Souto Fernandes**  
-Disciplina: Projeto de Sistemas Embarcados
-Professor: Carlos Henrique Barriquello  
-Período: 2025/2  
+# README
+
+## Descrição
+
+Este projeto implementa um nó IoT utilizando Zephyr RTOS na placa SAMR21 Xplained Pro, integrado ao sensor BNO055 via I²C. O sistema coleta dados de orientação, formata em JSON e envia ao PC via USB-CDC, onde uma aplicação Python realiza visualização 3D em tempo real.  
+A arquitetura segue o modelo exigido na disciplina, com separação entre HAL e APP, e está preparada para futura inclusão do OpenThread.
 
 ---
 
-# Comunicação entre duas placas SAM R21 Xplained Pro usando Zephyr RTOS
+## Recursos Implementados
 
-## Objetivo
-Estabelecer uma **comunicação sem fio ponto a ponto** entre duas placas **SAM R21 Xplained Pro**, utilizando o **rádio IEEE 802.15.4** embutido no microcontrolador **ATSAMR21**.  
-O objetivo inicial é enviar e receber mensagens simples entre as placas, validando o funcionamento do módulo de rádio sob o **Zephyr RTOS**.
-
----
-
-##  Ambiente de Desenvolvimento
-
-| Item | Descrição |
-|:--|:--|
-| **Sistema Operacional** | Ubuntu via WSL2 (Windows 10/11) |
-| **SDK Zephyr** | 0.16.8 |
-| **Board** | `atsamr21_xpro` |
-| **Compilador** | `arm-zephyr-eabi-gcc` |
-| **Gerenciador de Projeto** | `west` |
+- Execução do Zephyr RTOS no SAMR21  
+- Comunicação I²C com o BNO055  
+- Modo NDOF para fusão sensorial  
+- Envio periódico de dados via USB-CDC  
+- Visualização 3D em Python  
+- Estrutura modular dividida em HAL e APP
 
 ---
 
+## Arquitetura
 
-## Tipo de Comunicação
+**HAL:**  
+- Configuração e comunicação I²C  
+- Inicialização do BNO055 e leitura dos registros  
+- Seleção do modo NDOF  
+- Comunicação USB-CDC  
 
-- **Protocolo:** IEEE 802.15.4 (2.4 GHz)
-- **Modo:** Peer-to-Peer
-- **Direção:** Unidirecional (TX/RX)
-
----
-
-## Configuração Base (`prj.conf`)
-
-As opções de configuração essenciais para ativar o rádio e a pilha de rede 802.15.4 serão definidas no arquivo `prj.conf`, incluindo:
-
-- Ativação do subsistema de rede (`CONFIG_NETWORKING`)
-- Suporte ao protocolo IEEE 802.15.4 (`CONFIG_IEEE802154`)
-- Configurações de buffer e log de rede (`CONFIG_NET_BUF_*`, `CONFIG_NET_LOG`)
-
-Essas definições permitem o envio e recebimento de pacotes via rádio.
+**APP:**  
+- Threads cooperativas para leitura e transmissão  
+- Formatação dos dados em JSON  
+- Gerenciamento do fluxo MCU → PC
 
 ---
 
-## Etapas Gerais
+## Fundamentação Técnica
 
-1. **Configuração do ambiente Zephyr**
-   - Instalar o SDK, ferramentas e dependências.
-   - Inicializar o workspace com `west init` e `west update`.
+**Zephyr RTOS**  
+- Kernel leve, multitarefa, modular  
+- Drivers nativos para USB, I²C e sensores  
+- Configuração via device tree
 
-2. **Criação do diretório do aluno**
-   - Criar uma pasta com o nome pessoal dentro do projeto principal.
-   - Adicionar o código-fonte e arquivos de configuração.
+**BNO055**  
+- IMU de 9DoF com fusão interna  
+- Entrega Euler e quaternions sem necessidade de filtros adicionais
 
-3. **Implementação**
-   - Escrever o código do transmissor (`main_tx.c`).
-   - Escrever o código do receptor (`main_rx.c`).
-
-4. **Compilação e gravação**
-   - Compilar com o comando `west build -b atsamr21_xpro`.
-   - Gravar com `west flash`.
-
-5. **Teste de comunicação**
-   - Conectar as duas placas via USB.
-   - Monitorar a saída serial em ambas as placas.
-   - Verificar se as mensagens enviadas são recebidas corretamente.
+**OpenThread**  
+- Requer 14–18 KB de RAM  
+- Não foi habilitado devido à limitação da SAMR21 (32 KB totais)
 
 ---
 
-## Resultados Esperados
+## Aplicação Python
 
-- Comunicação ponto a ponto bem-sucedida entre duas placas SAM R21.  
-- Envio e recepção de mensagens com logs no terminal serial.  
-- Alcance funcional em ambiente aberto (~10 m).  
-- Estabilidade na taxa de transmissão (250 kbps nominal).
+A aplicação Python recebe os dados formatados em JSON e atualiza modelos 3D por meio do VPython.  
+Serve como ferramenta de validação visual do comportamento do sensor e da comunicação com o firmware.
 
 ---
+
+## Resultados
+
+- Leitura estável do BNO055  
+- Taxa de atualização de 50 ms mantida  
+- Visualização 3D responsiva e coerente com o movimento real  
+- Comunicação MCU → PC validada integralmente
+
+---
+
+## Desafios
+
+- Limitação de RAM que impede a habilitação do OpenThread  
+- Ajuste das pilhas das threads devido a stack overflow  
+- Tempo de inicialização necessário para leitura correta do Chip ID  
+- Configuração do I²C no device tree
+
+---
+
+## Trabalhos Futuros
+
+- Utilização de MCU com maior RAM para suportar Thread  
+- Substituição da comunicação USB por 802.15.4  
+- Suporte a múltiplos sensores  
+- Expansão da aplicação Python para registro e análise de dados

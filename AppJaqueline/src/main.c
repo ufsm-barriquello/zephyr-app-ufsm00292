@@ -7,7 +7,7 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
 #define BNO055_ADDR 0x29
 
-/* Registros importantes */
+
 #define REG_CHIP_ID          0x00
 #define REG_OPR_MODE         0x3D
 #define REG_PWR_MODE         0x3E
@@ -16,19 +16,19 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 #define OPR_MODE_CONFIG      0x00
 #define OPR_MODE_NDOF        0x0C
 
-/* Euler angles */
+
 #define REG_EULER_H_LSB      0x1A
 
-/* Aceleração */
+
 #define REG_ACCEL_DATA_LSB   0x08
 
-/* Magnetômetro */
+
 #define REG_MAG_DATA_LSB     0x0E   // X LSB
 
-/* Giroscópio */
+
 #define REG_GYRO_DATA_LSB    0x14
 
-/* Temperatura */
+
 #define REG_TEMP             0x34
 
 
@@ -56,7 +56,7 @@ void main(void)
 
     LOG_INF("I2C pronto: %s", i2c->name);
 
-    /* Ler CHIP ID */
+   
     uint8_t chip_id = 0;
     bno_read(i2c, REG_CHIP_ID, &chip_id, 1);
     LOG_INF("Chip ID: 0x%02X", chip_id);
@@ -68,12 +68,11 @@ void main(void)
 
     LOG_INF("BNO055 identificado!");
 
-    /* ---------- CONFIGURAÇÃO ----------- */
 
     bno_write(i2c, REG_OPR_MODE, OPR_MODE_CONFIG);
     k_msleep(25);
 
-    bno_write(i2c, REG_SYS_TRIGGER, 0x20);  // reset
+    bno_write(i2c, REG_SYS_TRIGGER, 0x20); 
     k_msleep(700);
 
     bno_write(i2c, REG_OPR_MODE, OPR_MODE_CONFIG);
@@ -85,7 +84,7 @@ void main(void)
     LOG_INF("BNO055 configurado em modo NDOF.");
     LOG_INF("Iniciando leituras...");
 
-    /* ---------- LOOP  ---------- */
+ 
     while (1) {
         LOG_INF("------------------------");
         /* --- EULER --- */

@@ -1,80 +1,54 @@
-/*
- * Copyright (c) 2021 Nordic Semiconductor ASA
- * SPDX-License-Identifier: Apache-2.0
- */
-
 #include <zephyr/kernel.h>
+#include <zephyr/device.h>
 #include <zephyr/drivers/sensor.h>
 #include <zephyr/logging/log.h>
 
-#include <app/drivers/blink.h>
+LOG_MODULE_REGISTER(sensor_lux);
 
-#include <app_version.h>
-
-LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
-
-#define BLINK_PERIOD_MS_STEP 100U
-#define BLINK_PERIOD_MS_MAX  1000U
+#define SLEEP_TIME_MS 1000
 
 int main(void)
 {
-	int ret;
-	unsigned int period_ms = BLINK_PERIOD_MS_MAX;
-	const struct device *sensor, *blink;
-	struct sensor_value last_val = { 0 }, val;
+    const struct device *dev;
 
-	printk("Zephyr Example Application %s\n", APP_VERSION_STRING);
+    LOG_INF("=== Sensor de Luminosidade V2 ===");
 
-	sensor = DEVICE_DT_GET(DT_NODELABEL(example_sensor));
-	if (!device_is_ready(sensor)) {
-		LOG_ERR("Sensor not ready");
-		return 0;
-	}
+    /*
+     * IMPORTANTE:
+     * Verifique o label no DTS da sua placa
+     * Por exemplo:
+     *  - "bh1750@23"
+     *  - "opt3001@44"
+     *
+     * Use o nome declarado no device tree (.overlay)
+     */
+    dev = DEVICE_DT_GET_ONE(rohm_bh1750);
 
-	blink = DEVICE_DT_GET(DT_NODELABEL(blink_led));
-	if (!device_is_ready(blink)) {
-		LOG_ERR("Blink LED not ready");
-		return 0;
-	}
+    if (!device_is_ready(dev)) {
+        LOG_ERR("Sensor BH1750 não está pronto!");
+        return -1;
+    }
 
-	ret = blink_off(blink);
-	if (ret < 0) {
-		LOG_ERR("Could not turn off LED (%d)", ret);
-		return 0;
-	}
+    struct sensor_value lux;
 
-	printk("Use the sensor to change LED blinking period\n");
+    while (1) {
+        int ret = sensor_sample_fetch(dev);
 
-	while (1) {
-		ret = sensor_sample_fetch(sensor);
-		if (ret < 0) {
-			LOG_ERR("Could not fetch sample (%d)", ret);
-			return 0;
-		}
+        if (ret != 0) {
+            LOG_ERR("Erro lendo sensor: %d", ret);
+            continue;
+        }
 
-		ret = sensor_channel_get(sensor, SENSOR_CHAN_PROX, &val);
-		if (ret < 0) {
-			LOG_ERR("Could not get sample (%d)", ret);
-			return 0;
-		}
+        ret = sensor_channel_get(dev, SENSOR_CHAN_LIGHT, &lux);
 
-		if ((last_val.val1 == 0) && (val.val1 == 1)) {
-			if (period_ms == 0U) {
-				period_ms = BLINK_PERIOD_MS_MAX;
-			} else {
-				period_ms -= BLINK_PERIOD_MS_STEP;
-			}
+        if (ret != 0) {
+            LOG_ERR("Erro ao acessar canal de luz: %d", ret);
+            continue;
+        }
 
-			printk("Proximity detected, setting LED period to %u ms\n",
-			       period_ms);
-			blink_set_period_ms(blink, period_ms);
-		}
+        LOG_INF("Luminosidade: %.2f lux", sensor_value_to_double(&lux));
 
-		last_val = val;
-
-		k_sleep(K_MSEC(100));
-	}
-
-	return 0;
+        k_msleep(SLEEP_TIME_MS);
+    }
 }
 

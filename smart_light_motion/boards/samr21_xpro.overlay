@@ -1,0 +1,22 @@
+/ {
+    aliases {
+        pir0 = &pir_sensor;
+        ldr0 = &ldr_adc;
+        led0 = &blue_led;
+    };
+
+    pir_sensor: pir_input {
+        gpios = <&porta 10 GPIO_ACTIVE_HIGH>;
+        status = "okay";
+    };
+
+    ldr_adc: ldr_input {
+        io-channels = <&adc0 1>;
+        status = "okay";
+    };
+
+    blue_led: led_out {
+        gpios = <&porta 15 GPIO_ACTIVE_HIGH>;
+        status = "okay";
+    };
+};

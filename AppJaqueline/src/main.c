@@ -13,11 +13,27 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 #define REG_SYS_TRIGGER      0x3F
 #define OPR_MODE_CONFIG      0x00
 #define OPR_MODE_NDOF        0x0C
+<<<<<<< HEAD
 #define REG_EULER_H_LSB      0x1A
 #define REG_ACCEL_DATA_LSB   0x08
 #define REG_MAG_DATA_LSB     0x0E   
 #define REG_GYRO_DATA_LSB    0x14
 #define REG_TEMP             0x34
+=======
+
+
+#define REG_EULER_H_LSB      0x1A
+
+
+#define REG_ACCEL_DATA_LSB   0x08
+
+
+#define REG_GYRO_DATA_LSB    0x14
+
+
+#define REG_TEMP             0x34    
+
+>>>>>>> 59f6af77461fda282afea999deb49b9fc5f0dbb0
 
 
 static int bno_write(const struct device *i2c, uint8_t reg, uint8_t value)
@@ -26,6 +42,10 @@ static int bno_write(const struct device *i2c, uint8_t reg, uint8_t value)
     return i2c_write(i2c, buf, 2, BNO055_ADDR);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59f6af77461fda282afea999deb49b9fc5f0dbb0
 static int bno_read(const struct device *i2c, uint8_t reg, uint8_t *buf, uint8_t len)
 {
     return i2c_write_read(i2c, BNO055_ADDR, &reg, 1, buf, len);
@@ -44,7 +64,11 @@ void main(void)
 
     LOG_INF("I2C pronto: %s", i2c->name);
 
+<<<<<<< HEAD
    
+=======
+ 
+>>>>>>> 59f6af77461fda282afea999deb49b9fc5f0dbb0
     uint8_t chip_id = 0;
     bno_read(i2c, REG_CHIP_ID, &chip_id, 1);
     LOG_INF("Chip ID: 0x%02X", chip_id);
@@ -56,26 +80,49 @@ void main(void)
 
     LOG_INF("BNO055 identificado!");
 
+<<<<<<< HEAD
+=======
+  
+
+>>>>>>> 59f6af77461fda282afea999deb49b9fc5f0dbb0
 
     bno_write(i2c, REG_OPR_MODE, OPR_MODE_CONFIG);
     k_msleep(25);
 
+<<<<<<< HEAD
     bno_write(i2c, REG_SYS_TRIGGER, 0x20); 
     k_msleep(700);
 
     bno_write(i2c, REG_OPR_MODE, OPR_MODE_CONFIG);
     k_msleep(25);
 
+=======
+    bno_write(i2c, REG_SYS_TRIGGER, 0x20);
+    k_msleep(700);
+
+ 
+    bno_write(i2c, REG_OPR_MODE, OPR_MODE_CONFIG);
+    k_msleep(25);
+
+  
+>>>>>>> 59f6af77461fda282afea999deb49b9fc5f0dbb0
     bno_write(i2c, REG_OPR_MODE, OPR_MODE_NDOF);
     k_msleep(20);
 
     LOG_INF("BNO055 configurado em modo NDOF.");
     LOG_INF("Iniciando leituras...");
 
+<<<<<<< HEAD
  
     while (1) {
         LOG_INF("------------------------");
         /* --- EULER --- */
+=======
+
+    while (1) {
+
+  
+>>>>>>> 59f6af77461fda282afea999deb49b9fc5f0dbb0
         uint8_t euler_raw[6];
         bno_read(i2c, REG_EULER_H_LSB, euler_raw, 6);
 

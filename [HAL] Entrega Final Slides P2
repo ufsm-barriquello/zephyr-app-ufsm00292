@@ -1,0 +1,59 @@
+# 🔧 Diário de Erros e Soluções (Troubleshooting)
+
+Durante o desenvolvimento, diversos obstáculos técnicos foram encontrados. Abaixo, documento os principais erros, suas causas raízes e as soluções adotadas. Este registro serve como base de conhecimento para evitar problemas similares no futuro.
+
+## 1. Problemas de Build e Estrutura (West)
+* **❌ Sintoma:** Erros genéricos ao rodar `west build`, dúvida se eram erros críticos ou apenas *warnings*.
+* **🔍 Causa:** Diretório da aplicação incorreto (flag `-s` apontando errado) ou pasta de build "suja" com resíduos de compilações anteriores.
+* **✅ Solução:**
+    * Adotar o comando padrão limpo: `west build -b samd21_xpro -p -s <caminho_da_app>`.
+    * Sempre conferir o diretório atual (`pwd`) antes de iniciar o build.
+* **💡 Aprendizado:** Separar claramente o código-fonte da pasta de build evita conflitos de cache.
+
+## 2. Mentalidade Bare-Metal vs. Device Tree
+* **❌ Sintoma:** O código compilava, mas os pinos/LEDs não respondiam. Acesso direto a registradores causava comportamentos inesperados.
+* **🔍 Causa:** Tentativa de programar pensando em "Bare-Metal" puro, ignorando o modelo de drivers do Zephyr e a descrição de hardware via Device Tree (DT).
+* **✅ Solução:**
+    * Uso de **Aliases** e **Labels** definidos no DT em vez de hardcodar números de pinos.
+    * Utilização das APIs nativas (ex: `gpio_pin_configure`, `DEVICE_DT_GET`).
+* **💡 Aprendizado:** O Zephyr exige uma descrição declarativa do hardware. Menos "gambiarra" em registrador, mais portabilidade via DT.
+
+## 3. Integração do BTLC1000 (Configuração BLE)
+* **❌ Sintoma:** Falha ao compilar samples como `peripheral_hr`. Erros ligados a drivers faltantes.
+* **🔍 Causa:** A integração BLE em um RTOS não é automática; exige a configuração correta do módulo (Shield) no `prj.conf` e suporte da board.
+* **✅ Solução:**
+    * Estudo da documentação de Shields do Zephyr.
+    * Ajuste fino das opções de Kconfig para habilitar a stack Bluetooth correta para o controlador externo.
+
+## 4. Inferno de Dependências e Versões
+* **❌ Sintoma:** Ambiente "instalado", mas builds gerando mensagens estranhas.
+* **🔍 Causa:** Versões incompatíveis de Python, CMake ou Toolchain. Variáveis de ambiente (PATH) apontando para instalações antigas ou duplicadas.
+* **✅ Solução:**
+    * Verificação rigorosa com `west --version`, `cmake --version`.
+    * Padronização do uso do PowerShell dentro da pasta raiz do projeto.
+* **💡 Aprendizado:** Em grandes projetos RTOS, 50% dos erros iniciais são de ambiente, não de código.
+
+## 5. Mistura de Árvore do Zephyr vs. Aplicação
+* **❌ Sintoma:** Tentar compilar "o Zephyr inteiro" ou apontar o build para pastas genéricas.
+* **🔍 Causa:** Confusão entre a raiz do repositório do RTOS e a pasta da minha aplicação específica.
+* **✅ Solução:**
+    * Manter uma estrutura de workspace clara (`zephyrproject/`) com subpastas definidas.
+    * Apontar o `-s` sempre para a aplicação final (ex: `samples/bluetooth/peripheral_nus`).
+
+## 6. Device Tree Overlay (SAMD21 + BTLC1000)
+* **❌ Sintoma:** Builds quebrando com mensagens de "Node not found" ou propriedades inválidas.
+* **🔍 Causa:** Cópia de *overlays* (.overlay) de outras placas sem ajustar os nomes dos nós (labels) para a SAMD21.
+* **✅ Solução:**
+    * Comparação do overlay com exemplos oficiais.
+    * Ajuste manual dos barramentos (SPI/UART) e GPIOs para corresponder ao esquema elétrico da `samd21_xpro`.
+* **💡 Aprendizado:** O Device Tree é sensível a nomes. Qualquer *typo* quebra o build.
+
+## 7. Interpretação de Logs
+* **❌ Sintoma:** Pânico ao ver centenas de linhas de log e *warnings* no final do build.
+* **🔍 Causa:** Falta de estratégia para filtrar a saída verbosa do CMake/Ninja.
+* **✅ Solução:**
+    * Procurar primeiro por palavras-chave: `error:` e `failed`.
+    * Analisar warnings recorrentes, mas focar no erro que interrompe o processo.
+* **💡 Aprendizado:** Ler log é uma habilidade tão importante quanto codificar.
+
+---

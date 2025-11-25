@@ -101,7 +101,7 @@ void main(void)
         printf("      ");
 
 
-        LOG_INF("------------------------");
+        LOG_INF("---------------------------");
         /* --- GIROSCÓPIO --- */
         uint8_t gyro_raw[6];
         bno_read(i2c, REG_GYRO_DATA_LSB, gyro_raw, 6);

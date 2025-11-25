@@ -16,27 +16,27 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 #define OPR_MODE_CONFIG      0x00
 #define OPR_MODE_NDOF        0x0C
 
-/* Euler angle registers */
+
 #define REG_EULER_H_LSB      0x1A
 
-/* Aceleração */
+
 #define REG_ACCEL_DATA_LSB   0x08
 
-/* Giroscópio */
+
 #define REG_GYRO_DATA_LSB    0x14
 
-/* Temperatura ambiente */
-#define REG_TEMP             0x34    // valor em °C (signed int8)
+
+#define REG_TEMP             0x34    
 
 
-/* Função auxiliar: escreve 1 byte em um registro */
+
 static int bno_write(const struct device *i2c, uint8_t reg, uint8_t value)
 {
     uint8_t buf[2] = { reg, value };
     return i2c_write(i2c, buf, 2, BNO055_ADDR);
 }
 
-/* Função auxiliar: lê N bytes de um registro */
+
 static int bno_read(const struct device *i2c, uint8_t reg, uint8_t *buf, uint8_t len)
 {
     return i2c_write_read(i2c, BNO055_ADDR, &reg, 1, buf, len);
@@ -54,7 +54,7 @@ void main(void)
 
     LOG_INF("I2C pronto: %s", i2c->name);
 
-    /* Ler CHIP ID */
+ 
     uint8_t chip_id = 0;
     bno_read(i2c, REG_CHIP_ID, &chip_id, 1);
     LOG_INF("Chip ID: 0x%02X", chip_id);
@@ -66,31 +66,30 @@ void main(void)
 
     LOG_INF("BNO055 identificado!");
 
-    /* ---------- CONFIGURA O SENSOR ---------- */
+  
 
-    // Modo CONFIG
+
     bno_write(i2c, REG_OPR_MODE, OPR_MODE_CONFIG);
     k_msleep(25);
 
-    // Reset (opcional)
     bno_write(i2c, REG_SYS_TRIGGER, 0x20);
     k_msleep(700);
 
-    // Volta para CONFIG
+ 
     bno_write(i2c, REG_OPR_MODE, OPR_MODE_CONFIG);
     k_msleep(25);
 
-    // Modo NDOF
+  
     bno_write(i2c, REG_OPR_MODE, OPR_MODE_NDOF);
     k_msleep(20);
 
     LOG_INF("BNO055 configurado em modo NDOF.");
     LOG_INF("Lendo dados continuamente...");
 
-    /* ----------- LOOP DE LEITURA ----------- */
+
     while (1) {
 
-        /* ---- Ler Euler angles ---- */
+  
         uint8_t euler_raw[6];
         bno_read(i2c, REG_EULER_H_LSB, euler_raw, 6);
 

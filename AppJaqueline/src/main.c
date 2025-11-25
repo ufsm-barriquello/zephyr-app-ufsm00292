@@ -7,28 +7,16 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
 #define BNO055_ADDR 0x29
 
-
 #define REG_CHIP_ID          0x00
 #define REG_OPR_MODE         0x3D
 #define REG_PWR_MODE         0x3E
 #define REG_SYS_TRIGGER      0x3F
-
 #define OPR_MODE_CONFIG      0x00
 #define OPR_MODE_NDOF        0x0C
-
-
 #define REG_EULER_H_LSB      0x1A
-
-
 #define REG_ACCEL_DATA_LSB   0x08
-
-
 #define REG_MAG_DATA_LSB     0x0E   
-
-
 #define REG_GYRO_DATA_LSB    0x14
-
-
 #define REG_TEMP             0x34
 
 
@@ -138,7 +126,7 @@ void main(void)
         LOG_INF("Magnetometro - X=%d, Y=%d, Z=%d", mx, my, mz);
         printf("      ");
 
-        LOG_INF("------------------------");
+        LOG_INF("---------------------------");
         /* --- TEMPERATURA --- */
         int8_t temp_raw = 0;
         bno_read(i2c, REG_TEMP, (uint8_t *)&temp_raw, 1);
@@ -146,7 +134,7 @@ void main(void)
         LOG_INF("Temperatura: %d °C", temp_raw);
         printf("      ");
 
-        LOG_INF("------------------------");
+        LOG_INF("---------------------------");
 
         k_msleep(300);
     }

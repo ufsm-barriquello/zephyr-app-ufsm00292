@@ -1,0 +1,12 @@
+// Este 'i2c2' refere-se ao SERCOM2 do SAM D21
+&i2c2 {
+    /* O status 'okay' confirma que esse barramento será usado */
+    status = "okay";
+
+    /* declarando o sensor */
+    bno055@28 {
+        compatible = "bosch,bno055";
+        reg = <0x28>;    /* Endereço I2C do sensor */
+        label = "BNO055";
+    };
+};

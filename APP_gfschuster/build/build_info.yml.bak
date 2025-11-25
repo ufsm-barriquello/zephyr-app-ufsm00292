@@ -1,4 +1,0 @@
-west:
-  command: C:\Users\Gabe\zephyrproject\.venv\Scripts\west build -b qemu_x86 --pristine
-  topdir: C:\zephyrproject
-  version: 1.5.0

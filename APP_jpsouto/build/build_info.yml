@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: '/mnt/c/zephyrproject/zephyr-app-ufsm00292/samr21_bno055'
+    source-dir: '/mnt/c/zephyrproject/zephyr-app-ufsm00292/samr21_bno055'
+  board:
+    name: 'samr21_xpro'
+    path:
+     - '/mnt/c/zephyrproject/zephyr/boards/atmel/sam0/samr21_xpro'
+    qualifiers: 'samr21g18a'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/mnt/c/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/mnt/c/zephyrproject/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro.dts'
+    include-dirs:
+     - '/mnt/c/zephyrproject/modules/hal/ambiq/dts'
+     - '/mnt/c/zephyrproject/modules/hal/atmel/include'
+     - '/mnt/c/zephyrproject/modules/hal/bouffalolab/include'
+     - '/mnt/c/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/mnt/c/zephyrproject/modules/hal/gigadevice/include'
+     - '/mnt/c/zephyrproject/modules/hal/microchip/include'
+     - '/mnt/c/zephyrproject/modules/hal/microchip/dts'
+     - '/mnt/c/zephyrproject/modules/hal/nuvoton/dts'
+     - '/mnt/c/zephyrproject/modules/hal/nxp/dts'
+     - '/mnt/c/zephyrproject/modules/hal/stm32/dts'
+     - '/mnt/c/zephyrproject/modules/hal/ti/dts'
+     - '/mnt/c/zephyrproject/zephyr/include'
+     - '/mnt/c/zephyrproject/zephyr/include/zephyr'
+     - '/mnt/c/zephyrproject/zephyr/dts/common'
+     - '/mnt/c/zephyrproject/zephyr/dts/vendor'
+     - '/mnt/c/zephyrproject/zephyr/dts/rx'
+     - '/mnt/c/zephyrproject/zephyr/dts/x86'
+     - '/mnt/c/zephyrproject/zephyr/dts/xtensa'
+     - '/mnt/c/zephyrproject/zephyr/dts/sparc'
+     - '/mnt/c/zephyrproject/zephyr/dts/riscv'
+     - '/mnt/c/zephyrproject/zephyr/dts/posix'
+     - '/mnt/c/zephyrproject/zephyr/dts/arm64'
+     - '/mnt/c/zephyrproject/zephyr/dts/arm'
+     - '/mnt/c/zephyrproject/zephyr/dts/arc'
+     - '/mnt/c/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/mnt/c/zephyrproject/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro_defconfig'
+     - '/mnt/c/zephyrproject/zephyr-app-ufsm00292/samr21_bno055/prj.conf'
+    user-files:
+     - '/mnt/c/zephyrproject/zephyr-app-ufsm00292/samr21_bno055/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/gfschuster/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.2.99'
+    zephyr-base: '/mnt/c/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/gfschuster/zephyrproject/.venv/bin/west build -b samr21_xpro --pristine'
+  topdir: '/mnt/c/zephyrproject'
+  version: '1.5.0'

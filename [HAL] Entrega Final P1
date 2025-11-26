@@ -1,0 +1,85 @@
+# Projeto de Integração: SAMD21 + Zephyr RTOS + BLE
+
+Este repositório documenta a trajetória de desenvolvimento de um sistema embarcado utilizando o microcontrolador **ATSAMD21**, migrando de uma abordagem *bare-metal* para o uso de um Sistema Operacional de Tempo Real moderno (**Zephyr RTOS**), com o objetivo final de integrar comunicação **Bluetooth Low Energy (BLE)** via módulo **BTLC1000**.
+
+## 🎯 Contexto e Motivação
+
+O objetivo principal deste projeto foi ir além dos exemplos triviais (como o "Blink LED") e simular um ambiente de desenvolvimento mais próximo da realidade industrial.
+
+* **Plataforma Principal:** Placa SAMD21 Xplained Pro.
+* **Tecnologia de Software:** Exploração do ecossistema Zephyr RTOS.
+* **Conectividade:** Tentativa de integração do módulo BLE (BTLC1000).
+* **Metodologia:** Versionamento de código, organização em fases e documentação técnica.
+
+---
+
+## 🛠️ Hardware e Ferramentas Utilizadas
+
+A complexidade do projeto reside na combinação de hardware específico com uma stack de software robusta.
+
+### Hardware
+* **MCU:** Microchip ATSAMD21J18A (ARM Cortex-M0+, 32 bits).
+* **Board:** SAMD21 Xplained Pro.
+* **Módulo de Rádio:** Placa de extensão BTLC1000 Xplained (Bluetooth Low Energy).
+
+### Software & Toolchain
+* **Sistema Operacional:** Zephyr RTOS.
+* **Gerenciador de Build:** Ferramenta `west`.
+* **Compilação:** Toolchain ARM, CMake e Ninja.
+* **Ambiente de Desenvolvimento:** Windows (via PowerShell).
+
+---
+
+## 📅 Linha do Tempo da Trajetória
+
+O desenvolvimento foi dividido em três fases estratégicas para garantir o entendimento progressivo da tecnologia.
+
+### Fase 1: Primeiros Passos com SAMD21 (Bare-Metal)
+Nesta etapa inicial, o foco foi entender o hardware "cru".
+* Estudo da pinagem e dos componentes on-board.
+* Realização de testes de Blink, temporização e I/O digital simples.
+* **Aprendizado:** Compreensão clara de como o hardware responde sem um sistema operacional (loop infinito, polling) e revisão prática de registradores e GPIOs.
+
+### Fase 2: Introdução ao Zephyr RTOS
+Transição para o uso do sistema operacional.
+* Configuração do ambiente: instalação do Python, `west`, e clonagem do repositório oficial do Zephyr.
+* Execução dos primeiros comandos: `west init`, `west update`.
+* **Sucesso:** Build e Flash bem-sucedidos do exemplo "Blinky" rodando sobre o kernel do Zephyr.
+* **Aprendizado:** Entendimento da estrutura de diretórios (`boards/`, `samples/`, `drivers/`) e a disciplina necessária para trabalhar com camadas de abstração de um RTOS.
+
+### Fase 3: Desafio do Bluetooth Low Energy (BLE)
+A etapa mais complexa, visando integrar o rádio externo.
+* Tentativa de rodar samples oficiais como `peripheral_hr` (Heart Rate) e `peripheral_uart` (NUS).
+* Estudo da organização da stack Bluetooth dentro do Zephyr.
+* Análise da relação entre drivers, overlays (.dts) e a aplicação.
+
+---
+
+## ⚠️ Desafios e Resultados
+
+A integração do BLE apresentou desafios técnicos significativos, que serviram como fonte de aprendizado sobre a complexidade de sistemas embarcados modernos.
+
+### Principais Dificuldades
+1.  **Erros de Build:** Mensagens de erro extensas e específicas do `west build` relacionadas à configuração do Bluetooth.
+2.  **Integração de Hardware:** Ajustes finos necessários nos arquivos de *Device Tree Overlay* para fazer a SAMD21 conversar corretamente com o BTLC1000.
+3.  **Configuração da Stack:** Entendimento de que o BLE no Zephyr não é apenas "ligar um módulo", mas depende de configurações precisas de Kconfig e drivers.
+
+### Conclusão
+Mesmo com as dificuldades técnicas encontradas na fase de Bluetooth, o projeto proporcionou uma **visão completa do fluxo de desenvolvimento**. A experiência consolidou o conhecimento sobre a diferença entre programar diretamente no hardware versus utilizar um RTOS escalável, preparando o terreno para projetos futuros mais complexos.
+
+---
+
+## 🚀 Como reproduzir o Build Básico
+
+Para compilar o exemplo básico testado na Fase 2:
+
+```powershell
+# 1. Inicializar o ambiente (dentro da pasta do projeto)
+west init
+west update
+
+# 2. Compilar o exemplo blinky para a placa SAMD21
+west build -b samd21_xpro samples/basic/blinky
+
+# 3. Gravar na placa (Flash)
+west flash

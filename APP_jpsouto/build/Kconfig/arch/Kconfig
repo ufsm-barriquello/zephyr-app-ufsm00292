@@ -1,0 +1,11 @@
+# Load Zephyr Arch Kconfig descriptions.
+osource "/mnt/c/zephyrproject/zephyr/arch/rx/Kconfig"
+osource "/mnt/c/zephyrproject/zephyr/arch/x86/Kconfig"
+osource "/mnt/c/zephyrproject/zephyr/arch/xtensa/Kconfig"
+osource "/mnt/c/zephyrproject/zephyr/arch/sparc/Kconfig"
+osource "/mnt/c/zephyrproject/zephyr/arch/riscv/Kconfig"
+osource "/mnt/c/zephyrproject/zephyr/arch/posix/Kconfig"
+osource "/mnt/c/zephyrproject/zephyr/arch/mips/Kconfig"
+osource "/mnt/c/zephyrproject/zephyr/arch/arm64/Kconfig"
+osource "/mnt/c/zephyrproject/zephyr/arch/arm/Kconfig"
+osource "/mnt/c/zephyrproject/zephyr/arch/arc/Kconfig"

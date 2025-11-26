@@ -1,0 +1,61 @@
+Notas de uso do OpenOCD + west flash (Semana 3)
+==============================================
+
+Ferramentas
+-----------
+- xPack OpenOCD 0.12.0-7 instalado em:
+  C:\Users\angel\AppData\Roaming\xPacks\xpack-openocd-0.12.0-7\
+
+- Verificação da instalação:
+  openocd --version
+
+- Ambiente Zephyr no diretório:
+  C:\Users\angel\zephyrproject\
+
+
+Comandos típicos de flash
+-------------------------
+Dentro de C:\Users\angel\zephyrproject:
+
+1) Gerar binário (exemplo com basic/blinky)
+
+   py -m west build -b samd21_xpro -p -s zephyr\samples\basic\blinky
+
+2) Tentar flash via west + OpenOCD
+
+   py -m west flash -r openocd ^
+     --openocd "C:\Users\angel\AppData\Roaming\xPacks\xpack-openocd-0.12.0-7\bin\openocd.exe" ^
+     --openocd-search "C:\Users\angel\AppData\Roaming\xPacks\xpack-openocd-0.12.0-7\share\openocd\scripts"
+
+
+Erros típicos observados
+------------------------
+Mesmo com a placa reconhecida, surgem mensagens como:
+
+- Info : CMSIS-DAP: SWD supported
+- Info : CMSIS-DAP: FW Version = 03.25.01B6
+- Info : CMSIS-DAP: Serial# = ATML2130021800019112
+- Info : CMSIS-DAP: Interface Initialised (SWD)
+- Info : SWD DPIDR 0x0bc11477
+- Info : [at91samd21j18a.cpu] Cortex-M0+ r0p1 processor detected
+
+Seguidas do erro crítico:
+
+- Error: Error connecting DP: cannot read IDR
+- Error: [at91samd21j18a.cpu] DP initialisation failed
+
+Isso acontece mesmo variando:
+- adapter speed (5, 25, 50, 400 kHz),
+- opções de reset_config,
+- e backends de CMSIS-DAP (hid / usb_bulk).
+
+
+Conclusão desta semana
+----------------------
+- O OpenOCD enxerga a interface CMSIS-DAP, mas tem problema de acesso ao DP/AP.
+- Para não arriscar a placa da universidade, optou-se por NÃO mexer mais em drivers
+  baixos nível da interface EDBG além do necessário.
+- Em vez disso, o fluxo oficial da Microchip (atprogram / Microchip Studio) foi
+  usado para apagar e gravar a flash do SAMD21 com os binários gerados pelo Zephyr.
+- O sample 'basic/blinky' comprovou que o executável gerado pelo Zephyr funciona
+  na placa, e que o ambiente de compilação está correto.

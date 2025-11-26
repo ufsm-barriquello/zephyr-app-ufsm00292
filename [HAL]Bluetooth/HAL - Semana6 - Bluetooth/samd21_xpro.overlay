@@ -1,0 +1,23 @@
+/*
+ * Overlay para usar o SERCOM4 como UART HCI ligado ao módulo BTLC1000
+ * na placa SAMD21 Xplained Pro.
+ *
+ * Caminho típico no projeto:
+ *   zephyr/samples/bluetooth/peripheral_nus/boards/samd21_xpro.overlay
+ */
+
+&sercom4 {
+    status = "okay";
+
+    /* UART em 115200 baud para o HCI */
+    current-speed = <115200>;
+
+    /* Mapeamento de pinos (ajustar conforme o esquemático do kit) */
+    rxpo = <1>;  /* PA13 como RX (PAD1) */
+    txpo = <0>;  /* PA12 como TX (PAD0) */
+
+    bt_hci_uart: hci_uart {
+        status = "okay";
+        compatible = "zephyr,bt-hci-uart";
+    };
+};

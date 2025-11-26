@@ -1,0 +1,33 @@
+📝 Resumo da Situação
+Nesta semana, o objetivo era configurar o ambiente Zephyr e rodar o exemplo peripheral_nus na placa SAMD21. O ambiente de compilação foi configurado e o código compila com sucesso, porém, não foi possível gravar o firmware na placa devido a um erro persistente de conexão com o debugger, impedindo a validação prática do Bluetooth.
+
+🛠️ Atividades e Diagnóstico de Erro
+1. Configuração e Build (Sucesso Parcial)
+O ambiente Zephyr (west, toolchain, python) foi instalado corretamente.
+
+O comando west build -b samd21_xpro samples/bluetooth/peripheral_nus executa sem erros e gera o arquivo zephyr.bin.
+
+2. O Erro Encontrado (Falha no Flash)
+Ao tentar transferir o código para a placa usando o comando west flash, o processo falha consistentemente.
+
+Log do Erro:
+
+Plaintext
+
+-- west flash: using runner 'openocd'
+Open On-Chip Debugger 0.11.0
+Error: interrupts not enabled
+Error: connecting DP: cannot read IDR
+Error: Failed to connect to target.
+runner: 'openocd' failed with exit code 1
+3. Tentativas de Solução (Sem Sucesso)
+Para tentar resolver o problema, realizei as seguintes ações, mas sem êxito:
+
+Reinstalei os drivers EDBG da placa via Gerenciador de Dispositivos do Windows.
+
+Troquei o cabo USB e a porta USB do computador.
+
+Tentei usar o Microchip Studio para "apagar" o chip (Chip Erase), mas a ferramenta também não reconheceu a placa corretamente.
+
+⚠️ Conclusão e Impedimento
+Devido à impossibilidade de comunicar com a placa via interface de debug (EDBG), não foi possível carregar o exemplo de Bluetooth. A atividade está paralisada nesta etapa até que o problema de hardware/driver seja resolvido ou a placa seja trocada. Portanto, a validação do BLE não pôde ser realizada.

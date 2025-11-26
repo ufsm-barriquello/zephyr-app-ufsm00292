@@ -1,0 +1,29 @@
+# 🚀 Reflexões Finais e Próximos Passos
+
+Mais do que apenas "fazer o LED piscar" ou o Bluetooth conectar, este projeto serviu como um laboratório de engenharia real. Abaixo, detalho o crescimento pessoal e a visão de futuro para este sistema.
+
+## 💡 Aprendizados Pessoais e de Processo
+
+O enfrentamento de erros complexos de *toolchain* e configuração trouxe lições valiosas que vão além do código:
+
+* **Maturidade no Debug:** Perdi o medo de logs extensos e mensagens de erro do build system. Aprendi a filtrar a informação e buscar a causa raiz.
+* **Metodologia de Resolução:** Adotei um processo estruturado: *Identificar → Reproduzir → Consultar Documentação → Testar Hipótese*. Isso se provou muito mais eficaz do que a tentativa e erro aleatória.
+* **Resiliência Técnica:** A persistência necessária para configurar um ambiente complexo (PATH, versões, drivers) foi um treino de paciência e foco.
+* **Documentação Empática:** Aprendi a organizar o código e escrever READMEs pensando na próxima pessoa que vai ler (ou no "eu" do futuro), facilitando a manutenção.
+* **A Maior Lição:** Entender o **porquê** um erro ocorre ensina muito mais do que apenas copiar uma solução pronta da internet.
+
+## 🔮 Roadmap: Possíveis Evoluções
+
+Se este projeto continuasse por mais um semestre, estes seriam os próximos passos lógicos:
+
+1.  **Estabilização do BLE:** Refinar o exemplo de `peripheral_nus` para ser totalmente à prova de falhas na SAMD21.
+2.  **Aplicação Real:** Desenvolver um firmware que leia um sensor físico (ex: temperatura/acelerômetro) na SAMD21 e envie para um App Mobile customizado.
+3.  **Expansão da Documentação:** Criar tutoriais "Passo a Passo" mais detalhados para ajudar outros estudantes a superar a barreira de entrada do Zephyr.
+
+## 🏁 Conclusão
+
+Este projeto não foi apenas sobre entregar um firmware funcional, mas sobre **entender o caminho**. Hoje, tenho uma visão muito mais clara de como um RTOS opera, como a stack BLE é estruturada e a importância das boas práticas de projeto.
+
+> *"A combinação da teoria vista em aula com a prática dos erros reais gerou o maior aprendizado de todos."*
+
+---

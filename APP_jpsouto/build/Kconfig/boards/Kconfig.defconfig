@@ -1,0 +1,2 @@
+# Load Zephyr board defconfig descriptions.
+osource "/mnt/c/zephyrproject/zephyr/boards/atmel/sam0/samr21_xpro/Kconfig.defconfig"

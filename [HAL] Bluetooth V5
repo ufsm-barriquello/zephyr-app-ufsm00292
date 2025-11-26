@@ -1,0 +1,35 @@
+🗓️ Semana 6: O Protocolo Proprietário (Vendor Specific Setup)
+Sintoma: O sistema estava estável, mas certas funcionalidades avançadas (como alterar a potência de TX ou ler o endereço MAC real do chip) falhavam ou retornavam valores padrão genéricos (00:00:00:00:00:00).
+
+Investigação: Descobrimos que o BTLC1000 é um chip baseada em ROM, mas que requer um "Patch" de firmware na RAM inicialização para corrigir bugs do silício e habilitar recursos modernos. O driver padrão bt_hci_uart do Zephyr assume um controlador HCI genérico e não enviava esse patch.
+
+A Descoberta: Ao comparar o log de inicialização do Zephyr com o log da SDK oficial da Atmel (via Microchip Studio), notamos uma sequência de comandos estranha no início: Opcode 0xFC00.
+
+Isso é um comando Vendor Specific.
+
+O rádio estava operando em "modo de compatibilidade" limitado.
+
+Correção Aplicada (A mais complexa): Criamos um hook de inicialização customizado no driver HCI (bt_hci_setup).
+
+Implementamos uma rotina que, antes de iniciar o stack BLE, envia uma sequência de comandos proprietários da Atmel.
+
+Essa sequência carrega pequenos patches na RAM do BTLC1000 e configura o endereço MAC correto lido da EEPROM da placa.
+
+Resultado Final: O endereço MAC correto agora aparece no scan e o rádio opera com máxima estabilidade e potência configurável.
+
+
+Mudanças Principais:
+
+Clock Precision: Migração do clock do SERCOM4 para FDPLL96M (fix erro de baud rate).
+
+UART Reliability: Ativação obrigatória de RTS/CTS no overlay do DeviceTree (fix buffer overrun).
+
+Vendor Setup: Adição da função btlc1000_setup_quirk() para enviar a sequência de inicialização proprietária e patches de RAM.
+
+Testes Realizados:
+
+Teste de transferência de arquivo de 1MB via NUS (Sucesso, sem quedas).
+
+Teste de conexão/desconexão rápida (100 ciclos) (Sucesso).
+
+Validação com analisador lógico Saleae.

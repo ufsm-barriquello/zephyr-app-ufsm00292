@@ -1,0 +1,49 @@
+cmake:
+  application:
+    configuration-dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS'
+    source-dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS'
+  board:
+    name: 'native_sim'
+    path:
+     - '/mnt/dados/zephyr/zephyr/boards/native/native_sim'
+    qualifiers: 'native'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/mnt/dados/zephyr/zephyr/dts/bindings'
+    files:
+     - '/mnt/dados/zephyr/zephyr/boards/native/native_sim/native_sim.dts'
+    include-dirs:
+     - '/mnt/dados/zephyr/modules/hal/atmel/include'
+     - '/mnt/dados/zephyr/modules/hal/stm32/dts'
+     - '/mnt/dados/zephyr/zephyr/include'
+     - '/mnt/dados/zephyr/zephyr/include/zephyr'
+     - '/mnt/dados/zephyr/zephyr/dts/common'
+     - '/mnt/dados/zephyr/zephyr/dts/vendor'
+     - '/mnt/dados/zephyr/zephyr/dts/rx'
+     - '/mnt/dados/zephyr/zephyr/dts/x86'
+     - '/mnt/dados/zephyr/zephyr/dts/xtensa'
+     - '/mnt/dados/zephyr/zephyr/dts/sparc'
+     - '/mnt/dados/zephyr/zephyr/dts/riscv'
+     - '/mnt/dados/zephyr/zephyr/dts/posix'
+     - '/mnt/dados/zephyr/zephyr/dts/arm64'
+     - '/mnt/dados/zephyr/zephyr/dts/arm'
+     - '/mnt/dados/zephyr/zephyr/dts/arc'
+     - '/mnt/dados/zephyr/zephyr/dts'
+  kconfig:
+    files:
+     - '/mnt/dados/zephyr/zephyr/boards/native/native_sim/native_sim_defconfig'
+     - '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/prj.conf'
+    user-files:
+     - '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/prj.conf'
+  toolchain:
+    name: 'host'
+    path: ''
+  zephyr:
+    version: '4.3.99'
+    zephyr-base: '/mnt/dados/zephyr/zephyr'
+version: '0.1.0'
+west:
+  command: '/mnt/dados/zephyr/zephyr-app-ufsm00292/.venv-310/bin/west build -b native_posix .'
+  topdir: '/mnt/dados/zephyr'
+  version: '1.5.0'

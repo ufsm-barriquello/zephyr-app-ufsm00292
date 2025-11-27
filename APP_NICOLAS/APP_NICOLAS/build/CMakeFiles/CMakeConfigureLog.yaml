@@ -1,0 +1,1792 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    message: |
+      The target system is: Generic - 4.3.99 - posix
+      The host system is: Linux - 6.14.0-33-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:135 (enable_language)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+      Copyright (C) 2023 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:145 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-p8LQeQ"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-p8LQeQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-p8LQeQ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a9b3c
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd  -fuse-ld=bfd -o CMakeFiles/cmTC_a9b3c.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-p8LQeQ/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_a9b3c.dir/src.c.obj -o cmTC_a9b3c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:36 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-m9WJsx"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-m9WJsx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wall_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-m9WJsx'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a20c6
+        [1/2] /usr/bin/gcc -Dcheck_Wall_C__fuse_ld_bfd  -fuse-ld=bfd   -Wall -o CMakeFiles/cmTC_a20c6.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-m9WJsx/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_a20c6.dir/src.c.obj -o cmTC_a20c6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:36 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-KGjp6i"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-KGjp6i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wformat__Wformat_security_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-KGjp6i'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2a37e
+        [1/2] /usr/bin/gcc -Dcheck_Wformat__Wformat_security_C__fuse_ld_bfd  -fuse-ld=bfd   -Wformat -Wformat-security -o CMakeFiles/cmTC_2a37e.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-KGjp6i/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_2a37e.dir/src.c.obj -o cmTC_2a37e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:36 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8tt2UB"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8tt2UB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wformat__Wformat_zero_length_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8tt2UB'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_15c59
+        [1/2] /usr/bin/gcc -Dcheck_Wformat__Wformat_zero_length_C__fuse_ld_bfd  -fuse-ld=bfd   -Wformat -Wformat-zero-length -o CMakeFiles/cmTC_15c59.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8tt2UB/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_15c59.dir/src.c.obj -o cmTC_15c59   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:43 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-6tfYm8"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-6tfYm8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wdouble_promotion_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-6tfYm8'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_04aef
+        [1/2] /usr/bin/gcc -Dcheck_Wdouble_promotion_C__fuse_ld_bfd  -fuse-ld=bfd   -Wdouble-promotion -o CMakeFiles/cmTC_04aef.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-6tfYm8/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_04aef.dir/src.c.obj -o cmTC_04aef   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:45 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rzoCKx"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rzoCKx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wpointer_sign_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rzoCKx'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f6c95
+        [1/2] /usr/bin/gcc -Dcheck_Wpointer_sign_C__fuse_ld_bfd  -fuse-ld=bfd   -Wpointer-sign -o CMakeFiles/cmTC_f6c95.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rzoCKx/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_f6c95.dir/src.c.obj -o cmTC_f6c95   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:48 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ohL5q1"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ohL5q1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wpointer_arith_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ohL5q1'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_5ad05
+        [1/2] /usr/bin/gcc -Dcheck_Wpointer_arith_C__fuse_ld_bfd  -fuse-ld=bfd   -Wpointer-arith -o CMakeFiles/cmTC_5ad05.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ohL5q1/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_5ad05.dir/src.c.obj -o cmTC_5ad05   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:51 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-RQxjIT"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-RQxjIT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wexpansion_to_defined_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-RQxjIT'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_504a5
+        [1/2] /usr/bin/gcc -Dcheck_Wexpansion_to_defined_C__fuse_ld_bfd  -fuse-ld=bfd   -Wexpansion-to-defined -o CMakeFiles/cmTC_504a5.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-RQxjIT/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_504a5.dir/src.c.obj -o cmTC_504a5   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:61 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-U3f2OG"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-U3f2OG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wlogical_op_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-U3f2OG'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_03430
+        [1/2] /usr/bin/gcc -Dcheck_Wlogical_op_C__fuse_ld_bfd  -fuse-ld=bfd   -Wlogical-op -o CMakeFiles/cmTC_03430.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-U3f2OG/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_03430.dir/src.c.obj -o cmTC_03430   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:61 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-MWeIA9"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-MWeIA9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wmissing_field_initializers_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-MWeIA9'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_acb7c
+        [1/2] /usr/bin/gcc -Dcheck_Wmissing_field_initializers_C__fuse_ld_bfd  -fuse-ld=bfd   -Wmissing-field-initializers -o CMakeFiles/cmTC_acb7c.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-MWeIA9/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_acb7c.dir/src.c.obj -o cmTC_acb7c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:77 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-F19MpN"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-F19MpN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wpacked_bitfield_compat_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-F19MpN'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1007f
+        [1/2] /usr/bin/gcc -Dcheck_Wpacked_bitfield_compat_C__fuse_ld_bfd  -fuse-ld=bfd   -Wpacked-bitfield-compat -o CMakeFiles/cmTC_1007f.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-F19MpN/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_1007f.dir/src.c.obj -o cmTC_1007f   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:77 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-3Adt0b"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-3Adt0b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wvla_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-3Adt0b'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_898aa
+        [1/2] /usr/bin/gcc -Dcheck_Wvla_C__fuse_ld_bfd  -fuse-ld=bfd   -Wvla -o CMakeFiles/cmTC_898aa.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-3Adt0b/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_898aa.dir/src.c.obj -o cmTC_898aa   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:96 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-WXlLVL"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-WXlLVL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Wunused_but_set_variable_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-WXlLVL'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_8604f
+        [1/2] /usr/bin/gcc -Dcheck_Wunused_but_set_variable_C__fuse_ld_bfd  -fuse-ld=bfd   -Wunused-but-set-variable -o CMakeFiles/cmTC_8604f.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-WXlLVL/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_8604f.dir/src.c.obj -o cmTC_8604f   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:98 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rY3lJO"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rY3lJO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_Werror_implicit_int_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rY3lJO'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_61570
+        [1/2] /usr/bin/gcc -Dcheck_Werror_implicit_int_C__fuse_ld_bfd  -fuse-ld=bfd   -Werror=implicit-int -o CMakeFiles/cmTC_61570.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rY3lJO/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_61570.dir/src.c.obj -o cmTC_61570   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:126 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-lrgTbZ"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-lrgTbZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_printf_return_value_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-lrgTbZ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2634c
+        [1/2] /usr/bin/gcc -Dcheck_fno_printf_return_value_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-printf-return-value -o CMakeFiles/cmTC_2634c.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-lrgTbZ/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_2634c.dir/src.c.obj -o cmTC_2634c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:190 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-zF32U3"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-zF32U3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_mstack_protector_guard_global_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-zF32U3'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_fbe5c
+        [1/2] /usr/bin/gcc -Dcheck_mstack_protector_guard_global_C__fuse_ld_bfd  -fuse-ld=bfd   -mstack-protector-guard=global -o CMakeFiles/cmTC_fbe5c.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-zF32U3/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_fbe5c.dir/src.c.obj -o cmTC_fbe5c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:207 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-qg1K5Z"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-qg1K5Z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fsanitize_undefined_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-qg1K5Z'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4e2f0
+        [1/2] /usr/bin/gcc -Dcheck_fsanitize_undefined_C__fuse_ld_bfd  -fuse-ld=bfd   -fsanitize=undefined -o CMakeFiles/cmTC_4e2f0.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-qg1K5Z/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_4e2f0.dir/src.c.obj -o cmTC_4e2f0   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:208 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-Vt2VF9"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-Vt2VF9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fsanitize_undefined_trap_on_error_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-Vt2VF9'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4c5e6
+        [1/2] /usr/bin/gcc -Dcheck_fsanitize_undefined_trap_on_error_C__fuse_ld_bfd  -fuse-ld=bfd   -fsanitize-undefined-trap-on-error -o CMakeFiles/cmTC_4c5e6.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-Vt2VF9/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_4c5e6.dir/src.c.obj -o cmTC_4c5e6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:212 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-0UTNhg"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-0UTNhg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_freestanding_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-0UTNhg'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4814e
+        [1/2] /usr/bin/gcc -Dcheck_fno_freestanding_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-freestanding -o CMakeFiles/cmTC_4814e.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-0UTNhg/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_4814e.dir/src.c.obj -o cmTC_4814e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:215 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-0treyo"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-0treyo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_ffreestanding_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-0treyo'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_6a8df
+        [1/2] /usr/bin/gcc -Dcheck_ffreestanding_C__fuse_ld_bfd  -fuse-ld=bfd   -ffreestanding -o CMakeFiles/cmTC_6a8df.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-0treyo/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_6a8df.dir/src.c.obj -o cmTC_6a8df   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:231 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rMudFs"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rMudFs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_gdwarf_4_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rMudFs'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_af0b7
+        [1/2] /usr/bin/gcc -Dcheck_gdwarf_4_C__fuse_ld_bfd  -fuse-ld=bfd   -gdwarf-4 -o CMakeFiles/cmTC_af0b7.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-rMudFs/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_af0b7.dir/src.c.obj -o cmTC_af0b7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/gcc/compiler_flags.cmake:250 (check_set_compiler_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/compiler/host-gcc/compiler_flags.cmake:3 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:42 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-hTfang"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-hTfang"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fdiagnostics_color_always_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-hTfang'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_63dd9
+        [1/2] /usr/bin/gcc -Dcheck_fdiagnostics_color_always_C__fuse_ld_bfd  -fuse-ld=bfd   -fdiagnostics-color=always -o CMakeFiles/cmTC_63dd9.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-hTfang/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_63dd9.dir/src.c.obj -o cmTC_63dd9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:5 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-JPULSj"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-JPULSj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___gc_sections"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-JPULSj'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_157c0
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___gc_sections  -fuse-ld=bfd -Wl,--gc-sections -o CMakeFiles/cmTC_157c0.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-JPULSj/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--gc-sections  CMakeFiles/cmTC_157c0.dir/src.c.obj -o cmTC_157c0   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:5 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-PV5edA"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-PV5edA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___build_id_none"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-PV5edA'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_85ea2
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___build_id_none  -fuse-ld=bfd -Wl,--build-id=none -o CMakeFiles/cmTC_85ea2.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-PV5edA/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--build-id=none  CMakeFiles/cmTC_85ea2.dir/src.c.obj -o cmTC_85ea2   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-T7TUms"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-T7TUms"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__nostdlib"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-T7TUms'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_aeaa7
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__nostdlib  -fuse-ld=bfd -nostdlib -o CMakeFiles/cmTC_aeaa7.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-T7TUms/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -nostdlib  CMakeFiles/cmTC_aeaa7.dir/src.c.obj -o cmTC_aeaa7   && :
+        /usr/bin/ld.bfd: warning: cannot find entry symbol _start; defaulting to 0000000000001000
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-jF6iwD"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-jF6iwD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__static"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-jF6iwD'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f477e
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__static  -fuse-ld=bfd -static -o CMakeFiles/cmTC_f477e.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-jF6iwD/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -static  CMakeFiles/cmTC_f477e.dir/src.c.obj -o cmTC_f477e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-2dsXRP"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-2dsXRP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl__X"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-2dsXRP'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_365bf
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl__X  -fuse-ld=bfd -Wl,-X -o CMakeFiles/cmTC_365bf.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-2dsXRP/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,-X  CMakeFiles/cmTC_365bf.dir/src.c.obj -o cmTC_365bf   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-hFwArZ"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-hFwArZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl__N"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-hFwArZ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c4bbb
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl__N  -fuse-ld=bfd -Wl,-N -o CMakeFiles/cmTC_c4bbb.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-hFwArZ/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,-N  CMakeFiles/cmTC_c4bbb.dir/src.c.obj -o cmTC_c4bbb   && :
+        FAILED: cmTC_c4bbb 
+        : && /usr/bin/gcc -fuse-ld=bfd -Wl,-N  CMakeFiles/cmTC_c4bbb.dir/src.c.obj -o cmTC_c4bbb   && :
+        /usr/bin/ld.bfd: cannot find -lgcc_s: No such file or directory
+        /usr/bin/ld.bfd: cannot find -lgcc_s: No such file or directory
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:17 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-NH3Urp"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-NH3Urp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___orphan_handling_warn"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-NH3Urp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_09581
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___orphan_handling_warn  -fuse-ld=bfd -Wl,--orphan-handling=warn -o CMakeFiles/cmTC_09581.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-NH3Urp/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--orphan-handling=warn  CMakeFiles/cmTC_09581.dir/src.c.obj -o cmTC_09581   && :
+        /usr/bin/ld.bfd: warning: orphan section `.note.gnu.property' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o' being placed in section `.note.gnu.property'
+        /usr/bin/ld.bfd: warning: orphan section `.note.ABI-tag' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o' being placed in section `.note.ABI-tag'
+        /usr/bin/ld.bfd: warning: orphan section `.rela.fini_array' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o' being placed in section `.rela.dyn'
+        /usr/bin/ld.bfd: warning: orphan section `.rela.init_array' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o' being placed in section `.rela.dyn'
+        /usr/bin/ld.bfd: warning: orphan section `.tm_clone_table' from `/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o' being placed in section `.tm_clone_table'
+        /usr/bin/ld.bfd: warning: orphan section `.tm_clone_table' from `/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o' being placed in section `.tm_clone_table'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:21 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ba26os"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ba26os"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___orphan_handling_error"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ba26os'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_33e51
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___orphan_handling_error  -fuse-ld=bfd -Wl,--orphan-handling=error -o CMakeFiles/cmTC_33e51.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ba26os/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--orphan-handling=error  CMakeFiles/cmTC_33e51.dir/src.c.obj -o cmTC_33e51   && :
+        FAILED: cmTC_33e51 
+        : && /usr/bin/gcc -fuse-ld=bfd -Wl,--orphan-handling=error  CMakeFiles/cmTC_33e51.dir/src.c.obj -o cmTC_33e51   && :
+        /usr/bin/ld.bfd: error: unplaced orphan section `.note.gnu.property' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.note.ABI-tag' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.rela.fini_array' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.rela.init_array' from `/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.tm_clone_table' from `/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o'
+        /usr/bin/ld.bfd: error: unplaced orphan section `.tm_clone_table' from `/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o'
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:27 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ztzXuf"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ztzXuf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___print_memory_usage"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ztzXuf'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_56da6
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___print_memory_usage  -fuse-ld=bfd -Wl,--print-memory-usage -o CMakeFiles/cmTC_56da6.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-ztzXuf/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--print-memory-usage  CMakeFiles/cmTC_56da6.dir/src.c.obj -o cmTC_56da6   && :
+        Memory region         Used Size  Region Size  %age Used
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:29 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-GFiVtg"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-GFiVtg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__fsanitize_undefined"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-GFiVtg'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ccc91
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__fsanitize_undefined  -fuse-ld=bfd -fsanitize=undefined -o CMakeFiles/cmTC_ccc91.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-GFiVtg/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -fsanitize=undefined  CMakeFiles/cmTC_ccc91.dir/src.c.obj -o cmTC_ccc91   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:30 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-oVTJ5x"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-oVTJ5x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__fsanitize_undefined_trap_on_error"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-oVTJ5x'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b9f89
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__fsanitize_undefined_trap_on_error  -fuse-ld=bfd -fsanitize-undefined-trap-on-error -o CMakeFiles/cmTC_b9f89.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-oVTJ5x/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -fsanitize-undefined-trap-on-error  CMakeFiles/cmTC_b9f89.dir/src.c.obj -o cmTC_b9f89   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:47 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-lm5Qh2"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-lm5Qh2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___no_relax"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-lm5Qh2'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_6981a
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___no_relax  -fuse-ld=bfd -Wl,--no-relax -o CMakeFiles/cmTC_6981a.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-lm5Qh2/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--no-relax  CMakeFiles/cmTC_6981a.dir/src.c.obj -o cmTC_6981a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:49 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-z5GLvo"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-z5GLvo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___sort_common_descending"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-z5GLvo'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_6edd1
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___sort_common_descending  -fuse-ld=bfd -Wl,--sort-common=descending -o CMakeFiles/cmTC_6edd1.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-z5GLvo/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--sort-common=descending  CMakeFiles/cmTC_6edd1.dir/src.c.obj -o cmTC_6edd1   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:49 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8uEWh3"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8uEWh3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___sort_section_alignment"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8uEWh3'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4ce2f
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___sort_section_alignment  -fuse-ld=bfd -Wl,--sort-section=alignment -o CMakeFiles/cmTC_4ce2f.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8uEWh3/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--sort-section=alignment  CMakeFiles/cmTC_4ce2f.dir/src.c.obj -o cmTC_4ce2f   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2526 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/gcc/linker_flags.cmake:10 (check_set_linker_property)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/host-gcc/linker_flags.cmake:2 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/linker/ld/linker_flags.cmake:59 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/target_toolchain_flags.cmake:43 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/kernel.cmake:153 (include)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-GZ6Ek0"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-GZ6Ek0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__pg"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-GZ6Ek0'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_331b5
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__pg  -fuse-ld=bfd -pg -o CMakeFiles/cmTC_331b5.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-GZ6Ek0/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -pg  CMakeFiles/cmTC_331b5.dir/src.c.obj -o cmTC_331b5   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2404 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:164 (target_ld_options)"
+      - "/mnt/dados/zephyr/zephyr/CMakeLists.txt:474 (zephyr_ld_options)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-1lwWrK"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-1lwWrK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-1lwWrK'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_39c31
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__fuse_ld_bfd  -fuse-ld=bfd -fuse-ld=bfd -o CMakeFiles/cmTC_39c31.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-1lwWrK/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -fuse-ld=bfd  CMakeFiles/cmTC_39c31.dir/src.c.obj -o cmTC_39c31   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2382 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2358 (target_cc_option_fallback)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:155 (target_cc_option)"
+      - "/mnt/dados/zephyr/zephyr/CMakeLists.txt:603 (zephyr_cc_option)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-PjORF7"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-PjORF7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_asynchronous_unwind_tables_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-PjORF7'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_36c21
+        [1/2] /usr/bin/gcc -Dcheck_fno_asynchronous_unwind_tables_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-asynchronous-unwind-tables -o CMakeFiles/cmTC_36c21.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-PjORF7/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_36c21.dir/src.c.obj -o cmTC_36c21   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2382 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2358 (target_cc_option_fallback)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:155 (target_cc_option)"
+      - "/mnt/dados/zephyr/zephyr/CMakeLists.txt:631 (zephyr_cc_option)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-zJVvXr"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-zJVvXr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_reorder_functions_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-zJVvXr'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_8004c
+        [1/2] /usr/bin/gcc -Dcheck_fno_reorder_functions_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-reorder-functions -o CMakeFiles/cmTC_8004c.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-zJVvXr/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_8004c.dir/src.c.obj -o cmTC_8004c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2382 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2358 (target_cc_option_fallback)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:155 (target_cc_option)"
+      - "/mnt/dados/zephyr/zephyr/CMakeLists.txt:638 (zephyr_cc_option)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-pfKcZF"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-pfKcZF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check__param_min_pagesize_0_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-pfKcZF'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_91f4a
+        [1/2] /usr/bin/gcc -Dcheck__param_min_pagesize_0_C__fuse_ld_bfd  -fuse-ld=bfd   --param=min-pagesize=0 -o CMakeFiles/cmTC_91f4a.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-pfKcZF/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_91f4a.dir/src.c.obj -o cmTC_91f4a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2382 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2358 (target_cc_option_fallback)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:155 (target_cc_option)"
+      - "/mnt/dados/zephyr/zephyr/CMakeLists.txt:641 (zephyr_cc_option)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-FcSgbK"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-FcSgbK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fno_defer_pop_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-FcSgbK'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0a40a
+        [1/2] /usr/bin/gcc -Dcheck_fno_defer_pop_C__fuse_ld_bfd  -fuse-ld=bfd   -fno-defer-pop -o CMakeFiles/cmTC_0a40a.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-FcSgbK/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_0a40a.dir/src.c.obj -o cmTC_0a40a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2382 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2358 (target_cc_option_fallback)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:155 (target_cc_option)"
+      - "/mnt/dados/zephyr/zephyr/CMakeLists.txt:660 (zephyr_cc_option)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-4wFvn0"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-4wFvn0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map__mnt_dados_zephyr_zephyr_app_ufsm00292_APP_NICOLAS_APP_NICOLAS_CMAKE_SOURCE_DIR_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-4wFvn0'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0f886
+        [1/2] /usr/bin/gcc -Dcheck_fmacro_prefix_map__mnt_dados_zephyr_zephyr_app_ufsm00292_APP_NICOLAS_APP_NICOLAS_CMAKE_SOURCE_DIR_C__fuse_ld_bfd  -fuse-ld=bfd   -fmacro-prefix-map=/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS=CMAKE_SOURCE_DIR -o CMakeFiles/cmTC_0f886.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-4wFvn0/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_0f886.dir/src.c.obj -o cmTC_0f886   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2382 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2358 (target_cc_option_fallback)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:155 (target_cc_option)"
+      - "/mnt/dados/zephyr/zephyr/CMakeLists.txt:661 (zephyr_cc_option)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-a7LMsD"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-a7LMsD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map__mnt_dados_zephyr_zephyr_ZEPHYR_BASE_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-a7LMsD'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_48096
+        [1/2] /usr/bin/gcc -Dcheck_fmacro_prefix_map__mnt_dados_zephyr_zephyr_ZEPHYR_BASE_C__fuse_ld_bfd  -fuse-ld=bfd   -fmacro-prefix-map=/mnt/dados/zephyr/zephyr=ZEPHYR_BASE -o CMakeFiles/cmTC_48096.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-a7LMsD/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_48096.dir/src.c.obj -o cmTC_48096   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2382 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2358 (target_cc_option_fallback)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:155 (target_cc_option)"
+      - "/mnt/dados/zephyr/zephyr/CMakeLists.txt:663 (zephyr_cc_option)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-6iU243"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-6iU243"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fmacro_prefix_map__mnt_dados_zephyr_WEST_TOPDIR_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-6iU243'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f4c7e
+        [1/2] /usr/bin/gcc -Dcheck_fmacro_prefix_map__mnt_dados_zephyr_WEST_TOPDIR_C__fuse_ld_bfd  -fuse-ld=bfd   -fmacro-prefix-map=/mnt/dados/zephyr=WEST_TOPDIR -o CMakeFiles/cmTC_f4c7e.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-6iU243/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_f4c7e.dir/src.c.obj -o cmTC_f4c7e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2382 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2358 (target_cc_option_fallback)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:155 (target_cc_option)"
+      - "/mnt/dados/zephyr/zephyr/arch/common/CMakeLists.txt:43 (zephyr_cc_option)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-byiMZV"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-byiMZV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_ffunction_sections_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-byiMZV'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_5af20
+        [1/2] /usr/bin/gcc -Dcheck_ffunction_sections_C__fuse_ld_bfd  -fuse-ld=bfd   -ffunction-sections -o CMakeFiles/cmTC_5af20.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-byiMZV/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_5af20.dir/src.c.obj -o cmTC_5af20   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2382 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2358 (target_cc_option_fallback)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:155 (target_cc_option)"
+      - "/mnt/dados/zephyr/zephyr/arch/common/CMakeLists.txt:43 (zephyr_cc_option)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-bLGlEZ"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-bLGlEZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_fdata_sections_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-bLGlEZ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_c304b
+        [1/2] /usr/bin/gcc -Dcheck_fdata_sections_C__fuse_ld_bfd  -fuse-ld=bfd   -fdata-sections -o CMakeFiles/cmTC_c304b.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-bLGlEZ/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_c304b.dir/src.c.obj -o cmTC_c304b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2604 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/arch/posix/CMakeLists.txt:64 (check_set_compiler_property)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8UhuIU"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8UhuIU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_msse2__mfpmath_sse_C__fuse_ld_bfd"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8UhuIU'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1bad5
+        [1/2] /usr/bin/gcc -Dcheck_msse2__mfpmath_sse_C__fuse_ld_bfd  -fuse-ld=bfd   -msse2 -mfpmath=sse -o CMakeFiles/cmTC_1bad5.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-8UhuIU/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd  CMakeFiles/cmTC_1bad5.dir/src.c.obj -o cmTC_1bad5   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2343 (check_c_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:1198 (check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:2404 (zephyr_check_compiler_flag)"
+      - "/mnt/dados/zephyr/zephyr/cmake/modules/extensions.cmake:164 (target_ld_options)"
+      - "/mnt/dados/zephyr/zephyr/arch/posix/CMakeLists.txt:80 (zephyr_ld_options)"
+    directories:
+      source: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-YknD9m"
+      binary: "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-YknD9m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/dados/zephyr/zephyr/cmake/modules"
+    buildResult:
+      variable: "check_C__fuse_ld_bfd__Wl___unresolved_symbols_ignore_all"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-YknD9m'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_29b26
+        [1/2] /usr/bin/gcc -Dcheck_C__fuse_ld_bfd__Wl___unresolved_symbols_ignore_all  -fuse-ld=bfd -Wl,--unresolved-symbols=ignore-all -o CMakeFiles/cmTC_29b26.dir/src.c.obj -c /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/CMakeFiles/CMakeScratch/TryCompile-YknD9m/src.c
+        [2/2] : && /usr/bin/gcc -fuse-ld=bfd -Wl,--unresolved-symbols=ignore-all  CMakeFiles/cmTC_29b26.dir/src.c.obj -o cmTC_29b26   && :
+        
+      exitCode: 0
+...

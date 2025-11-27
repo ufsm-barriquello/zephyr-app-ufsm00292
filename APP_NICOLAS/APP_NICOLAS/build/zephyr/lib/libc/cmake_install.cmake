@@ -34,6 +34,16 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/zephyr/lib/libc/picolibc/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/zephyr/lib/libc/common/cmake_install.cmake")
 endif()
 

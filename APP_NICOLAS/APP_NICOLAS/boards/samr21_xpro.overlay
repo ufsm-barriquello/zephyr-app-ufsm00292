@@ -1,0 +1,24 @@
+/ {
+    chosen {
+        zephyr,bt-hci = &bt_hci_uart;
+    };
+};
+
+/* SERCOM3 é o UART no header EXT1 da SAMR21 Xplained Pro */
+&sercom3 {
+    compatible = "atmel,sam0-uart";
+    status = "okay";
+
+    /* PB00 = PAD0 = TX (txpo = 0)
+     * PB01 = PAD1 = RX (rxpo = 1)
+     */
+    txpo = <0>;
+    rxpo = <1>;
+    current-speed = <115200>;
+
+    bt_hci_uart: bt_hci_uart {
+        compatible = "zephyr,bt-hci-uart";
+        status = "okay";
+    };
+};
+

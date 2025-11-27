@@ -1,63 +1,24 @@
-/* samd21_xpro.overlay
- *
- * Integração SAMD21 Xplained Pro + BTLC1000 Xplained Pro via HCI UART (SERCOM4).
- * OBS: dependendo da versão do Zephyr, os valores de pinmux podem precisar de ajuste.
- */
-
-&pinctrl {
-    /* Pinos do SERCOM4 em modo UART 4-wire para o BTLC1000 */
-    btlc1000_uart_default: btlc1000_uart_default {
-        group1 {
-            /*
-             * PB8  -> SERCOM4 PAD0 (TX da SAMD21 -> RX do BTLC1000)
-             * PB9  -> SERCOM4 PAD1 (RX da SAMD21 <- TX do BTLC1000)
-             * PB10 -> SERCOM4 PAD2 (RTS da SAMD21 -> CTS do BTLC1000)
-             * PB11 -> SERCOM4 PAD3 (CTS da SAMD21 <- RTS do BTLC1000)
-             *
-             * Os símbolos abaixo (PB8D_SERCOM4_PAD0, etc.) podem precisar ser
-             * substituídos por valores numéricos de pinmux específicos da sua
-             * versão do Zephyr/SAMD21, conforme a documentação de atmel,sam0-pinctrl.
-             */
-            pinmux = <PB8D_SERCOM4_PAD0>,
-                     <PB9D_SERCOM4_PAD1>,
-                     <PB10D_SERCOM4_PAD2>,
-                     <PB11D_SERCOM4_PAD3>;
-        };
-    };
-};
-
-/* Configura SERCOM4 como UART com fluxo de hardware para HCI */
-&sercom4 {
-    status = "okay";
-    compatible = "atmel,sam0-uart";
-
-    /* UART HCI normalmente em 1 Mbps */
-    current-speed = <1000000>;
-
-    /*
-     * Mapeamento interno dos pads:
-     * rxpo = 1 -> RX em PAD1 (PB9)
-     * txpo = 2 -> TX em PAD0, RTS/CTS em PAD2/3 (modo 4-wire)
-     */
-    rxpo = <1>;
-    txpo = <2>;
-
-    #address-cells = <1>;
-    #size-cells = <0>;
-
-    pinctrl-0 = <&btlc1000_uart_default>;
-    pinctrl-names = "default";
-
-    /* Nó do controlador HCI UART para o Zephyr */
-    bt_hci_uart: bt_hci_uart {
-        compatible = "zephyr,bt-hci-uart";
-        status = "okay";
-    };
-};
-
-/* Diz ao Zephyr que o controlador Bluetooth (HCI) está em bt_hci_uart */
- / {
+/ {
     chosen {
-        zephyr,bt-hci = &bt_hci_uart;
+        zephyr,bt-hci = &btlc1000;
     };
 };
+
+&sercom1 {
+    status = "okay";
+    compatible = "zephyr,bt-hci-uart";
+    current-speed = <115200>;
+    hw-flow-control;
+
+    rx-pin = <3>;   // EXT1 PIN 17
+    tx-pin = <2>;   // EXT1 PIN 15
+    rts-pin = <7>;  // EXT1 PIN 13
+    cts-pin = <6>;  // EXT1 PIN 11
+};
+
+btlc1000: btlc1000 {
+    compatible = "atmel,btlc1000";
+    hci-uart = <&sercom1>;
+    enable-gpios = <&porta 14 GPIO_ACTIVE_HIGH>; // EXT1 pin 4
+};
+

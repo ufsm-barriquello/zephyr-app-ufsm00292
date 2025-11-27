@@ -1,0 +1,4 @@
+"cmsis_6":"/mnt/dados/zephyr/modules/hal/cmsis_6":"${ZEPHYR_CMSIS_6_CMAKE_DIR}"
+"atmel":"/mnt/dados/zephyr/modules/hal/atmel":"/mnt/dados/zephyr/modules/hal/atmel"
+"hal_nordic":"/mnt/dados/zephyr/modules/hal/nordic":"${ZEPHYR_HAL_NORDIC_CMAKE_DIR}"
+"hal_stm32":"/mnt/dados/zephyr/modules/hal/stm32":"/mnt/dados/zephyr/modules/hal/stm32"

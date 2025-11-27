@@ -1,5 +1,5 @@
 west:
-  command: /mnt/dados/zephyr/zephyr-app-ufsm00292/.venv-310/bin/west build -b native_posix
-    .
+  command: /mnt/dados/zephyr/zephyr-app-ufsm00292/.venv-310/bin/west build -b samr21_xpro
+    -p always .
   topdir: /mnt/dados/zephyr
   version: 1.5.0

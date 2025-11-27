@@ -1,0 +1,55 @@
+-- west build: making build dir /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build pristine
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base).
+-- Application: /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS
+-- CMake version: 3.28.3
+-- Found Python3: /mnt/dados/zephyr/zephyr-app-ufsm00292/.venv-310/bin/python3.10 (found suitable version "3.10.19", minimum required is "3.10") found components: Interpreter 
+-- Cache files will be written to: /home/nicolas/.cache/zephyr
+-- Zephyr version: 4.3.99 (/mnt/dados/zephyr/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: samd21_xpro, qualifiers: samd21j18a
+-- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+-- Found host-tools: zephyr 0.16.0 (/opt/zephyr-sdk)
+-- Found toolchain: zephyr 0.16.0 (/opt/zephyr-sdk)
+-- Found Dtc: /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.6.0", minimum required is "1.4.6") 
+-- Found BOARD.dts: /mnt/dados/zephyr/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro.dts
+-- Found devicetree overlay: /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/boards/samd21_xpro.overlay
+-- Generated zephyr.dts: /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/zephyr/zephyr.dts
+-- Generated pickled edt: /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/zephyr/include/generated/zephyr/devicetree_generated.h
+/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/zephyr/zephyr.dts:209.28-233.5: Warning (avoid_unnecessary_addr_size): /soc/sercom@42001800: unnecessary #address-cells/#size-cells without "ranges" or child "reg" property
+
+warning: PSA_CRYPTO (defined at modules/mbedtls/Kconfig.psa.logic:4) was assigned the value 'n' but
+got the value 'y'. See http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_PSA_CRYPTO and/or
+look up PSA_CRYPTO in the menuconfig/guiconfig interface. The Application Development Primer,
+Setting Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be
+helpful too.
+
+
+/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/prj.conf:11: warning: attempt to assign the value 'y' to the undefined symbol BT_NUS
+
+warning: PSA_CRYPTO (defined at modules/mbedtls/Kconfig.psa.logic:4) has direct dependencies 0 with value n, but is currently being y-selected by the following symbols:
+ - BT_HOST_CRYPTO (defined at subsys/bluetooth/host/Kconfig:201), with value y, direct dependencies BT_HCI_HOST && BT_HCI && BT (value: y), and select condition BT_HCI_HOST && BT_HCI && BT (value: y)
+
+warning: PSA_WANT_ALG_ECB_NO_PADDING (defined at modules/mbedtls/Kconfig.psa.auto:55) has direct dependencies PSA_CRYPTO_CLIENT && 0 with value n, but is currently being y-selected by the following symbols:
+ - BT_HOST_CRYPTO (defined at subsys/bluetooth/host/Kconfig:201), with value y, direct dependencies BT_HCI_HOST && BT_HCI && BT (value: y), and select condition BT_HCI_HOST && BT_HCI && BT (value: y)
+
+warning: PSA_WANT_KEY_TYPE_AES (defined at modules/mbedtls/Kconfig.psa.auto:267) has direct dependencies PSA_CRYPTO_CLIENT && 0 with value n, but is currently being y-selected by the following symbols:
+ - BT_HOST_CRYPTO (defined at subsys/bluetooth/host/Kconfig:201), with value y, direct dependencies BT_HCI_HOST && BT_HCI && BT (value: y), and select condition BT_HCI_HOST && BT_HCI && BT (value: y)
+Parsing /mnt/dados/zephyr/zephyr/Kconfig
+Loaded configuration '/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samd21_xpro/samd21_xpro_defconfig'
+Merged configuration '/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/prj.conf'
+
+error: Aborting due to Kconfig warnings
+
+CMake Error at /mnt/dados/zephyr/zephyr/cmake/modules/kconfig.cmake:393 (message):
+  command failed with return code: 1
+Call Stack (most recent call first):
+  /mnt/dados/zephyr/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+  /mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+  /mnt/dados/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+  CMakeLists.txt:3 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+FATAL ERROR: command exited with status 1: /usr/bin/cmake -DWEST_PYTHON=/mnt/dados/zephyr/zephyr-app-ufsm00292/.venv-310/bin/python3.10 -B/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build -GNinja -DBOARD=samd21_xpro -S/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS

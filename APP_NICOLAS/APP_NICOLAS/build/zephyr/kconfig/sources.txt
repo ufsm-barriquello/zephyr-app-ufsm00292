@@ -3,7 +3,7 @@
 /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/Kconfig/arch/Kconfig
 /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/Kconfig/boards/Kconfig
 /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/Kconfig/boards/Kconfig.defconfig
-/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/Kconfig/boards/Kconfig.native_sim
+/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/Kconfig/boards/Kconfig.samr21_xpro
 /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/Kconfig/soc/Kconfig
 /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/Kconfig/soc/Kconfig.defconfig
 /mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/build/Kconfig/soc/Kconfig.soc
@@ -45,11 +45,7 @@
 /mnt/dados/zephyr/zephyr/arch/xtensa/Kconfig
 /mnt/dados/zephyr/zephyr/boards/Kconfig
 /mnt/dados/zephyr/zephyr/boards/Kconfig.v2
-/mnt/dados/zephyr/zephyr/boards/native/common/extra_args/Kconfig
-/mnt/dados/zephyr/zephyr/boards/native/common/sdl/Kconfig
-/mnt/dados/zephyr/zephyr/boards/native/native_sim/Kconfig
-/mnt/dados/zephyr/zephyr/boards/native/native_sim/Kconfig.defconfig
-/mnt/dados/zephyr/zephyr/boards/native/native_sim/Kconfig.native_sim
+/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/Kconfig.samr21_xpro
 /mnt/dados/zephyr/zephyr/boards/shields/abrobot_esp32c3_oled/Kconfig.shield
 /mnt/dados/zephyr/zephyr/boards/shields/adafruit_24lc32/Kconfig.shield
 /mnt/dados/zephyr/zephyr/boards/shields/adafruit_2_8_tft_touch_v2/Kconfig.defconfig
@@ -276,7 +272,6 @@
 /mnt/dados/zephyr/zephyr/boards/shields/x_nucleo_wb05kn1/Kconfig.defconfig
 /mnt/dados/zephyr/zephyr/boards/shields/x_nucleo_wb05kn1/Kconfig.shield
 /mnt/dados/zephyr/zephyr/boards/shields/zc143ac72mipi/Kconfig.shield
-/mnt/dados/zephyr/zephyr/cmake/toolchain/host/Kconfig
 /mnt/dados/zephyr/zephyr/drivers/Kconfig
 /mnt/dados/zephyr/zephyr/drivers/adc/Kconfig
 /mnt/dados/zephyr/zephyr/drivers/adc/Kconfig.ad405x
@@ -4216,3 +4211,4 @@
 /mnt/dados/zephyr/zephyr/subsys/usb/host/Kconfig.usbip
 /mnt/dados/zephyr/zephyr/subsys/usb/usb_c/Kconfig
 /mnt/dados/zephyr/zephyr/subsys/zbus/Kconfig
+/opt/zephyr-sdk/cmake/zephyr/Kconfig

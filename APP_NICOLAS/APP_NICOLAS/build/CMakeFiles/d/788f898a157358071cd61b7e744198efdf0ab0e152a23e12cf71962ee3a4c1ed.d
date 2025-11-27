@@ -3,6 +3,7 @@ zephyr/linker_zephyr_pre0.cmd: \
   zephyr/include/generated/snippets-data-sections.ld \
   zephyr/include/generated/snippets-noinit.ld \
   zephyr/include/generated/snippets-ram-sections.ld \
+  zephyr/include/generated/snippets-ramfunc-section.ld \
   zephyr/include/generated/snippets-rodata.ld \
   zephyr/include/generated/snippets-rom-sections.ld \
   zephyr/include/generated/snippets-rom-start.ld \
@@ -11,9 +12,14 @@ zephyr/linker_zephyr_pre0.cmd: \
   zephyr/include/generated/zephyr/autoconf.h \
   zephyr/include/generated/zephyr/devicetree_generated.h \
   zephyr/include/generated/zephyr/offsets.h \
-  /mnt/dados/zephyr/zephyr/include/zephyr/arch/posix/linker.ld \
-  /mnt/dados/zephyr/zephyr/include/zephyr/arch/posix/native_sim_interface.ld \
-  /mnt/dados/zephyr/zephyr/include/zephyr/arch/posix/native_tasks.ld \
+  /mnt/dados/zephyr/zephyr/arch/arm/core/cortex_m/vector_table_pad.ld \
+  /mnt/dados/zephyr/zephyr/arch/arm/core/swi_tables.ld \
+  /mnt/dados/zephyr/zephyr/arch/arm/core/vector_table.ld \
+  /mnt/dados/zephyr/zephyr/arch/common/fill_with_zeros.ld \
+  /mnt/dados/zephyr/zephyr/arch/common/ramfunc.ld \
+  /mnt/dados/zephyr/zephyr/arch/common/rom_start_address.ld \
+  /mnt/dados/zephyr/zephyr/arch/common/rom_start_offset.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/arch/arm/cortex_m/scripts/linker.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/devicetree.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/devicetree/can.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/devicetree/clocks.h \
@@ -33,6 +39,7 @@ zephyr/linker_zephyr_pre0.cmd: \
   /mnt/dados/zephyr/zephyr/include/zephyr/irq_multilevel.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/kernel/internal/mm.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/kernel/mm.h \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/common-noinit.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/common-ram.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/common-rom.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/common-rom/common-rom-bt.ld \
@@ -44,14 +51,28 @@ zephyr/linker_zephyr_pre0.cmd: \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/common-rom/common-rom-misc.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/common-rom/common-rom-net.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/common-rom/common-rom-ztest.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/cplusplus-ram.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/cplusplus-rom.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/debug-sections.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/device-deps.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/devicetree_regions.h \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/intlist.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/irq-vector-table-section.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/iterable_sections.h \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/kobject-data.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/kobject-priv-stacks.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/kobject-rom.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/kobject-text.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/linker-defs.h \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/linker-devnull.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/linker-tool-gcc.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/linker-tool.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/llext-sections.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/ram-end.ld \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/rel-sections.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/section_tags.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/linker/sections.h \
+  /mnt/dados/zephyr/zephyr/include/zephyr/linker/thread-local-storage.ld \
   /mnt/dados/zephyr/zephyr/include/zephyr/sys/util.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/sys/util_internal.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/sys/util_internal_is_eq.h \
@@ -64,5 +85,4 @@ zephyr/linker_zephyr_pre0.cmd: \
   /mnt/dados/zephyr/zephyr/include/zephyr/toolchain.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/toolchain/common.h \
   /mnt/dados/zephyr/zephyr/include/zephyr/toolchain/gcc.h \
-  /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
+  /opt/zephyr-sdk/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/12.2.0/include/stdbool.h

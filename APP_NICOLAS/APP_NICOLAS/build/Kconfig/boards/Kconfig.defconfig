@@ -1,2 +1,2 @@
 # Load Zephyr board defconfig descriptions.
-osource "/mnt/dados/zephyr/zephyr/boards/native/native_sim/Kconfig.defconfig"
+osource "/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/Kconfig.defconfig"

@@ -1,2 +1,2 @@
 # Load Sysbuild board Kconfig descriptions.
-osource "/mnt/dados/zephyr/zephyr/boards/native/native_sim/Kconfig.sysbuild"
+osource "/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/Kconfig.sysbuild"

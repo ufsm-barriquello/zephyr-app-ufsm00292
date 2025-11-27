@@ -1,6 +1,38 @@
 [
     [
         [
+            "int zephyr_read_stdin",
+            "char *buf, int nbytes"
+        ],
+        "libc-hooks.h",
+        true
+    ],
+    [
+        [
+            "int zephyr_write_stdout",
+            "const void *buf, int nbytes"
+        ],
+        "libc-hooks.h",
+        true
+    ],
+    [
+        [
+            "int zephyr_fputc",
+            "int c, FILE * stream"
+        ],
+        "libc-hooks.h",
+        true
+    ],
+    [
+        [
+            "size_t zephyr_fwrite",
+            "const void *ZRESTRICT ptr, size_t size,\n\t\t\t\tsize_t nitems, FILE *ZRESTRICT stream"
+        ],
+        "libc-hooks.h",
+        true
+    ],
+    [
+        [
             "void sys_clock_getrtoffset",
             "struct timespec *tp"
         ],
@@ -189,6 +221,198 @@
             "const struct device *dev"
         ],
         "gpio.h",
+        true
+    ],
+    [
+        [
+            "int uart_err_check",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_poll_in",
+            "const struct device *dev, unsigned char *p_char"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_poll_in_u16",
+            "const struct device *dev, uint16_t *p_u16"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "void uart_poll_out",
+            "const struct device *dev,\n\t\t\t     unsigned char out_char"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "void uart_poll_out_u16",
+            "const struct device *dev, uint16_t out_u16"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_configure",
+            "const struct device *dev,\n\t\t\t     const struct uart_config *cfg"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_config_get",
+            "const struct device *dev,\n\t\t\t      struct uart_config *cfg"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "void uart_irq_tx_enable",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "void uart_irq_tx_disable",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "void uart_irq_rx_enable",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "void uart_irq_rx_disable",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "void uart_irq_err_enable",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "void uart_irq_err_disable",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_irq_is_pending",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_irq_update",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_tx",
+            "const struct device *dev, const uint8_t *buf,\n\t\t      size_t len,\n\t\t      int32_t timeout"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_tx_u16",
+            "const struct device *dev, const uint16_t *buf,\n\t\t\t  size_t len, int32_t timeout"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_tx_abort",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_rx_enable",
+            "const struct device *dev, uint8_t *buf,\n\t\t\t     size_t len,\n\t\t\t     int32_t timeout"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_rx_enable_u16",
+            "const struct device *dev, uint16_t *buf,\n\t\t\t\t size_t len, int32_t timeout"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_rx_disable",
+            "const struct device *dev"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_line_ctrl_set",
+            "const struct device *dev,\n\t\t\t\t uint32_t ctrl, uint32_t val"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_line_ctrl_get",
+            "const struct device *dev, uint32_t ctrl,\n\t\t\t\t uint32_t *val"
+        ],
+        "uart.h",
+        true
+    ],
+    [
+        [
+            "int uart_drv_cmd",
+            "const struct device *dev, uint32_t cmd, uint32_t p"
+        ],
+        "uart.h",
         true
     ],
     [
@@ -1033,10 +1257,82 @@
     ],
     [
         [
-            "int *z_errno",
-            "void"
+            "bool atomic_cas",
+            "atomic_t *target, atomic_val_t old_value,\n\t\t\t atomic_val_t new_value"
         ],
-        "errno_private.h",
+        "atomic_c.h",
+        true
+    ],
+    [
+        [
+            "bool atomic_ptr_cas",
+            "atomic_ptr_t *target, atomic_ptr_val_t old_value,\n\t\t\t      atomic_ptr_val_t new_value"
+        ],
+        "atomic_c.h",
+        true
+    ],
+    [
+        [
+            "atomic_val_t atomic_add",
+            "atomic_t *target, atomic_val_t value"
+        ],
+        "atomic_c.h",
+        true
+    ],
+    [
+        [
+            "atomic_val_t atomic_sub",
+            "atomic_t *target, atomic_val_t value"
+        ],
+        "atomic_c.h",
+        true
+    ],
+    [
+        [
+            "atomic_val_t atomic_set",
+            "atomic_t *target, atomic_val_t value"
+        ],
+        "atomic_c.h",
+        true
+    ],
+    [
+        [
+            "atomic_ptr_val_t atomic_ptr_set",
+            "atomic_ptr_t *target, atomic_ptr_val_t value"
+        ],
+        "atomic_c.h",
+        true
+    ],
+    [
+        [
+            "atomic_val_t atomic_or",
+            "atomic_t *target, atomic_val_t value"
+        ],
+        "atomic_c.h",
+        true
+    ],
+    [
+        [
+            "atomic_val_t atomic_xor",
+            "atomic_t *target, atomic_val_t value"
+        ],
+        "atomic_c.h",
+        true
+    ],
+    [
+        [
+            "atomic_val_t atomic_and",
+            "atomic_t *target, atomic_val_t value"
+        ],
+        "atomic_c.h",
+        true
+    ],
+    [
+        [
+            "atomic_val_t atomic_nand",
+            "atomic_t *target, atomic_val_t value"
+        ],
+        "atomic_c.h",
         true
     ],
     [
@@ -3385,198 +3681,6 @@
     ],
     [
         [
-            "int uart_err_check",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_poll_in",
-            "const struct device *dev, unsigned char *p_char"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_poll_in_u16",
-            "const struct device *dev, uint16_t *p_u16"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "void uart_poll_out",
-            "const struct device *dev,\n\t\t\t     unsigned char out_char"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "void uart_poll_out_u16",
-            "const struct device *dev, uint16_t out_u16"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_configure",
-            "const struct device *dev,\n\t\t\t     const struct uart_config *cfg"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_config_get",
-            "const struct device *dev,\n\t\t\t      struct uart_config *cfg"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "void uart_irq_tx_enable",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "void uart_irq_tx_disable",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "void uart_irq_rx_enable",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "void uart_irq_rx_disable",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "void uart_irq_err_enable",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "void uart_irq_err_disable",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_irq_is_pending",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_irq_update",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_tx",
-            "const struct device *dev, const uint8_t *buf,\n\t\t      size_t len,\n\t\t      int32_t timeout"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_tx_u16",
-            "const struct device *dev, const uint16_t *buf,\n\t\t\t  size_t len, int32_t timeout"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_tx_abort",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_rx_enable",
-            "const struct device *dev, uint8_t *buf,\n\t\t\t     size_t len,\n\t\t\t     int32_t timeout"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_rx_enable_u16",
-            "const struct device *dev, uint16_t *buf,\n\t\t\t\t size_t len, int32_t timeout"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_rx_disable",
-            "const struct device *dev"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_line_ctrl_set",
-            "const struct device *dev,\n\t\t\t\t uint32_t ctrl, uint32_t val"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_line_ctrl_get",
-            "const struct device *dev, uint32_t ctrl,\n\t\t\t\t uint32_t *val"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
-            "int uart_drv_cmd",
-            "const struct device *dev, uint32_t cmd, uint32_t p"
-        ],
-        "uart.h",
-        false
-    ],
-    [
-        [
             "int w1_change_bus_lock",
             "const struct device *dev, bool lock"
         ],
@@ -4553,82 +4657,10 @@
     ],
     [
         [
-            "bool atomic_cas",
-            "atomic_t *target, atomic_val_t old_value,\n\t\t\t atomic_val_t new_value"
+            "int *z_errno",
+            "void"
         ],
-        "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "bool atomic_ptr_cas",
-            "atomic_ptr_t *target, atomic_ptr_val_t old_value,\n\t\t\t      atomic_ptr_val_t new_value"
-        ],
-        "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "atomic_val_t atomic_add",
-            "atomic_t *target, atomic_val_t value"
-        ],
-        "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "atomic_val_t atomic_sub",
-            "atomic_t *target, atomic_val_t value"
-        ],
-        "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "atomic_val_t atomic_set",
-            "atomic_t *target, atomic_val_t value"
-        ],
-        "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "atomic_ptr_val_t atomic_ptr_set",
-            "atomic_ptr_t *target, atomic_ptr_val_t value"
-        ],
-        "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "atomic_val_t atomic_or",
-            "atomic_t *target, atomic_val_t value"
-        ],
-        "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "atomic_val_t atomic_xor",
-            "atomic_t *target, atomic_val_t value"
-        ],
-        "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "atomic_val_t atomic_and",
-            "atomic_t *target, atomic_val_t value"
-        ],
-        "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "atomic_val_t atomic_nand",
-            "atomic_t *target, atomic_val_t value"
-        ],
-        "atomic_c.h",
+        "errno_private.h",
         false
     ],
     [
@@ -4645,38 +4677,6 @@
             "int nfds, struct zvfs_fd_set *ZRESTRICT readfds,\n\t\t\t  struct zvfs_fd_set *ZRESTRICT writefds,\n\t\t\t  struct zvfs_fd_set *ZRESTRICT errorfds,\n\t\t\t  const struct timespec *ZRESTRICT timeout, const void *ZRESTRICT sigmask"
         ],
         "fdtable.h",
-        false
-    ],
-    [
-        [
-            "int zephyr_read_stdin",
-            "char *buf, int nbytes"
-        ],
-        "libc-hooks.h",
-        false
-    ],
-    [
-        [
-            "int zephyr_write_stdout",
-            "const void *buf, int nbytes"
-        ],
-        "libc-hooks.h",
-        false
-    ],
-    [
-        [
-            "int zephyr_fputc",
-            "int c, FILE * stream"
-        ],
-        "libc-hooks.h",
-        false
-    ],
-    [
-        [
-            "size_t zephyr_fwrite",
-            "const void *ZRESTRICT ptr, size_t size,\n\t\t\t\tsize_t nitems, FILE *ZRESTRICT stream"
-        ],
-        "libc-hooks.h",
         false
     ]
 ]

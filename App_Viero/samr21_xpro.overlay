@@ -1,0 +1,44 @@
+/*
+ * Device Tree Overlay para SAMR21 Xplained Pro (Zephyr 3.7)
+ * I2C habilitado no EXT1 para BNO055
+ * 
+ * Pinout EXT1:
+ * Pin 11 (SDA): PA22 - SERCOM3 PAD[0]
+ * Pin 12 (SCL): PA23 - SERCOM3 PAD[1]
+ */
+
+&sercom3 {
+    status = "okay";
+    compatible = "atmel,sam0-i2c";
+    clock-frequency = <I2C_BITRATE_FAST>; /* 400kHz */
+    #address-cells = <1>;
+    #size-cells = <0>;
+    
+    pinctrl-0 = <&sercom3_i2c_default>;
+    pinctrl-names = "default";
+};
+
+&pinctrl {
+    sercom3_i2c_default: sercom3_i2c_default {
+        group1 {
+            pinmux = <PA22C_SERCOM3_PAD0>,  /* SDA */
+                     <PA23C_SERCOM3_PAD1>;  /* SCL */
+        };
+    };
+};
+
+/* USB para console */
+&usb0 {
+    status = "okay";
+    
+    cdc_acm_uart0: cdc_acm_uart0 {
+        compatible = "zephyr,cdc-acm-uart";
+        label = "CDC_ACM_0";
+    };
+};
+
+/ {
+    chosen {
+        zephyr,console = &cdc_acm_uart0;
+    };
+};

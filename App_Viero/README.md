@@ -1,4 +1,4 @@
-O trabalho foi realizado na pasta samr21_thread_sensor em coletivo com alguns colegas da disciplina.
+O trabalho foi realizado utilizando os dados da pasta samr21_thread_sensor em coletivo com alguns colegas da disciplina.
 
 Relatório de Impedimento Técnico: Limitação de Hardware na Integração Zephyr + OpenThread
 1. Contexto e Status do Projeto O objetivo central deste trabalho era desenvolver uma aplicação de IoT utilizando o sistema operacional de tempo real Zephyr RTOS integrado à pilha de rede OpenThread, operando na plataforma de hardware Microchip SAM R21 Xplained Pro.

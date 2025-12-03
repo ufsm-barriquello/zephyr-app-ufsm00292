@@ -1,7 +1,8 @@
 # 0 "/mnt/dados/zephyr/zephyr/misc/empty_file.c"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "/mnt/dados/zephyr/zephyr/boards/native/native_sim/native_sim.dts" 1
+# 1 "/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro.dts" 1
+
 
 
 
@@ -9,11 +10,33 @@
 
 
 /dts-v1/;
-# 1 "/mnt/dados/zephyr/zephyr/dts/posix/posix.dtsi" 1 3 4
+# 1 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samr21.dtsi" 1 3 4
 
 
 
 
+
+
+
+# 1 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samd21.dtsi" 1 3 4
+
+
+
+
+
+
+
+# 1 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samd2x.dtsi" 1 3 4
+
+
+
+
+
+
+
+# 1 "/mnt/dados/zephyr/zephyr/dts/common/mem.h" 1 3 4
+# 9 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samd2x.dtsi" 2 3 4
+# 1 "/mnt/dados/zephyr/zephyr/dts/arm/armv6-m.dtsi" 1 3 4
 
 
 # 1 "/mnt/dados/zephyr/zephyr/dts/common/skeleton.dtsi" 1 3 4
@@ -26,10 +49,31 @@
 
  aliases {};
 };
-# 8 "/mnt/dados/zephyr/zephyr/dts/posix/posix.dtsi" 2 3 4
-# 1 "/mnt/dados/zephyr/zephyr/dts/common/mem.h" 1 3 4
-# 9 "/mnt/dados/zephyr/zephyr/dts/posix/posix.dtsi" 2 3 4
-# 9 "/mnt/dados/zephyr/zephyr/boards/native/native_sim/native_sim.dts" 2
+# 4 "/mnt/dados/zephyr/zephyr/dts/arm/armv6-m.dtsi" 2 3 4
+
+/ {
+ soc {
+  #address-cells = <1>;
+  #size-cells = <1>;
+  compatible = "simple-bus";
+  interrupt-parent = <&nvic>;
+  ranges;
+
+  nvic: interrupt-controller@e000e100 {
+   #address-cells = <1>;
+   compatible = "arm,v6m-nvic";
+   reg = <0xe000e100 0xc00>;
+   interrupt-controller;
+   #interrupt-cells = <2>;
+  };
+
+  systick: timer@e000e010 {
+   compatible = "arm,armv6m-systick";
+   reg = <0xe000e010 0x10>;
+  };
+ };
+};
+# 10 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samd2x.dtsi" 2 3 4
 # 1 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/adc/adc.h" 1 3 4
 # 9 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/adc/adc.h" 3 4
 # 1 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/dt-util.h" 1 3 4
@@ -60,50 +104,37 @@
 # 35 "/mnt/dados/zephyr/zephyr/include/zephyr/sys/util_macro.h" 2 3 4
 # 20 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/dt-util.h" 2 3 4
 # 10 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/adc/adc.h" 2 3 4
-# 10 "/mnt/dados/zephyr/zephyr/boards/native/native_sim/native_sim.dts" 2
-# 1 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
-# 11 "/mnt/dados/zephyr/zephyr/boards/native/native_sim/native_sim.dts" 2
+# 11 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samd2x.dtsi" 2 3 4
 # 1 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
-# 12 "/mnt/dados/zephyr/zephyr/boards/native/native_sim/native_sim.dts" 2
+# 12 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samd2x.dtsi" 2 3 4
+# 1 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
+# 13 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samd2x.dtsi" 2 3 4
+# 1 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/pwm/pwm.h" 1 3 4
+# 14 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samd2x.dtsi" 2 3 4
 
 / {
- model = "Native Sim Board";
- compatible = "zephyr,posix";
+ aliases {
+  adc-0 = &adc;
+
+  port-a = &porta;
+  port-b = &portb;
+
+  rtc = &rtc;
+
+  sercom-0 = &sercom0;
+  sercom-1 = &sercom1;
+  sercom-2 = &sercom2;
+  sercom-3 = &sercom3;
+  sercom-4 = &sercom4;
+  sercom-5 = &sercom5;
+
+  tc-4 = &tc4;
+
+  watchdog0 = &wdog;
+ };
 
  chosen {
-  zephyr,console = &uart0;
-  zephyr,shell-uart = &uart0;
-  zephyr,uart-mcumgr = &uart0;
-  zephyr,flash = &flash0;
-  zephyr,entropy = &rng;
-  zephyr,flash-controller = &flashcontroller0;
-  zephyr,display = &sdl_dc;
-  zephyr,canbus = &can_loopback0;
-  zephyr,code-partition = &slot0_partition;
-  zephyr,bt-hci = &bt_hci_userchan;
-  zephyr,touch = &input_sdl_touch;
- };
-
- aliases {
-  eeprom-0 = &eeprom0;
-  i2c-0 = &i2c0;
-  spi-0 = &spi0;
-  led0 = &led0;
-  rtc = &rtc;
- };
-
- leds {
-  compatible = "gpio-leds";
-
-  led0: led_0 {
-   gpios = <&gpio0 0 (0 << 0)>;
-   label = "Green LED";
-  };
- };
-
- lvgl_pointer {
-  compatible = "zephyr,lvgl-pointer-input";
-  input = <&input_sdl_touch>;
+  zephyr,flash-controller = &nvmctrl;
  };
 
  cpus {
@@ -111,212 +142,727 @@
   #size-cells = <0>;
 
   cpu0: cpu@0 {
-   compatible = "zephyr,native-sim-cpu";
+   compatible = "arm,cortex-m0+";
    reg = <0>;
+
+   device_type = "cpu";
   };
  };
 
- flashcontroller0: flash-controller@0 {
-  compatible = "zephyr,sim-flash";
-  reg = <0x00000000 ((2048) * 1024)>;
+ sram0: memory@20000000 {
+  compatible = "mmio-sram";
+ };
 
-  #address-cells = <1>;
-  #size-cells = <1>;
-  erase-value = <0xff>;
+ id: device_id@80a00c {
+  compatible = "atmel,sam0-id";
+  reg = <0x0080A00C 0x4>,
+        <0x0080A040 0x4>,
+        <0x0080A044 0x4>,
+        <0x0080A048 0x4>;
+ };
 
-  flash0: flash@0 {
-   status = "okay";
-   compatible = "soc-nv-flash";
-   erase-block-size = <4096>;
-   write-block-size = <1>;
-   reg = <0x00000000 ((2048) * 1024)>;
+ soc {
+  nvmctrl: nvmctrl@41004000 {
+   compatible = "atmel,sam0-nvmctrl";
+   reg = <0x41004000 0x22>;
+   interrupts = <5 0>;
 
-   partitions {
-    compatible = "fixed-partitions";
-    #address-cells = <1>;
-    #size-cells = <1>;
+   #address-cells = <1>;
+   #size-cells = <1>;
 
-    boot_partition: partition@0 {
-     label = "mcuboot";
-     reg = <0x00000000 0x0000C000>;
-    };
+   lock-regions = <16>;
 
-    slot0_partition: partition@c000 {
-     label = "image-0";
-     reg = <0x0000C000 0x00069000>;
-    };
+   flash0: flash@0 {
+    compatible = "soc-nv-flash";
 
-    slot1_partition: partition@75000 {
-     label = "image-1";
-     reg = <0x00075000 0x00069000>;
-    };
-
-    scratch_partition: partition@de000 {
-     label = "image-scratch";
-     reg = <0x000de000 0x0001e000>;
-    };
-
-    storage_partition: partition@fc000 {
-     label = "storage";
-     reg = <0x000fc000 0x00004000>;
-    };
+    write-block-size = <4>;
    };
   };
+
+  pm: pm@40000400 {
+   compatible = "atmel,sam0-mclk";
+   reg = <0x40000400 0x400>;
+   interrupts = <0 0>;
+
+   #clock-cells = <2>;
+  };
+
+  gclk: gclk@40000c00 {
+   compatible = "atmel,sam0-gclk";
+   reg = <0x40000c00 0x400>;
+
+   #clock-cells = <1>;
+   #atmel,assigned-clock-cells = <1>;
+  };
+
+  eic: eic@40001800 {
+   compatible = "atmel,sam0-eic";
+   reg = <0x40001800 0x1C>;
+   interrupts = <4 0>;
+  };
+
+  pinmux_a: pinmux@41004400 {
+   compatible = "atmel,sam0-pinmux";
+   reg = <0x41004400 0x80>;
+  };
+
+  pinmux_b: pinmux@41004480 {
+   compatible = "atmel,sam0-pinmux";
+   reg = <0x41004480 0x80>;
+  };
+
+  wdog: watchdog@40001000 {
+   compatible = "atmel,sam0-watchdog";
+   reg = <0x40001000 9>;
+   interrupts = <2 0>;
+  };
+
+  sercom0: sercom@42000800 {
+   compatible = "atmel,sam0-sercom";
+   reg = <0x42000800 0x40>;
+   status = "disabled";
+  };
+
+  sercom1: sercom@42000c00 {
+   compatible = "atmel,sam0-sercom";
+   reg = <0x42000c00 0x40>;
+   status = "disabled";
+  };
+
+  sercom2: sercom@42001000 {
+   compatible = "atmel,sam0-sercom";
+   reg = <0x42001000 0x40>;
+   status = "disabled";
+  };
+
+  sercom3: sercom@42001400 {
+   compatible = "atmel,sam0-sercom";
+   reg = <0x42001400 0x40>;
+   status = "disabled";
+  };
+
+  sercom4: sercom@42001800 {
+   compatible = "atmel,sam0-sercom";
+   reg = <0x42001800 0x40>;
+   status = "disabled";
+  };
+
+  sercom5: sercom@42001c00 {
+   compatible = "atmel,sam0-sercom";
+   reg = <0x42001c00 0x40>;
+   status = "disabled";
+  };
+
+  tc4: tc@42003000 {
+   compatible = "atmel,sam0-tc32";
+   reg = <0x42003000 0x20>;
+   status = "disabled";
+  };
+
+  pinctrl: pinctrl@41004400 {
+   compatible = "atmel,sam0-pinctrl";
+   ranges = <0x41004400 0x41004400 0x100>;
+
+   #address-cells = <1>;
+   #size-cells = <1>;
+
+   porta: gpio@41004400 {
+    compatible = "atmel,sam0-gpio";
+    reg = <0x41004400 0x80>;
+
+    #atmel,pin-cells = <2>;
+    #gpio-cells = <2>;
+
+    gpio-controller;
+   };
+
+   portb: gpio@41004480 {
+    compatible = "atmel,sam0-gpio";
+    reg = <0x41004480 0x80>;
+
+    #atmel,pin-cells = <2>;
+    #gpio-cells = <2>;
+
+    gpio-controller;
+   };
+  };
+
+  rtc: rtc@40001400 {
+   compatible = "atmel,sam0-rtc";
+   reg = <0x40001400 0x1C>;
+   interrupts = <3 0>;
+   clocks = <&gclk 4 4>, <&pm 0x18 5>;
+   clock-names = "GCLK", "PM";
+   status = "disabled";
+
+   alarms-count = <1>;
+   cal-constant = <(1024 * 976)>;
+  };
+
+  adc: adc@42004000 {
+   compatible = "atmel,sam0-adc";
+   reg = <0x42004000 0x2B>;
+   status = "disabled";
+
+   #io-channel-cells = <1>;
+
+   prescaler = <4>;
+  };
+
+  dac0: dac@42004800 {
+   compatible = "atmel,sam0-dac";
+   reg = <0x42004800 0x10>;
+   status = "disabled";
+
+   #io-channel-cells = <0>;
+  };
+ };
+};
+
+&nvic {
+ arm,num-irq-priority-bits = <2>;
+};
+# 9 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samd21.dtsi" 2 3 4
+
+/ {
+ aliases {
+  tc-6 = &tc6;
+
+  tcc-0 = &tcc0;
+  tcc-1 = &tcc1;
+  tcc-2 = &tcc2;
  };
 
- eeprom0: eeprom {
-  status = "okay";
-  compatible = "zephyr,sim-eeprom";
-  size = <((32) * 1024)>;
+ soc {
+  usb0: usb@41005000 {
+   compatible = "atmel,sam0-usb";
+   reg = <0x41005000 0x1000>;
+   interrupts = <7 0>;
+   status = "disabled";
+
+   num-bidir-endpoints = <8>;
+  };
+
+  dmac: dmac@41004800 {
+   compatible = "atmel,sam0-dmac";
+   reg = <0x41004800 0x50>;
+   interrupts = <6 0>;
+   status = "disabled";
+
+   #dma-cells = <2>;
+  };
+
+  tc6: tc@42003800 {
+   compatible = "atmel,sam0-tc32";
+   reg = <0x42003800 0x20>;
+   interrupts = <21 0>;
+   clocks = <&gclk 0x1d>, <&pm 0x20 14>;
+   clock-names = "GCLK", "PM";
+   atmel,assigned-clocks = <&gclk 0>;
+   atmel,assigned-clock-names = "GCLK";
+   status = "disabled";
+  };
+
+  tcc0: tcc@42002000 {
+   compatible = "atmel,sam0-tcc";
+   reg = <0x42002000 0x80>;
+   interrupts = <15 0>;
+   clocks = <&gclk 26>, <&pm 0x20 8>;
+   clock-names = "GCLK", "PM";
+   atmel,assigned-clocks = <&gclk 0>;
+   atmel,assigned-clock-names = "GCLK";
+   status = "disabled";
+
+   channels = <4>;
+   counter-size = <24>;
+  };
+
+  tcc1: tcc@42002400 {
+   compatible = "atmel,sam0-tcc";
+   reg = <0x42002400 0x80>;
+   interrupts = <16 0>;
+   clocks = <&gclk 26>, <&pm 0x20 9>;
+   clock-names = "GCLK", "PM";
+   atmel,assigned-clocks = <&gclk 0>;
+   atmel,assigned-clock-names = "GCLK";
+   status = "disabled";
+
+   channels = <2>;
+   counter-size = <24>;
+  };
+
+  tcc2: tcc@42002800 {
+   compatible = "atmel,sam0-tcc";
+   reg = <0x42002800 0x80>;
+   interrupts = <17 0>;
+   clocks = <&gclk 27>, <&pm 0x20 10>;
+   clock-names = "GCLK", "PM";
+   atmel,assigned-clocks = <&gclk 0>;
+   atmel,assigned-clock-names = "GCLK";
+   status = "disabled";
+
+   channels = <2>;
+   counter-size = <16>;
+  };
+ };
+};
+
+&dac0 {
+ interrupts = <25 0>;
+ clocks = <&gclk 33>, <&pm 0x20 18>;
+ clock-names = "GCLK", "PM";
+ atmel,assigned-clocks = <&gclk 0>;
+ atmel,assigned-clock-names = "GCLK";
+};
+
+&rtc {
+ clocks = <&gclk 4>, <&pm 0x18 5>;
+ clock-names = "GCLK", "PM";
+ atmel,assigned-clocks = <&gclk 4>;
+ atmel,assigned-clock-names = "GCLK";
+};
+
+&sercom0 {
+ interrupts = <9 0>;
+ clocks = <&gclk 0x14>, <&pm 0x20 2>;
+ clock-names = "GCLK", "PM";
+ atmel,assigned-clocks = <&gclk 0>;
+ atmel,assigned-clock-names = "GCLK";
+};
+
+&sercom1 {
+ interrupts = <10 0>;
+ clocks = <&gclk 0x15>, <&pm 0x20 3>;
+ clock-names = "GCLK", "PM";
+ atmel,assigned-clocks = <&gclk 0>;
+ atmel,assigned-clock-names = "GCLK";
+};
+
+&sercom2 {
+ interrupts = <11 0>;
+ clocks = <&gclk 0x16>, <&pm 0x20 4>;
+ clock-names = "GCLK", "PM";
+ atmel,assigned-clocks = <&gclk 0>;
+ atmel,assigned-clock-names = "GCLK";
+};
+
+&sercom3 {
+ interrupts = <12 0>;
+ clocks = <&gclk 0x17>, <&pm 0x20 5>;
+ clock-names = "GCLK", "PM";
+ atmel,assigned-clocks = <&gclk 0>;
+ atmel,assigned-clock-names = "GCLK";
+};
+
+&sercom4 {
+ interrupts = <13 0>;
+ clocks = <&gclk 0x18>, <&pm 0x20 6>;
+ clock-names = "GCLK", "PM";
+ atmel,assigned-clocks = <&gclk 0>;
+ atmel,assigned-clock-names = "GCLK";
+};
+
+&sercom5 {
+ interrupts = <14 0>;
+ clocks = <&gclk 0x19>, <&pm 0x20 7>;
+ clock-names = "GCLK", "PM";
+ atmel,assigned-clocks = <&gclk 0>;
+ atmel,assigned-clock-names = "GCLK";
+};
+
+&tc4 {
+ interrupts = <19 0>;
+ clocks = <&gclk 0x1c>, <&pm 0x20 12>;
+ clock-names = "GCLK", "PM";
+ atmel,assigned-clocks = <&gclk 0>;
+ atmel,assigned-clock-names = "GCLK";
+};
+
+&adc {
+ interrupts = <23 0>;
+ interrupt-names = "resrdy";
+ clocks = <&gclk 0x1e>, <&pm 0x20 16>;
+ clock-names = "GCLK", "PM";
+
+
+
+
+
+ atmel,assigned-clocks = <&gclk 3>;
+ atmel,assigned-clock-names = "GCLK";
+};
+# 9 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samr21.dtsi" 2 3 4
+
+/ {
+ aliases {
+  port-c = &portc;
  };
 
- i2c0: i2c@100 {
-  status = "okay";
-  compatible = "zephyr,i2c-emul-controller";
-  clock-frequency = <100000>;
-  #address-cells = <1>;
-  #size-cells = <0>;
-  #forward-cells = <1>;
-  reg = <0x100 4>;
+ soc {
+  pinctrl: pinctrl@41004400 {
+   ranges = <0x41004400 0x41004400 0x180>;
+
+   portc: gpio@41004500 {
+    compatible = "atmel,sam0-gpio";
+    reg = <0x41004500 0x80>;
+
+    #atmel,pin-cells = <2>;
+    #gpio-cells = <2>;
+
+    gpio-controller;
+   };
+  };
+
+  pinmux_c: pinmux@41004500 {
+   compatible = "atmel,sam0-pinmux";
+   reg = <0x41004500 0x80>;
+  };
+ };
+};
+# 10 "/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro.dts" 2
+# 1 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samx2xx18.dtsi" 1 3 4
+# 9 "/mnt/dados/zephyr/zephyr/dts/arm/atmel/samx2xx18.dtsi" 3 4
+&sram0 {
+ reg = <0x20000000 ((32) * 1024)>;
+};
+
+&flash0 {
+ reg = <0 ((256) * 1024)>;
+};
+# 11 "/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro.dts" 2
+# 1 "/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro-pinctrl.dtsi" 1
+
+
+
+
+
+# 1 "/mnt/dados/zephyr/modules/hal/atmel/include/dt-bindings/pinctrl/samr21g-pinctrl.h" 1 3 4
+
+
+
+
+
+
+# 1 "/mnt/dados/zephyr/modules/hal/atmel/include/dt-bindings/pinctrl/atmel_sam_pinctrl.h" 1 3 4
+# 8 "/mnt/dados/zephyr/modules/hal/atmel/include/dt-bindings/pinctrl/samr21g-pinctrl.h" 2 3 4
+# 7 "/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro-pinctrl.dtsi" 2
+
+&pinctrl {
+ adc_default: adc_default {
+  group1 {
+   pinmux = <((((0U) & (0xFU)) << (0U)) | (((6) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((1U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>;
+  };
  };
 
- spi0: spi@200 {
-  status = "okay";
-  compatible = "zephyr,spi-emul-controller";
-  clock-frequency = <50000000>;
-  #address-cells = <1>;
-  #size-cells = <0>;
-  reg = <0x200 4>;
+ pwm_default: pwm_default {
+  group1 {
+   pinmux = <((((0U) & (0xFU)) << (0U)) | (((19) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((5U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>;
+  };
  };
 
- espi0: espi@300 {
-  status = "okay";
-  compatible = "zephyr,espi-emul-controller";
-  reg = <0x300 4>;
-  #address-cells = <1>;
-  #size-cells = <0>;
+ sercom1_i2c_default: sercom1_i2c_default {
+  group1 {
+   pinmux = <((((0U) & (0xFU)) << (0U)) | (((16) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((2U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>,
+     <((((0U) & (0xFU)) << (0U)) | (((17) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((2U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>;
+  };
  };
 
- mspi0: mspi@400 {
-  status = "okay";
-  compatible = "zephyr,mspi-emul-controller";
-  clock-frequency = <250000000>;
-  reg = <0x400 4>;
-  #address-cells = <1>;
-  #size-cells = <0>;
+ sercom4_spi_default: sercom4_spi_default {
+  group1 {
+   pinmux = <((((2U) & (0xFU)) << (0U)) | (((19) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((5U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>,
+     <((((1U) & (0xFU)) << (0U)) | (((31) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((5U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>,
+     <((((1U) & (0xFU)) << (0U)) | (((30) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((5U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>,
+     <((((2U) & (0xFU)) << (0U)) | (((18) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((5U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>;
+  };
  };
 
- uart0: uart {
-  status = "okay";
-  compatible = "zephyr,native-pty-uart";
-
-
-
-  current-speed = <0>;
+ sercom5_spi_default: sercom5_spi_default {
+  group1 {
+   pinmux = <((((1U) & (0xFU)) << (0U)) | (((2) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((3U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>,
+     <((((1U) & (0xFU)) << (0U)) | (((22) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((3U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>,
+     <((((1U) & (0xFU)) << (0U)) | (((23) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((3U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>;
+  };
  };
 
- uart1: uart_1 {
-  status = "disabled";
-  compatible = "zephyr,native-pty-uart";
-
-
-
-  current-speed = <0>;
+ sercom0_uart_default: sercom0_uart_default {
+  group1 {
+   pinmux = <((((0U) & (0xFU)) << (0U)) | (((4) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((3U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>,
+     <((((0U) & (0xFU)) << (0U)) | (((5) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((3U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>;
+  };
  };
 
- rng: rng {
-  status = "okay";
-  compatible = "zephyr,native-sim-rng";
+ usb_dc_default: usb_dc_default {
+  group1 {
+   pinmux = <((((0U) & (0xFU)) << (0U)) | (((25) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((6U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>,
+     <((((0U) & (0xFU)) << (0U)) | (((24) & (0x1FU)) << ((0U) + 4U)) | (((1U) & (0x7U)) << (((0U) + 4U) + 5U)) | (((6U) & (0xFU)) << ((((0U) + 4U) + 5U) + 3U)))>;
+  };
+ };
+};
+# 12 "/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro.dts" 2
+# 1 "/mnt/dados/zephyr/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h" 1 3 4
+# 13 "/mnt/dados/zephyr/zephyr/boards/atmel/sam0/samr21_xpro/samr21_xpro.dts" 2
+
+/ {
+ model = "SAM R21 Xplained Pro";
+ compatible = "samr21,xpro", "atmel,samr21g18a", "atmel,samr21";
+
+ chosen {
+  zephyr,console = &sercom0;
+  zephyr,shell-uart = &sercom0;
+  zephyr,sram = &sram0;
+  zephyr,flash = &flash0;
+  zephyr,ieee802154 = &ieee802154;
  };
 
- counter0: counter {
-  status = "okay";
-  compatible = "zephyr,native-sim-counter";
+
+ aliases {
+  led0 = &led0;
+  pwm-led0 = &pwm_led0;
+  sw0 = &user_button;
+  i2c-0 = &sercom1;
  };
 
- gpio0: gpio_emul {
-  status = "okay";
-  compatible = "zephyr,gpio-emul";
-  rising-edge;
-  falling-edge;
-  high-level;
-  low-level;
-  gpio-controller;
+ leds {
+  compatible = "gpio-leds";
+
+  led0: led_0 {
+   gpios = <&porta 19 (1 << 0)>;
+   label = "Yellow LED";
+  };
+ };
+
+ pwmleds {
+  compatible = "pwm-leds";
+
+  pwm_led0: pwm_led_0 {
+   pwms = <&tcc0 3 (((20) * 1000UL) * 1000UL)>;
+  };
+ };
+
+ buttons {
+  compatible = "gpio-keys";
+
+  user_button: button_0 {
+   gpios = <&porta 28 ((1 << 4) | (1 << 0))>;
+   label = "SW0";
+   zephyr,code = <11>;
+  };
+ };
+
+ ext1_header: xplained-pro-connector1 {
+  compatible = "atmel-xplained-pro-header";
   #gpio-cells = <2>;
+  gpio-map-mask = <0xffffffff 0xffffffc0>;
+  gpio-map-pass-thru = <0 0x3f>;
+
+
+
+  gpio-map = <0 0 &porta 6 0>,
+      <1 0 &porta 7 0>,
+      <2 0 &porta 13 0>,
+      <3 0 &porta 28 0>,
+      <4 0 &porta 18 0>,
+      <5 0 &porta 19 0>,
+      <6 0 &porta 22 0>,
+      <7 0 &porta 23 0>,
+      <8 0 &porta 16 0>,
+      <9 0 &porta 17 0>,
+      <10 0 &porta 5 0>,
+      <11 0 &porta 4 0>,
+      <12 0 &portb 3 0>,
+      <13 0 &portb 22 0>,
+      <14 0 &portb 2 0>,
+      <15 0 &portb 23 0>;
+
+
+
  };
 
- zephyr_udc0: udc0 {
-  compatible = "zephyr,native-posix-udc";
- };
+ ext2_header: xplained-pro-connector2 {
+  compatible = "atmel-xplained-pro-header";
+  #gpio-cells = <2>;
+  gpio-map-mask = <0xffffffff 0xffffffc0>;
+  gpio-map-pass-thru = <0 0x3f>;
 
- sdl_dc: sdl_dc {
-  compatible = "zephyr,sdl-dc";
-  height = <240>;
-  width = <320>;
- };
 
- input_sdl_touch: input-sdl-touch {
-  compatible = "zephyr,input-sdl-touch";
-  display = <&sdl_dc>;
- };
 
- can_loopback0: can_loopback0 {
+  gpio-map =
+
+        <2 0 &porta 15 0>,
+
+
+
+
+        <7 0 &porta 8 0>,
+        <8 0 &porta 16 0>,
+        <9 0 &porta 17 0>,
+
+
+        <12 0 &porta 14 0>,
+        <13 0 &portb 22 0>,
+        <14 0 &portb 2 0>,
+        <15 0 &portb 23 0>;
+
+
+
+ };
+};
+
+&cpu0 {
+ clock-frequency = <48000000>;
+};
+
+&adc {
+ status = "okay";
+ pinctrl-0 = <&adc_default>;
+ pinctrl-names = "default";
+};
+
+&tcc0 {
+ status = "okay";
+ compatible = "atmel,sam0-tcc-pwm";
+ prescaler = <4>;
+ #pwm-cells = <2>;
+
+ pinctrl-0 = <&pwm_default>;
+ pinctrl-names = "default";
+};
+
+&rtc {
+ status = "okay";
+ counter-mode = "clock";
+ prescaler = <1024>;
+};
+
+&sercom0 {
+ status = "okay";
+ compatible = "atmel,sam0-uart";
+ current-speed = <115200>;
+ rxpo = <1>;
+ txpo = <0>;
+
+ pinctrl-0 = <&sercom0_uart_default>;
+ pinctrl-names = "default";
+};
+
+&sercom1 {
+ status = "okay";
+ compatible = "atmel,sam0-i2c";
+ clock-frequency = <400000>;
+ #address-cells = <1>;
+ #size-cells = <0>;
+
+ pinctrl-0 = <&sercom1_i2c_default>;
+ pinctrl-names = "default";
+};
+
+&sercom4 {
+ status = "okay";
+ compatible = "atmel,sam0-spi";
+
+
+
+
+ dipo = <0>;
+ dopo = <1>;
+ #address-cells = <1>;
+ #size-cells = <0>;
+
+ pinctrl-0 = <&sercom4_spi_default>;
+ pinctrl-names = "default";
+
+ cs-gpios = <&portb 31 (1 << 0)>;
+
+ ieee802154: rf2xx@0 {
+  compatible = "atmel,rf2xx";
+  reg = <0x0>;
+  spi-max-frequency = <6000000>;
+  irq-gpios = <&portb 0 ((0 << 0) | (1 << 5))>;
+  reset-gpios = <&portb 15 (1 << 0)>;
+  slptr-gpios = <&porta 20 (0 << 0)>;
+  dig2-gpios = <&portb 17 ((0 << 0) | (1 << 5))>;
   status = "okay";
-  compatible = "zephyr,can-loopback";
+  tx-pwr-min = [01 11];
+  tx-pwr-max = [00 04];
+  tx-pwr-table = [00 01 03 04 05 05 06 06
+    07 07 07 08 08 09 09 0a
+    0a 0a 0b 0b 0b 0b 0c 0c
+    0c 0c 0d 0d 0d 0d 0d 0d
+    0d 0d 0e 0e 0e 0e 0e 0e
+    0e 0e 0e 0e 0e 0e 0f 0f];
  };
+};
 
- can0: can {
-  status = "disabled";
-  compatible = "zephyr,native-linux-can";
+&sercom5 {
+ status = "okay";
+ compatible = "atmel,sam0-spi";
+ dipo = <0>;
+ dopo = <2>;
+ #address-cells = <1>;
+ #size-cells = <0>;
+
+ pinctrl-0 = <&sercom5_spi_default>;
+ pinctrl-names = "default";
+};
+
+zephyr_udc0: &usb0 {
+ status = "okay";
+
+ pinctrl-0 = <&usb_dc_default>;
+ pinctrl-names = "default";
+};
+
+ext1_spi: &sercom5 {};
+
+ext1_i2c: &sercom1 {};
+
+ext1_serial: &sercom0 {};
+
+ext2_spi: &sercom5 {};
+
+ext2_i2c: &sercom1 {};
+
+&flash0 {
+ partitions {
+  compatible = "fixed-partitions";
+  #address-cells = <1>;
+  #size-cells = <1>;
 
 
 
-  host-interface = "zcan0";
- };
 
- rtc: rtc {
-  status = "okay";
-  compatible = "zephyr,rtc-emul";
-  alarms-count = <2>;
- };
 
- adc0: adc {
-  compatible = "zephyr,adc-emul";
-  nchannels = <2>;
-  #io-channel-cells = <1>;
-  status = "okay";
- };
 
- dma: dma {
-  compatible = "zephyr,dma-emul";
-  #dma-cells = <1>;
-  stack-size = <4096>;
- };
-
- bt_hci_userchan: bt_hci_userchan {
-  compatible = "zephyr,bt-hci-userchan";
-  status = "okay";
- };
-
- performance-states {
-  pstate_0: pstate_0 {
-   compatible = "zephyr,native-sim-pstate";
-   load-threshold = <50>;
-   pstate-id = <0>;
+  storage_partition: partition@3c000 {
+   label = "storage";
+   reg = <0x0003c000 0x00004000>;
   };
-
-  pstate_1: pstate_1 {
-   compatible = "zephyr,native-sim-pstate";
-   load-threshold = <20>;
-   pstate-id = <1>;
-  };
-
-  pstate_2: pstate_2 {
-   compatible = "zephyr,native-sim-pstate";
-   load-threshold = <0>;
-   pstate-id = <2>;
-  };
  };
+};
+# 0 "<command-line>" 2
+# 1 "/mnt/dados/zephyr/zephyr-app-ufsm00292/APP_NICOLAS/APP_NICOLAS/boards/samr21_xpro.overlay" 1
+/ {
+    chosen {
+        zephyr,bt-hci = &bt_hci_uart;
+    };
+};
+
+
+&sercom3 {
+    compatible = "atmel,sam0-uart";
+    status = "okay";
+
+
+
+
+    txpo = <0>;
+    rxpo = <1>;
+    current-speed = <115200>;
+
+    bt_hci_uart: bt_hci_uart {
+        compatible = "zephyr,bt-hci-uart";
+        status = "okay";
+    };
 };
 # 0 "<command-line>" 2
 # 1 "/mnt/dados/zephyr/zephyr/misc/empty_file.c"
